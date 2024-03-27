@@ -36,5 +36,12 @@ module.exports = {
   },
   rules: {
     semi: ["error", "always"],
+    "linebreak-style": ["error", "windows"],
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
   },
 };
