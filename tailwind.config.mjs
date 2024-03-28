@@ -4,36 +4,36 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: "'Poppins', sans-serif",
-        title: "Herabara",
-        subtitle: "Herabara",
+        sans: "'Montserrat', sans-serif",
+        title: "Times New Roman",
+        subtitle: "Carla Sans",
       },
       colors: {
         primary: {
-          50: "#FAF5F9", // Valor por defecto
-          100: "#F6EDF4",
-          200: "#EEDCE9",
-          300: "#E1C0D8",
-          400: "#D2A0C3",
-          500: "#BC78A6",
-          600: "#A75B8A",
-          700: "#8E4871",
-          800: "#763E5F",
-          900: "#643751",
-          950: "#3B1C2D",
+          50: "#FFF9E1", // Valor por defecto
+          100: "#FFF4C0",
+          200: "#FFE785",
+          300: "#FFD13F",
+          400: "#FFB70B",
+          500: "#F49D00",
+          600: "#D37600",
+          700: "#A85100",
+          800: "#8A3F09",
+          900: "#75340E",
+          950: "#451903",
         },
         accent: {
-          50: "#FBF5F1",
-          100: "#F6E7DE",
-          200: "#EDCDBB",
+          50: "#F2F7F4",
+          100: "#E1EAE2",
+          200: "#C4D6C9",
           300: "#DD9E80",
-          400: "#D48163",
-          500: "#CB6244",
-          600: "#BD4D39",
-          700: "#9D3C31", // Valor por defecto
-          800: "#7E332E",
-          900: "#672C27",
-          950: "#371413",
+          400: "#9CB9A5",
+          500: "#50795F",
+          600: "#3C5F4A",
+          700: "#355442", // Valor por defecto
+          800: "#283D31",
+          900: "#213329",
+          950: "#121C17",
         },
         grey: {
           50: "#F6F6F6",
