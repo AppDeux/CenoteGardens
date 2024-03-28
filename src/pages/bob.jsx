@@ -1,13 +1,18 @@
 import React from "react";
 
-const bob = () => {
+const Bob = () => {
   const bob = {
     b1: "2",
     b2: "2",
     b3: "2",
   };
 
-  return <div>bob</div>;
+  return (
+    <div>
+      <div></div>
+      <div></div>.
+    </div>
+  );
 };
 
-export default bob;
+export default Bob;

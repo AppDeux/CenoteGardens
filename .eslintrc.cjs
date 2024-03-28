@@ -3,14 +3,15 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:astro/recommended",
-    "plugin:vue/recommended",
-    "plugin:prettier/recommended",
-  ],
-  plugins: ["react", "vue", "astro", "prettier"],
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+  },
+  extends: ["eslint:recommended"],
+  rules: {
+    semi: ["error", "always"],
+    "linebreak-style": ["error", "windows"],
+  },
   overrides: [
     {
       env: {
@@ -21,27 +22,54 @@ module.exports = {
         sourceType: "script",
       },
     },
+    // Configuration for Astro
     {
       files: ["*.astro"],
+      extends: ["plugin:astro/recommended"],
+      plugins: ["astro"],
       parser: "astro-eslint-parser",
       parserOptions: {
         parser: "@typescript-eslint/parser",
         extraFileExtensions: [".astro"],
       },
+      globals: {
+        Astro: "readonly",
+      },
+    },
+    // Configuration for React
+    {
+      parser: "@typescript-eslint/parser",
+      files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      plugins: ["react", "prettier"],
+      extends: ["plugin:react/recommended", "plugin:prettier/recommended"],
+      parserOptions: {
+        project: "./tsconfig.json",
+      },
+      rules: {
+        "prettier/prettier": [
+          "error",
+          {
+            endOfLine: "auto",
+          },
+        ],
+      },
+    },
+    // Configuration for Vue
+    {
+      files: ["*.vue"],
+      plugins: ["vue", "prettier"],
+      extends: ["plugin:vue/recommended", "plugin:prettier/recommended"],
+      parserOptions: {
+        project: "./tsconfig.json",
+      },
+      rules: {
+        "prettier/prettier": [
+          "error",
+          {
+            endOfLine: "auto",
+          },
+        ],
+      },
     },
   ],
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-  },
-  rules: {
-    semi: ["error", "always"],
-    "linebreak-style": ["error", "windows"],
-    "prettier/prettier": [
-      "error",
-      {
-        endOfLine: "auto",
-      },
-    ],
-  },
 };
