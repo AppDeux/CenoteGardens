@@ -46,6 +46,8 @@ module.exports = {
         project: "./tsconfig.json",
       },
       rules: {
+        "react/react-in-jsx-scope": 0,
+        "react/prop-types": 0,
         "prettier/prettier": [
           "error",
           {
