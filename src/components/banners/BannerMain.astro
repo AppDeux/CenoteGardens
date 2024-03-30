@@ -1,9 +1,17 @@
 ---
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import logoHeader from "../../assets/svgs/logo_header.svg";
+
+const optimizedBackground = await getImage({
+  src: bannerContacto,
+  format: "jpg",
+});
 ---
 
-<section>
+<section
+  class="h-96"
+  style={`background-image: url(${optimizedBackground.src});`}
+>
   <Image src={logoHeader} alt="Logo Cenotes" />
 </section>
 
