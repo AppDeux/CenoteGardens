@@ -7,4 +7,10 @@
   @import "./core/typography";
   @import "./core/components/";
 
+  // Desactiva la prefencia del scroll del usuario
+  @media (prefers-reduced-motion: reduce) {
+    :global(html) {
+      scroll-behavior: auto;
+    }
+  }
 </style>
