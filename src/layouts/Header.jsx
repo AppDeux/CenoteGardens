@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Squash as Hamburger } from "hamburger-react";
 import logoHeader from "@/assets/svgs/logo_header.svg";
 import iconMenu from "@/assets/svgs/circum_menu-fries.svg";
 
@@ -17,7 +18,6 @@ const Header = () => {
     } else {
       document.body.style.overflow = "unset";
     }
-    console.log(scrollNumber);
   }, [scrollNumber, showMobileMenu]);
 
   return (
@@ -32,8 +32,15 @@ const Header = () => {
         grid grid-cols-6
         items-center justify-items-center"
       >
-        <div className=" flex order-1">
-          <img src={iconMenu.src} alt="logo cenotes" />
+        <div className="flex order-1">
+          <Hamburger
+            size={32}
+            color="#fff"
+            distance="lg"
+            rounded
+            toggled={showMobileMenu}
+            toggle={setShowMobileMenu}
+          />
         </div>
 
         <div className="order-2 col-span-4">
