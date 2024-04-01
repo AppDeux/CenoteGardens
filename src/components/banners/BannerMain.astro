@@ -12,11 +12,12 @@ const optimizedBackground = await getImage({
 <section
   class="w-full relative
     h-[26rem] md:h-[32rem] lg:h-[36rem]
-    flex justify-center
     bg-cover bg-center"
   style={`background-image: url(${optimizedBackground.src});`}
 >
-  <Image src={logoHeader} alt="Logo Cenotes" />
+  <div class="flex h-full justify-center">
+    <Image src={logoHeader} alt="Logo Cenotes" />
+  </div>
 </section>
 
 <style></style>
