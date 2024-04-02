@@ -28,13 +28,13 @@ const Header = () => {
     >
       <div
         className="container m-auto
-        py-3 pr-2 md:pr-0
-        grid grid-cols-6
+        py-3 px-2 md:pr-0
+        grid grid-cols-6 gap-2
         items-center justify-items-center"
       >
         <div className="flex order-1">
           <Hamburger
-            size={32}
+            size={28}
             color="#fff"
             distance="lg"
             rounded
@@ -43,9 +43,9 @@ const Header = () => {
           />
         </div>
 
-        <div className="order-2 col-span-4">
+        <div className="order-2 col-span-3">
           <img
-            className={`max-w-52 m-auto
+            className={`max-w-48 w-full
             opacity-0 ${scrollNumber > 10 && "opacity-100"}
             transition-opacity delay-300 ease-linear`}
             src={logoHeader.src}
@@ -62,7 +62,11 @@ const Header = () => {
           <a href="#contact">Contact</a>
         </div>
 
-        <div className="order-3 font-semibold text-grey-50">
+        <div
+          className="flex gap-4 order-3 col-span-2
+            justify-self-end
+            font-semibold text-xl text-grey-50"
+        >
           <a>EN</a> | <a>ES</a>
         </div>
       </div>

@@ -1,6 +1,10 @@
 .hamburger-react {
   border: 0.5px solid white;
 
+  div div {
+    left: 9px !important;
+  }
+
   div:nth-child(2) div {
     width: 1.5rem !important;
   }
