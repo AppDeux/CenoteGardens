@@ -11,7 +11,7 @@ const Header = () => {
       setScrollNumber(window.scrollY);
     });
 
-    // si showNav es true, bloquear scroll vertical
+    // si showMobileMenu es true, bloquear scroll vertical
     if (showMobileMenu) {
       document.body.style.overflow = "hidden";
     } else {
@@ -61,7 +61,7 @@ const Header = () => {
           className={`Header__content__links font-subtitle text-grey-50
             ${showMobileMenu ? "Header__content__links--active" : "hidden"}
             transition-all delay-300 ease-in
-            lg:order-2 lg:col-span-7 w-full
+            lg:order-2 lg:col-span-7 w-full lg:pr-8
             lg:flex lg:items-center lg:justify-evenly lg:gap-8`}
         >
           <a href="#">Home</a>
