@@ -1,0 +1,123 @@
+---
+import { Image } from "astro:assets";
+import iconWorld from "@/assets/svgs/icon_world.svg";
+import iconLeaves from "@/assets/svgs/icon_leaves.svg";
+import piramid from "@/assets/imgs/piramid.png";
+import iconLine from "@/assets/svgs/icon_line.svg";
+---
+
+<div class="container">
+  <div class="presentation">
+    <section>
+      <Image class="iconWorld" src={iconWorld} alt="Icon World" />
+    </section>
+    <br />
+    <p>
+      Escape to a world where nature embraces contemporary comfort—nestled in
+      the vibrant jungles of Tulum.
+    </p>
+    <br />
+    <p>
+      Picture waking up to the beautiful songs of tropical birds, surrounded by
+      the lush jungle in vibrant colors. Every day is like a new adventure
+      waiting to happen
+    </p>
+  </div>
+  <div class="information">
+    <div class="informationText">
+      <section class="iconLeaves">
+        <Image class="iconLeaves" src={iconLeaves} alt="Icon Leaves" />
+      </section>
+      <br />
+      <p>
+        Cenote Gardens offers <b>56 residential lots</b> that bring a unique opportunity
+        to be part of an extraordinary living experience.
+      </p>
+      <br />
+      <p>
+        It is the perfect place for those looking for <b
+          >a lifestyle respectful of nature</b
+        > and the biodiversity of the Mayan jungle.
+      </p>
+      <br />
+      <p>
+        Ideal to find <b>privacy</b> and coexistence with other people seeking wellness,
+        spirituality, and expansion of consciousness.
+      </p>
+    </div>
+    <div>
+      <section class="piramid">
+        <center>
+          <Image class="piramid" src={piramid} alt="Piramid Image" />
+        </center>
+      </section>
+    </div>
+  </div>
+  <div class="question">
+    <section>
+      <Image class="iconLine" src={iconLine} alt="Icon Line" />
+    </section>
+    <br />
+    <h1>WHAT MAKES CENOTE GARDENS AN ENTICING INVESTIMENT OPORTUNITY</h1>
+    <br />
+  </div>
+  <div class="characteristics">
+    <div>
+      <section>
+        <h2>VISION OF SUSTENTABLE LIVING</h2>
+      </section>
+    </div>
+    <div>
+      <section>
+        <h2>ESSENTIAL SERVICES AND CONNECTIVITY</h2>
+      </section>
+    </div>
+    <div>
+      <section>
+        <h2>PRIVATE CENOTE AN LUXURIOUS AMENITIES</h2>
+      </section>
+    </div>
+  </div>
+</div>
+
+<style>
+  .presentation,
+  .question {
+    color: #355442;
+    text-align: center;
+    padding: 9rem;
+  }
+  .iconWorld,
+  .iconLeaves,
+  .piramid,
+  .iconLine {
+    display: block;
+    margin: auto;
+    width: 10rem;
+  }
+  .information,
+  .characteristics {
+    color: #355442;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 9rem;
+  }
+  .information > div {
+    width: 50%;
+  }
+  .piramid {
+    width: 25rem;
+  }
+  h1 {
+    padding: 5rem;
+    font-size: 3.5rem;
+  }
+  .iconLine {
+    width: 15rem;
+  }
+  .characteristics > div {
+    width: 33%;
+  }
+</style>
