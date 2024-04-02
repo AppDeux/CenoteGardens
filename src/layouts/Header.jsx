@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import logoHeader from "@/assets/svgs/logo_header.svg";
-import iconMenu from "@/assets/svgs/circum_menu-fries.svg";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -22,12 +21,14 @@ const Header = () => {
 
   return (
     <header
-      className={`${scrollNumber < 10 ? "bg-transparent" : "bg-accent-700"}
+      className={`Header
+      ${showMobileMenu || scrollNumber > 10 ? "bg-accent-700" : "bg-transparent"}
       fixed top-0 z-20 w-full
       transition-colors delay-300 ease-linear`}
     >
       <div
-        className="container m-auto
+        className="Header__content
+        container m-auto
         py-3 px-2 md:pr-0
         grid grid-cols-6 gap-2
         items-center justify-items-center"
@@ -40,20 +41,27 @@ const Header = () => {
             rounded
             toggled={showMobileMenu}
             toggle={setShowMobileMenu}
+            onClick={() => {
+              setShowMobileMenu(!showMobileMenu);
+            }}
           />
         </div>
 
         <div className="order-2 col-span-3">
           <img
             className={`max-w-48 w-full
-            opacity-0 ${scrollNumber > 10 && "opacity-100"}
+            ${showMobileMenu || scrollNumber > 10 ? "opacity-100" : "opacity-0"}
             transition-opacity delay-300 ease-linear`}
             src={logoHeader.src}
             alt="logo cenotes"
           />
         </div>
 
-        <div className="hidden">
+        <div
+          className={`Header__content__links
+            ${showMobileMenu ? "Header__content__links--active" : "hidden"}
+            transition-all delay-300 ease-in`}
+        >
           <a href="#">Home</a>
           <a href="#location">Location</a>
           <a href="#availability">Availability</a>
