@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import logoHeader from "@/assets/svgs/logo_header.svg";
-import iconMenu from "@/assets/svgs/circum_menu-fries.svg";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -12,7 +11,7 @@ const Header = () => {
       setScrollNumber(window.scrollY);
     });
 
-    // si showNav es true, bloquear scroll vertical
+    // si showMobileMenu es true, bloquear scroll vertical
     if (showMobileMenu) {
       document.body.style.overflow = "hidden";
     } else {
@@ -22,38 +21,49 @@ const Header = () => {
 
   return (
     <header
-      className={`${scrollNumber < 10 ? "bg-transparent" : "bg-accent-700"}
+      className={`Header
+      ${showMobileMenu || scrollNumber > 20 ? "bg-accent-700" : "bg-transparent"}
       fixed top-0 z-20 w-full
       transition-colors delay-300 ease-linear`}
     >
       <div
-        className="container m-auto
-        py-3 pr-2 md:pr-0
-        grid grid-cols-6
+        className="Header__content
+        container m-auto
+        py-3 px-2 lg:pr-0
+        grid grid-cols-6 lg:grid-cols-12 gap-2 lg:gap-0
         items-center justify-items-center"
       >
-        <div className="flex order-1">
+        <div className="flex order-1 lg:hidden">
           <Hamburger
-            size={32}
+            size={28}
             color="#fff"
             distance="lg"
             rounded
             toggled={showMobileMenu}
             toggle={setShowMobileMenu}
+            onClick={() => {
+              setShowMobileMenu(!showMobileMenu);
+            }}
           />
         </div>
 
-        <div className="order-2 col-span-4">
+        <div className="order-2 lg:order-1 col-span-3 lg:col-span-3">
           <img
-            className={`max-w-52 m-auto
-            opacity-0 ${scrollNumber > 10 && "opacity-100"}
+            className={`max-w-48 w-full lg:max-w-52
+            ${showMobileMenu || scrollNumber > 20 ? "opacity-100" : "opacity-0"}
             transition-opacity delay-300 ease-linear`}
             src={logoHeader.src}
             alt="logo cenotes"
           />
         </div>
 
-        <div className="hidden">
+        <div
+          className={`Header__content__links font-subtitle text-grey-50
+            ${showMobileMenu ? "Header__content__links--active" : "hidden"}
+            transition-all delay-300 ease-in
+            lg:order-2 lg:col-span-7 w-full lg:pr-8 lg:text-sm xl:text-base
+            lg:flex lg:items-center lg:justify-evenly lg:gap-8`}
+        >
           <a href="#">Home</a>
           <a href="#location">Location</a>
           <a href="#availability">Availability</a>
@@ -62,7 +72,11 @@ const Header = () => {
           <a href="#contact">Contact</a>
         </div>
 
-        <div className="order-3 font-semibold text-grey-50">
+        <div
+          className="flex gap-4 order-3 col-span-2 lg:col-span-2
+            justify-self-end
+            font-semibold text-xl lg:text-lg text-grey-50"
+        >
           <a>EN</a> | <a>ES</a>
         </div>
       </div>
