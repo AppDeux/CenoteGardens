@@ -3,15 +3,14 @@ import { Image } from "astro:assets";
 import iconWorld from "@/assets/svgs/icon_world.svg";
 import iconLeaves from "@/assets/svgs/icon_leaves.svg";
 import piramid from "@/assets/imgs/piramid.png";
-import iconLine from "@/assets/svgs/icon_line.svg";
+/*import iconLine from "@/assets/svgs/icon_line.svg";*/
 ---
 
-<div class="container">
-  <div class="presentation">
-    <section>
-      <Image class="iconWorld" src={iconWorld} alt="Icon World" />
-    </section>
-    <br />
+<section class="container description_section items-center">
+  <div class="presentation text-lg">
+    <div>
+      <Image class="presentation__iconWorld" src={iconWorld} alt="Icon World" />
+    </div>
     <p>
       Escape to a world where nature embraces contemporary comfort—nestled in
       the vibrant jungles of Tulum.
@@ -20,40 +19,45 @@ import iconLine from "@/assets/svgs/icon_line.svg";
     <p>
       Picture waking up to the beautiful songs of tropical birds, surrounded by
       the lush jungle in vibrant colors. Every day is like a new adventure
-      waiting to happen
+      waiting to happen.
     </p>
   </div>
-  <div class="information">
-    <div class="informationText">
-      <section class="iconLeaves">
-        <Image class="iconLeaves" src={iconLeaves} alt="Icon Leaves" />
-      </section>
-      <br />
-      <p>
+  <div
+    class="information grid grid-cols-1 md:grid-cols-2 md:gap-y-0 md:gap-x-16 px-4 md:px-14"
+  >
+    <div class="flex justify-center md:col-span-2 md:justify-start mb-4">
+      <Image
+        class="information__iconLeaves max-w-20 md:max-w-32"
+        src={iconLeaves}
+        alt="Icon Leaves"
+      />
+    </div>
+    <div
+      class="informationText flex flex-col items-center md:items-start text-base mb-6 md:max-w-[26rem] md:mt-4"
+    >
+      <p class="mb-4">
         Cenote Gardens offers <b>56 residential lots</b> that bring a unique opportunity
         to be part of an extraordinary living experience.
       </p>
-      <br />
-      <p>
+      <p class="mb-4">
         It is the perfect place for those looking for <b
           >a lifestyle respectful of nature</b
         > and the biodiversity of the Mayan jungle.
       </p>
-      <br />
       <p>
         Ideal to find <b>privacy</b> and coexistence with other people seeking wellness,
         spirituality, and expansion of consciousness.
       </p>
     </div>
-    <div>
-      <section class="piramid">
-        <center>
-          <Image class="piramid" src={piramid} alt="Piramid Image" />
-        </center>
-      </section>
+    <div class="flex justify-end">
+      <Image
+        class="information__piramid md:max-w-[380px]"
+        src={piramid}
+        alt="Piramid Image"
+      />
     </div>
   </div>
-  <div class="question">
+  <!-- <div class="question">
     <section>
       <Image class="iconLine" src={iconLine} alt="Icon Line" />
     </section>
@@ -77,47 +81,37 @@ import iconLine from "@/assets/svgs/icon_line.svg";
         <h2>PRIVATE CENOTE AN LUXURIOUS AMENITIES</h2>
       </section>
     </div>
-  </div>
-</div>
+  </div> -->
+</section>
 
-<style>
-  .presentation,
-  .question {
-    color: #355442;
-    text-align: center;
-    padding: 9rem;
-  }
-  .iconWorld,
-  .iconLeaves,
-  .piramid,
-  .iconLine {
-    display: block;
-    margin: auto;
-    width: 10rem;
-  }
-  .information,
-  .characteristics {
-    color: #355442;
-    text-align: center;
+<style lang="scss">
+  .description_section {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 9rem;
+    justify-content: center;
+    @apply text-accent-700;
+    padding-top: 3rem;
+    flex-direction: column;
   }
-  .information > div {
-    width: 50%;
+  .presentation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 1rem;
+    margin-bottom: 3.5rem;
   }
-  .piramid {
-    width: 25rem;
+  .presentation__iconWorld {
+    margin-bottom: 1.5rem;
+    max-width: 5.75rem;
   }
-  h1 {
-    padding: 5rem;
-    font-size: 3.5rem;
-  }
-  .iconLine {
-    width: 15rem;
-  }
-  .characteristics > div {
-    width: 33%;
+  @media (min-width: 768px) {
+    .presentation__iconWorld {
+      max-width: 6.25rem;
+    }
+    .presentation {
+      max-width: 620px;
+      font-size: 1.25rem;
+    }
   }
 </style>
