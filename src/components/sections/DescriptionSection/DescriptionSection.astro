@@ -3,7 +3,12 @@ import { Image } from "astro:assets";
 import iconWorld from "@/assets/svgs/icon_world.svg";
 import iconLeaves from "@/assets/svgs/icon_leaves.svg";
 import piramid from "@/assets/imgs/piramid.png";
-/*import iconLine from "@/assets/svgs/icon_line.svg";*/
+import iconHouse from "@/assets/svgs/icon_house.svg";
+import iconDrop from "@/assets/svgs/icon_drop.svg";
+import iconPlug from "@/assets/svgs/icon_plug.svg";
+import iconHand from "@/assets/svgs/icon_hand.svg";
+import iconSun from "@/assets/svgs/icon_sun.svg";
+import iconHammer from "@/assets/svgs/icon_hammer.svg";
 ---
 
 <section class="container description_section items-center">
@@ -57,31 +62,82 @@ import piramid from "@/assets/imgs/piramid.png";
       />
     </div>
   </div>
-  <!-- <div class="question">
-    <section>
-      <Image class="iconLine" src={iconLine} alt="Icon Line" />
-    </section>
-    <br />
-    <h1>WHAT MAKES CENOTE GARDENS AN ENTICING INVESTIMENT OPORTUNITY</h1>
-    <br />
+  <div>
+    <h1 class="pt-12 px-10 text-2xl text-center md:text-[52px] md:pb-6">
+      Sustainability is our core vision
+    </h1>
   </div>
-  <div class="characteristics">
-    <div>
-      <section>
-        <h2>VISION OF SUSTENTABLE LIVING</h2>
-      </section>
+  <div class="characteristics grid grid-cols-1 md:grid-cols-3 px-10">
+    <div class="p-6 md:">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__house w-16 md:w-28"
+          src={iconHouse}
+          alt="House Image"
+        />
+      </div>
+      <p class="text-center">
+        Low construction density (+60% of untouched green areas).
+      </p>
     </div>
-    <div>
-      <section>
-        <h2>ESSENTIAL SERVICES AND CONNECTIVITY</h2>
-      </section>
+    <div class="p-6 md:p-10">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__drop w-16 md:w-28"
+          src={iconDrop}
+          alt="Drop Image"
+        />
+      </div>
+      <p class="text-center">
+        Private eco-friendly sewage system that completes the water cycle (water
+        reuse).
+      </p>
     </div>
-    <div>
-      <section>
-        <h2>PRIVATE CENOTE AN LUXURIOUS AMENITIES</h2>
-      </section>
+    <div class="p-6 md:p-10">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__plug w-16 md:w-28"
+          src={iconPlug}
+          alt="Plug Image"
+        />
+      </div>
+      <p class="text-center">
+        Renewable energy for the lighting of driveways and power of amenities.
+      </p>
     </div>
-  </div> -->
+    <div class="p-6 md:p-10">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__hand w-16 md:w-28"
+          src={iconHand}
+          alt="Hand Image"
+        />
+      </div>
+      <p class="text-center">
+        Amenities and driveways designed with eco-friendly materials.
+      </p>
+    </div>
+    <div class="p-6 md:p-10">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__sun w-16 md:w-28"
+          src={iconSun}
+          alt="Sun Image"
+        />
+      </div>
+      <p class="text-center">Solar panel buyer rebate program.</p>
+    </div>
+    <div class="p-6 md:p-10">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__hammer w-16 md:w-28"
+          src={iconHammer}
+          alt="Hammer Image"
+        />
+      </div>
+      <p class="text-center">Eco-construction guidelines.</p>
+    </div>
+  </div>
 </section>
 
 <style lang="scss">
