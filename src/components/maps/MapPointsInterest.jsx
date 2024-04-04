@@ -1,4 +1,63 @@
+import { useState } from "react";
+
 const MapPointsInterest = () => {
+  const [tooltip, setTooltip] = useState({
+    x: 0,
+    y: 0,
+    text: "",
+    display: "none",
+  });
+
+  // Manejador para mostrar el tooltip cuando se pasa sobre un círculo
+  const handleMouseOver = (event) => {
+    console.log("mpuse in");
+    const circle = event.target;
+    const svgRect = event.target.ownerSVGElement.getBoundingClientRect();
+    const circleRect = circle.getBoundingClientRect();
+    const cx = circleRect.left - svgRect.left + circleRect.width / 2;
+    const cy = circleRect.top - svgRect.top + circleRect.height / 2;
+    const minutes = parseInt(circle.getAttribute("data-minutes"));
+    setTooltip({
+      x: cx,
+      y: cy,
+      text: `Yax-Kin Cenote - ${minutes} mins`,
+      display: "block",
+    });
+  };
+
+  // Manejador para ocultar el tooltip cuando se sale del círculo
+  const handleMouseOut = () => {
+    console.log("mpuse out");
+    setTooltip({
+      ...tooltip,
+      display: "none",
+    });
+  };
+
+  // Componente funcional que representa un círculo en el SVG
+  function Circle({
+    cx,
+    cy,
+    r,
+    minutes,
+    handleMouseOver,
+    fill,
+    handleMouseOut,
+  }) {
+    return (
+      <circle
+        className="MapPointsInterest__dot"
+        cx={cx}
+        cy={cy}
+        r={r}
+        fill={fill}
+        data-minutes={minutes} // Añadimos el atributo data-minutes
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      />
+    );
+  }
+
   return (
     <section className="MapPointsInterest container">
       <svg
@@ -17,21 +76,30 @@ const MapPointsInterest = () => {
         <rect width="1440" height="631" fill="url(#pattern0)" />
 
         {/* Yellow residential */}
-        <circle
+        <Circle
           className="dotMap"
           cx="576"
           cy="490"
           r="10"
           fill="#FAB10B"
-          onClick={() => {
-            console.log("bob");
-          }}
+          minutes={5}
+          handleMouseOver={handleMouseOver}
+          handleMouseOut={handleMouseOut}
         />
         <circle cx="571" cy="550" r="10" fill="#FAB10B" />
         <circle cx="596" cy="544" r="10" fill="#FAB10B" />
         <circle cx="594" cy="570" r="10" fill="#FAB10B" />
         {/* Green Super market */}
-        <circle cx="795" cy="294" r="10" fill="#33B43F" />
+        <Circle
+          className="dotMap"
+          cx="795"
+          cy="294"
+          r="10"
+          fill="#33B43F"
+          minutes={10}
+          handleMouseOver={handleMouseOver}
+          handleMouseOut={handleMouseOut}
+        />
         <circle cx="632" cy="483" r="10" fill="#33B43F" />
         <circle cx="602" cy="500" r="10" fill="#33B43F" />
         <circle cx="610" cy="530" r="10" fill="#33B43F" />
@@ -425,6 +493,17 @@ const MapPointsInterest = () => {
           />
         </defs>
       </svg>
+
+      <div
+        className="tooltip"
+        style={{
+          left: tooltip.x + 10 + "px",
+          top: tooltip.y - 30 + "px",
+          display: tooltip.display,
+        }}
+      >
+        {tooltip.text}
+      </div>
     </section>
   );
 };
