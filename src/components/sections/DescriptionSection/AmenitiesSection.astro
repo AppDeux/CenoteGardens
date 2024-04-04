@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import iconWorld from "@/assets/svgs/icon_world.svg";
+import iconLeaves from "@/assets/svgs/icon_leaves.svg";
+import iconLine from "@/assets/svgs/icon_line.svg";
+---
+
+<section class="container amenities_section px-4 lg:px-36">
+  <div class="amenities_section text-accent-700 text-xs md:text-xs">
+    <div>
+      <h1
+        class="font-title uppercase px-4 md:px-8 mb-4 text-2xl md:text-[2rem] md:pb-6"
+      >
+        State-of-the-art amenities
+      </h1>
+    </div>
+    <div
+      class="chance grid grid-cols-1 md:grid-cols-3 md:gap-y-0 md:gap-x-4 mb-12 px-4 md:px-8"
+    >
+      <div class="flex flex-col items-start pt-4 pb-4">
+        <Image
+          class="amenities__iconWorld w-16 pb-4"
+          src={iconWorld}
+          alt="Icon World"
+        />
+        <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
+          Wellness
+        </h2>
+        <hr class="bg-accent-700 w-16 h-[2px]" />
+        <p class="pt-2">Temazcal, Ice Plunge & Holistic Meditation Area.</p>
+      </div>
+      <div class="flex flex-col items-start pt-4 pb-4">
+        <Image
+          class="amenities__iconLeaves w-16 pb-4 md:pb-8"
+          src={iconLeaves}
+          alt="Icon LeaesiconLeaves"
+        />
+        <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
+          Nature connection
+        </h2>
+        <hr class="bg-accent-700 w-16 h-[2px]" />
+        <p class="pt-2">Cenote, Fire pit, Sightseeing Tower & Pet Area.</p>
+      </div>
+      <div class="flex flex-col items-start pt-4 pb-4">
+        <Image
+          class="amenities__iconLine w-16 pb-4 md:pb-9 md:pt-3"
+          src={iconLine}
+          alt="Icon Line"
+        />
+        <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
+          Sports & recreation
+        </h2>
+        <hr class="bg-accent-700 w-16 h-[2px]" />
+        <p class="pt-2">
+          Pickleball, Outdoor gym, Hammock area & co-working space.
+        </p>
+      </div>
+    </div>
+    <div class="px-4 md:px-8">
+      <p>
+        <b>Investing in Cenote Gardens</b> presents an exceptional opportunity to
+        <b>capitalize on the upside potential of Tulum's growth.</b>
+      </p>
+    </div>
+  </div>
+</section>
