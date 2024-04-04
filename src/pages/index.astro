@@ -5,6 +5,7 @@ import DescriptionSecction from "@/components/sections/DescriptionSection/Descri
 import BannerParallax from "@/components/banners/BannerParallax.astro";
 import PromotionSection from "@/components/sections/DescriptionSection/PromotionSection.astro";
 import AmenitiesSection from "@/components/sections/DescriptionSection/AmenitiesSection.astro";
+import SliderComponent from "@/components/sliders/SliderComponent.vue";
 ---
 
 <Layout title="Cenote gardens">
@@ -14,4 +15,5 @@ import AmenitiesSection from "@/components/sections/DescriptionSection/Amenities
   <PromotionSection />
   <AmenitiesSection />
   <style></style>
+  <SliderComponent client:load />
 </Layout>
