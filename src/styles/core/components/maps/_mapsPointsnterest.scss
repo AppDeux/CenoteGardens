@@ -1,0 +1,25 @@
+.MapPointsInterest {
+}
+
+.dotMap {
+  transition: fill 0.3s;
+  position: relative;
+}
+
+.dotMap:hover {
+  cursor: pointer;
+}
+
+.dotMap::before {
+  content: "Contenido dinámico";
+  
+  position: absolute;
+  top: -20px; /* Ajusta la posición del pseudo-elemento */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  z-index: 1;
+}
