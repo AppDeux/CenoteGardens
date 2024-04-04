@@ -51,7 +51,7 @@ const MapPointsInterestDesk = () => {
   };
 
   return (
-    <section className="MapPointsInterest hidden md:block container">
+    <section className="MapPointsInterest hidden md:block container overflow-hidden">
       <svg
         className="md:w-full"
         viewBox="0 0 1440 632"
@@ -788,7 +788,7 @@ const MapPointsInterestDesk = () => {
       <div
         className="tooltip"
         style={{
-          left: tooltip.x + 10 + "px",
+          right: "calc(100% - " + String(tooltip.x - 10) + "px)",
           top: tooltip.y - 30 + "px",
           display: tooltip.display,
         }}
