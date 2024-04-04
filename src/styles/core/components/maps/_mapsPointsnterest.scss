@@ -1,4 +1,4 @@
-.MapPointsInterest {
+.MapPointsInterestDesk {
   position: relative;
 
   &__dot {
@@ -8,8 +8,6 @@
 
 .tooltip {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
+  background-color: hsla(48, 100%, 94%, 0.8);
+  @apply text-grey-950 p-1 border-2 border-accent-700;
 }

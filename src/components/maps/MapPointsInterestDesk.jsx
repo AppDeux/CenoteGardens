@@ -17,7 +17,7 @@ function Circle({ cx, cy, r, minutes, placeName, handleMouseOver, fill }) {
   );
 }
 
-const MapPointsInterest = () => {
+const MapPointsInterestDesk = () => {
   const [tooltip, setTooltip] = useState({
     x: 0,
     y: 0,
@@ -51,7 +51,7 @@ const MapPointsInterest = () => {
   };
 
   return (
-    <section className="MapPointsInterest container">
+    <section className="MapPointsInterestDesk container">
       <svg
         className="w-full"
         viewBox="0 0 1440 632"
@@ -799,4 +799,4 @@ const MapPointsInterest = () => {
   );
 };
 
-export default MapPointsInterest;
+export default MapPointsInterestDesk;
