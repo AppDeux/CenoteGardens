@@ -1,0 +1,74 @@
+---
+import { Image, getImage } from "astro:assets";
+import logoHeader from "@/assets/svgs/logo_header.svg";
+import imgFooterBannerMain from "@/assets/imgs/bgFooterMain.png";
+import IconFacebook from "@/assets/imgs/icon_facebook.png";
+import Iconinstagram from "@/assets/imgs/icon_instagram.png";
+import Icontiktok from "@/assets/imgs/icon_tiktok.png";
+import Iconyoutube from "@/assets/imgs/icon_youtube.png";
+
+const optimizedBackground = await getImage({
+  src: imgFooterBannerMain,
+  format: "jpg",
+});
+---
+
+<section
+  class="footer_section w-full relative
+    h-[28rem] md:h-[20rem] lg:h-[26rem]
+    bg-cover bg-center"
+  style={`background-image: url(${optimizedBackground.src});`}
+>
+  <div>
+    <div class="flex mt-10 mb-10 h-[5rem] justify-center align-top">
+      <Image src={logoHeader} alt="Logo Cenotes" />
+    </div>
+    <div>
+      <div class="text-accent-50 flex flex-col items-center">
+        <div class="m-"><p>© 2024 Cenote Gardens</p></div>
+        <div class="mb-8"><p>Privacy Policy</p></div>
+        <div>
+          <div class="grid grid-cols-4 md:gap-x-2">
+            <div>
+              <a href="">
+                <Image
+                  class="footer__iconFacebook w-10 pt-4 pb-4 m-1"
+                  src={IconFacebook}
+                  alt="Icon Facebook"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <Image
+                  class="footer__iconinstagram w-10 pt-4 pb-4 m-1"
+                  src={Iconinstagram}
+                  alt="Icon instagram"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <Image
+                  class="footer__icontiktok w-10 pt-4 pb-4 m-1"
+                  src={Icontiktok}
+                  alt="Icon tiktok"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <Image
+                  class="footer__iconyoutube w-10 pt-4 pb-4 m-1"
+                  src={Iconyoutube}
+                  alt="Icon youtube"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div><p>Produced by YGU Comunicaxion</p></div>
+      </div>
+    </div>
+  </div>
+</section>
