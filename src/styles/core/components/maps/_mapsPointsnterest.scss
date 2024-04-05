@@ -1,0 +1,13 @@
+.MapPointsInterest {
+  position: relative;
+
+  &__dot {
+    cursor: pointer;
+  }
+}
+
+.tooltip {
+  position: absolute;
+  background-color: hsla(48, 100%, 94%, 0.8);
+  @apply text-grey-950 p-1 border-2 border-accent-700;
+}
