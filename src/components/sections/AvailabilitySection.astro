@@ -12,8 +12,12 @@ import waterfallImage from "@/assets/imgs/waterfall.png";
     <div
       class="grid grid-cols-1 md:grid-cols-3 md:gap-y-0 md:gap-x-16 mb-12 px-4 md:px-2 pt-12 text-sm md:text-base lg:text-base relative"
     >
-      <div class="md:pt-4 flex flex-col items-start col-span-2 order-1">
-        <h1 class="font-title uppercase text-3xl">Availability</h1>
+      <div
+        class="md:pt-4 flex flex-col items-start md:col-span-2 order-1 md:mr-12"
+      >
+        <h1 class="font-title uppercase text-xl md:text-5xl md:mb-12">
+          Availability
+        </h1>
         <p>
           Cenote Gardens is the perfect canvas for your dream home. Every lot
           offers ample space, ranging from <b>250 sq m to 600 sq m</b>,
@@ -23,27 +27,27 @@ import waterfallImage from "@/assets/imgs/waterfall.png";
           >
         </p>
       </div>
-      <div class="order-3">
+      <div class="order-3 md:col-span-2">
         <Image
-          class="location__peopleImage pt-8 w-[230px]"
+          class="location__peopleImage pt-8 w-[200px]"
           src={peopleImage}
           alt="people Image"
         />
-        <div class="pt-8">
+        <div class="pt-8 md:max-w-[550px] md:text-2xl">
           <p>
             Explore the available lots today and start envisioning your future
             in this idyllic enclave in the heart of Tulum's jungle.
           </p>
         </div>
       </div>
-      <div class="col-span-1 order-2">
+      <div class="col-span-1 order-2 md:row-span-2">
         <Image
-          class="location__waterfallImage pt-4 w-[900px]"
+          class="location__waterfallImage pt-4 md:absolute md:w-[300px] mb-10 md:left-[65%]"
           src={waterfallImage}
           alt="waterfall Image"
         />
         <div
-          class="pt-4 order-2 border-2 border-accent-700 text-accent-700 bg-accent-100 bg-opacity-50 p-4 md:absolute md:top-[60%] md:max-w-2xl md:m-auto md:left-[20%]"
+          class="pt-4 border-2 border-accent-700 text-accent-700 bg-accent-100 bg-opacity-50 p-4 md:absolute md:top-[60%] md:max-w-xl md:m-auto md:left-[20%]"
         >
           <p>
             Whether you envision a <b
