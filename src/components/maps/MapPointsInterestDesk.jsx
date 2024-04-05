@@ -788,8 +788,8 @@ const MapPointsInterestDesk = () => {
       <div
         className="tooltip"
         style={{
-          right: "calc(100% - " + String(tooltip.x - 10) + "px)",
-          top: tooltip.y - 30 + "px",
+          left: tooltip.x - 20 + "px",
+          top: tooltip.y - 40 + "px",
           display: tooltip.display,
         }}
       >

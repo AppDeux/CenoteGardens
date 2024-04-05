@@ -3,13 +3,14 @@ import Layout from "@/layouts/Layout.astro";
 import BannerMain from "@/components/banners/BannerMain.astro";
 import DescriptionSecction from "@/components/sections/DescriptionSection/DescriptionSection.astro";
 import BannerParallax from "@/components/banners/BannerParallax.astro";
-import MapPointsInterestMobile from "@/components/maps/MapPointsInterestMobile";
-import MapPointsInterestDesk from "@/components/maps/MapPointsInterestDesk";
 import PromotionSection from "@/components/sections/DescriptionSection/PromotionSection.astro";
 import AmenitiesSection from "@/components/sections/DescriptionSection/AmenitiesSection.astro";
 import SliderComponent from "@/components/sliders/SliderComponent.vue";
 //importar imagenes del slider de amenidades
 import imgAmenidades from "@/data/imgAmenidades";
+import MapPointsInterestMobile from "@/components/maps/MapPointsInterestMobile";
+import MapPointsInterestDesk from "@/components/maps/MapPointsInterestDesk";
+import MapPlanoCenote from "@/components/maps/MapPlanoCenote";
 import LocationSection from "@/components/sections/LocationSection.astro";
 import AvailabilitySection from "@/components/sections/AvailabilitySection.astro";
 import InvestSection from "@/components/sections/InvestSection.astro";
@@ -22,6 +23,9 @@ import InvestSection from "@/components/sections/InvestSection.astro";
   <PromotionSection />
   <AmenitiesSection />
   <SliderComponent client:load imgPaths={imgAmenidades} />
+  <MapPlanoCenote client:load />
+  <MapPointsInterestDesk client:visible />
+  <MapPointsInterestMobile client:visible />
   <LocationSection />
   <MapPointsInterestDesk client:load />
   <MapPointsInterestMobile client:load />
