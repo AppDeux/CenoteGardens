@@ -6,6 +6,8 @@ import BannerParallax from "@/components/banners/BannerParallax.astro";
 import PromotionSection from "@/components/sections/DescriptionSection/PromotionSection.astro";
 import AmenitiesSection from "@/components/sections/DescriptionSection/AmenitiesSection.astro";
 import SliderComponent from "@/components/sliders/SliderComponent.vue";
+//importar imagenes del slider de amenidades
+import imgAmenidades from "@/data/imgAmenidades";
 ---
 
 <Layout title="Cenote gardens">
@@ -15,5 +17,5 @@ import SliderComponent from "@/components/sliders/SliderComponent.vue";
   <PromotionSection />
   <AmenitiesSection />
   <style></style>
-  <SliderComponent client:load />
-</Layout>
+  <SliderComponent client:load imgPaths={imgAmenidades} />
+</Layout>; ---
