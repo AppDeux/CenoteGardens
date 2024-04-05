@@ -23,12 +23,10 @@ import InvestSection from "@/components/sections/InvestSection.astro";
   <PromotionSection />
   <AmenitiesSection />
   <SliderComponent client:load imgPaths={imgAmenidades} />
-  <MapPlanoCenote client:load />
+  <LocationSection />
   <MapPointsInterestDesk client:visible />
   <MapPointsInterestMobile client:visible />
-  <LocationSection />
-  <MapPointsInterestDesk client:load />
-  <MapPointsInterestMobile client:load />
   <AvailabilitySection />
+  <MapPlanoCenote client:load />
   <InvestSection />
 </Layout>

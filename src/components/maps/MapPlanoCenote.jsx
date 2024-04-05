@@ -55,7 +55,7 @@ const MapPlanoCenote = () => {
       )}
 
       <svg
-        className="md:w-full"
+        className="md:w-full mb-8"
         viewBox="0 0 1440 878"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -117,6 +117,15 @@ const MapPlanoCenote = () => {
           />
         </defs>
       </svg>
+
+      <div className="flex items-center mt-8`">
+        <a
+          href="#contacto"
+          className="max-w-56 mb-4 bg-accent-700  px-6 py-3 text-white m-auto text-center"
+        >
+          I want to know more
+        </a>
+      </div>
     </section>
   );
 };
