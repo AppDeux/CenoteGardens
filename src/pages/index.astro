@@ -10,6 +10,9 @@ import AmenitiesSection from "@/components/sections/DescriptionSection/Amenities
 import SliderComponent from "@/components/sliders/SliderComponent.vue";
 //importar imagenes del slider de amenidades
 import imgAmenidades from "@/data/imgAmenidades";
+import LocationSection from "@/components/sections/LocationSection.astro";
+import AvailabilitySection from "@/components/sections/AvailabilitySection.astro";
+import InvestSection from "@/components/sections/InvestSection.astro";
 ---
 
 <Layout title="Cenote gardens">
@@ -19,7 +22,9 @@ import imgAmenidades from "@/data/imgAmenidades";
   <PromotionSection />
   <AmenitiesSection />
   <SliderComponent client:load imgPaths={imgAmenidades} />
-
+  <LocationSection />
   <MapPointsInterestDesk client:load />
   <MapPointsInterestMobile client:load />
+  <AvailabilitySection />
+  <InvestSection />
 </Layout>

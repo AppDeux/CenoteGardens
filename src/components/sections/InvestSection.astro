@@ -1,0 +1,135 @@
+---
+import { Image } from "astro:assets";
+import airbnbImage from "@/assets/imgs/airbnb.png";
+import financialImage from "@/assets/imgs/financial.png";
+import tripadvisorImage from "@/assets/imgs/tripadvisor.png";
+import cnbcImage from "@/assets/imgs/cnbc.png";
+import wolrd_travel_awardsImage from "@/assets/imgs/wolrd_travel_awards.png";
+import global_wellnessImage from "@/assets/imgs/global_wellness.png";
+---
+
+<section
+  class="container invest_section flex flex-col text-center pt-8 px-4 lg:px-11 xl:px-36 min-[1536px]:px-72 text-xs md:text-sm"
+>
+  <div>
+    <div>
+      <div class="font-title uppercase text-2xl md:text-6xl">
+        <h1>Why invest in Tulum?</h1>
+      </div>
+      <div class="pt-10 pb-10 md:px-28">
+        <p>
+          Government initiatives like the <b
+            >Tulum International Airport, Mayan Train, and Jaguar Park are
+            expected to increase the flow of tourism in Tulum</b
+          >, with the new airport anticipated to attract over <b
+            >5 million new visitors</b
+          > annually.<br />
+          The expansion of global companies into Tulum underscores <b
+            >confidence in the market</b
+          >, while the potential influx of tourists from India, Japan, and China
+          further enhances this promising outlook.
+        </p>
+      </div>
+      <div class="pt-0 pb-10">
+        <div
+          class="border-2 border-accent-700 text-accent-700 grid grid-cols-1 md:grid-cols-4 p-10 gap-y-0 md:gap-x-4"
+        >
+          <div>
+            <div class="font-subtitle text-xl p-4">
+              <h2>#1 Ranking</h2>
+            </div>
+            <div>
+              <p>Tourist destination in Mexico.</p>
+            </div>
+          </div>
+          <div>
+            <div class="font-subtitle text-xl p-4">
+              <h2>6.5+ million</h2>
+            </div>
+            <div>
+              <p>Tourists per year (#1 hotspot in all Latin America).</p>
+            </div>
+          </div>
+          <div>
+            <div class="font-subtitle text-xl p-4">
+              <h2>$7.1+ Billion</h2>
+            </div>
+            <div>
+              <p>Yearly spent by tourists ($1,000+ avg. per visitor).</p>
+            </div>
+          </div>
+          <div>
+            <div class="font-subtitle text-xl pt-4 pb-4">
+              <h2>87% of tourists</h2>
+            </div>
+            <div>
+              <p>Are foreigners with high purchase power.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-10 md:px-28">
+        <p>
+          With the recent announcement of the government infrastructure program,
+          Cenote Gardens is not just about sustainable luxury living; it is a
+          savvy investment in a tangible asset poised for appreciation.
+        </p>
+      </div>
+      <div class="font-title uppercase pb-10 text-2xl">
+        <h2>Tulum industry awards & media recognitions</h2>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-6">
+      <div class="flex flex-col items-center pb-8">
+        <Image
+          class="invest__airbnbImage max-w-20 md:max-w-32"
+          src={airbnbImage}
+          alt="Airbnb Image"
+        />
+        <p>
+          “Destination with the 4th most reservations globally for New Years.”
+        </p>
+      </div>
+      <div class="flex flex-col items-center pb-8">
+        <Image
+          class="invest__financialImage max-w-20 md:max-w-32"
+          src={financialImage}
+          alt="Financial Image"
+        />
+        <p>“One of the markets with the most growth in the world.”</p>
+      </div>
+      <div class="flex flex-col items-center pb-8">
+        <Image
+          class="invest__tripadvisorImage max-w-20 md:max-w-32"
+          src={tripadvisorImage}
+          alt="Tripadvisor Image"
+        />
+        <p>“Best up and coming travel destination in the world.”</p>
+      </div>
+      <div class="flex flex-col items-center pb-8">
+        <Image
+          class="invest__cnbcImage max-w-20 md:max-w-32"
+          src={cnbcImage}
+          alt="Cnbc Image"
+        />
+        <p>“Most tourist destination in the planet.”</p>
+      </div>
+      <div class="flex flex-col items-center pb-8">
+        <Image
+          class="invest__wolrd_travel_awardsImage max-w-20 md:max-w-32"
+          src={wolrd_travel_awardsImage}
+          alt="Wolrd_travel_awards Image"
+        />
+        <p>“Leading beach destination in Mexico and Central America.”</p>
+      </div>
+      <div class="flex flex-col items-center pb-8">
+        <Image
+          class="invest__global_wellnessImage max-w-20 md:max-w-32"
+          src={global_wellnessImage}
+          alt="Global_wellness Image"
+        />
+        <p>“Tulum is the global capital of yoga”</p>
+      </div>
+    </div>
+  </div>
+</section>
