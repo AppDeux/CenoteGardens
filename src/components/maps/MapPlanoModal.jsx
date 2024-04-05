@@ -24,10 +24,10 @@ const MapPlanoModal = ({ modal, closeModal }) => {
   return (
     <div
       className={`
-      transition-all
+      transition-all z-20
       MapPlanoCenote__modal ${modal.display} 
       grid grid-cols-2 items-center bg-slate-200 gap-0.5
-      w-1/2 md:w-1/3 font-semibold
+      w-3/4 md:w-1/2 lg:w-1/3 font-semibold
       text-center
     `}
     >
@@ -45,33 +45,33 @@ const MapPlanoModal = ({ modal, closeModal }) => {
       >
         {txtAvailable}
       </div>
-      <div className="flex flex-col items-center py-2 bg-white">
+      <div className="flex flex-col items-center py-2 bg-white h-full">
         <h5 className="font-light text-sm mb-1">Typology</h5>
         <p>{modal.data.typology}</p>
       </div>
-      <div className="flex flex-col items-center py-2 bg-white">
+      <div className="flex flex-col items-center py-2 bg-white h-full">
         <h5 className="font-light text-sm mb-1">Surface</h5>
         <p>
           {modal.data.surface} M<sup>2</sup>
         </p>
       </div>
-      <div className="flex flex-col items-center py-2 bg-white">
+      <div className="flex flex-col items-center py-2 bg-white h-full">
         <h5 className="font-light text-sm mb-1">
           USD/M<sup>2</sup>
         </h5>
         <p>${modal.data.USDm2}</p>
       </div>
-      <div className="flex flex-col items-center py-2 bg-white">
+      <div className="flex flex-col items-center py-2 bg-white h-full">
         <h5 className="font-light text-sm mb-1">Allowed levels</h5>
         <p>
           {modal.data.levels} M<sup>2</sup>
         </p>
       </div>
-      <div className="flex flex-col items-center py-2 bg-white h-full">
+      <div className="flex flex-col items-center py-2 bg-white  h-full">
         <h5 className="font-light text-sm mb-1">Allowed Height</h5>
         <p>{modal.data.height} meters</p>
       </div>
-      <div className="flex flex-col items-center py-2 bg-white">
+      <div className="flex flex-col items-center py-2 bg-white h-full">
         <h5 className="font-light text-sm mb-1">Allowed Construction Area</h5>
         <p>
           {modal.data.area} M<sup>2</sup>
