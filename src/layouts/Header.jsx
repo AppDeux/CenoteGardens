@@ -3,6 +3,36 @@ import { Squash as Hamburger } from "hamburger-react";
 import logoHeader from "@/assets/svgs/logo_header.svg";
 
 const Header = () => {
+  useEffect(() => {
+    const smoothScroll = () => {
+      const links = document.querySelectorAll('a[href^="#"]');
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    };
+
+    smoothScroll();
+
+    return () => {
+      // Cleanup
+      const links = document.querySelectorAll('a[href^="#"]');
+      links.forEach((link) => {
+        link.removeEventListener("click", smoothScroll);
+      });
+    };
+  }, []); // Se ejecuta solo una vez al montar el componente
+
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [scrollNumber, setScrollNumber] = useState(0);
 
@@ -18,6 +48,13 @@ const Header = () => {
       document.body.style.overflow = "unset";
     }
   }, [scrollNumber, showMobileMenu]);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <header
@@ -64,7 +101,9 @@ const Header = () => {
             lg:order-2 lg:col-span-7 w-full lg:pr-8 lg:text-sm xl:text-base
             lg:flex lg:items-center lg:justify-evenly lg:gap-8`}
         >
-          <a href="#">Home</a>
+          <a className="cursor-pointer" onClick={scrollToTop}>
+            Home
+          </a>
           <a href="#location">Location</a>
           <a href="#availability">Availability</a>
           <a href="#invest">Why invest in tulum?</a>
