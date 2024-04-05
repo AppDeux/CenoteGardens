@@ -3,6 +3,9 @@ import { Squash as Hamburger } from "hamburger-react";
 import logoHeader from "@/assets/svgs/logo_header.svg";
 
 const Header = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [scrollNumber, setScrollNumber] = useState(0);
+
   useEffect(() => {
     const smoothScroll = () => {
       const links = document.querySelectorAll('a[href^="#"]');
@@ -32,9 +35,6 @@ const Header = () => {
       });
     };
   }, []); // Se ejecuta solo una vez al montar el componente
-
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [scrollNumber, setScrollNumber] = useState(0);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
