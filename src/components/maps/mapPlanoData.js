@@ -11,7 +11,7 @@ const mapPlanoData = [
       height: 12,
       area: 327,
       price: "150,000",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -26,7 +26,7 @@ const mapPlanoData = [
       height: 12,
       area: 299,
       price: "137,000",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -41,7 +41,7 @@ const mapPlanoData = [
       height: 12,
       area: 286,
       USDm2: "275.28",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -56,7 +56,7 @@ const mapPlanoData = [
       height: 12,
       area: 324,
       USDm2: "275.61",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -71,7 +71,7 @@ const mapPlanoData = [
       height: 12,
       area: 327,
       price: "150,000",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -86,7 +86,7 @@ const mapPlanoData = [
       height: 12,
       area: 216,
       price: "94,000",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -101,7 +101,7 @@ const mapPlanoData = [
       height: 12,
       area: 193,
       USDm2: "258.53",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -116,7 +116,7 @@ const mapPlanoData = [
       height: 12,
       area: 200,
       USDm2: "260.51",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -131,7 +131,7 @@ const mapPlanoData = [
       height: 12,
       area: 210,
       USDm2: "259.59",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -146,7 +146,7 @@ const mapPlanoData = [
       height: 12,
       area: 218,
       USDm2: "259.22",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -161,7 +161,7 @@ const mapPlanoData = [
       height: 12,
       area: 218,
       USDm2: "261.12",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -176,7 +176,7 @@ const mapPlanoData = [
       height: 12,
       area: 216,
       USDm2: "260.70",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -191,7 +191,7 @@ const mapPlanoData = [
       height: 12,
       area: 206,
       USDm2: "259.85",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -206,7 +206,7 @@ const mapPlanoData = [
       height: 12,
       area: 175,
       USDm2: "261.26",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -221,7 +221,7 @@ const mapPlanoData = [
       height: 12,
       area: 184,
       USDm2: "206.31",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -236,7 +236,7 @@ const mapPlanoData = [
       height: 12,
       area: 271,
       USDm2: "274.79",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -251,7 +251,7 @@ const mapPlanoData = [
       height: 12,
       area: 179,
       USDm2: "261.36",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -266,7 +266,7 @@ const mapPlanoData = [
       height: 12,
       area: 187,
       USDm2: "259.35",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -281,7 +281,7 @@ const mapPlanoData = [
       height: 12,
       area: 184,
       USDm2: "260.37",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -296,7 +296,7 @@ const mapPlanoData = [
       height: 12,
       area: 175,
       USDm2: "261.14",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -311,7 +311,7 @@ const mapPlanoData = [
       height: 12,
       area: 197,
       USDm2: "258.83",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -326,7 +326,7 @@ const mapPlanoData = [
       height: 12,
       area: 193,
       USDm2: "260.57",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -341,7 +341,7 @@ const mapPlanoData = [
       height: 12,
       area: 224,
       USDm2: "259.45",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -356,7 +356,7 @@ const mapPlanoData = [
       height: 12,
       area: 307,
       USDm2: "275.17",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -371,7 +371,7 @@ const mapPlanoData = [
       height: 12,
       area: 264,
       USDm2: "274.68",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -386,7 +386,7 @@ const mapPlanoData = [
       height: 12,
       area: 203,
       USDm2: "259.86",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -401,7 +401,7 @@ const mapPlanoData = [
       height: 12,
       area: 200,
       USDm2: "260.42",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -416,7 +416,7 @@ const mapPlanoData = [
       height: 12,
       area: 227,
       USDm2: "259.49",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -431,7 +431,7 @@ const mapPlanoData = [
       height: 12,
       area: 224,
       USDm2: "260.33",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -446,7 +446,7 @@ const mapPlanoData = [
       height: 12,
       area: 187,
       USDm2: "259.68",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -461,7 +461,7 @@ const mapPlanoData = [
       height: 12,
       area: 256,
       USDm2: "274.23",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -476,7 +476,7 @@ const mapPlanoData = [
       height: 12,
       area: 293,
       USDm2: "274.75",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -491,7 +491,7 @@ const mapPlanoData = [
       height: 12,
       area: 242,
       USDm2: "275.69",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -506,7 +506,7 @@ const mapPlanoData = [
       height: 12,
       area: 190,
       USDm2: "258.51",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -521,7 +521,7 @@ const mapPlanoData = [
       height: 12,
       area: 258,
       USDm2: "274.42",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -536,7 +536,7 @@ const mapPlanoData = [
       height: 12,
       area: 156,
       USDm2: "200.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -551,7 +551,7 @@ const mapPlanoData = [
       height: 12,
       area: 156,
       USDm2: "200.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -566,7 +566,7 @@ const mapPlanoData = [
       height: 12,
       area: 156,
       USDm2: "200.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -581,7 +581,7 @@ const mapPlanoData = [
       height: 12,
       area: 156,
       USDm2: "200.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -596,7 +596,7 @@ const mapPlanoData = [
       height: 12,
       area: 156,
       USDm2: "200.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -611,7 +611,7 @@ const mapPlanoData = [
       height: 12,
       area: 156,
       USDm2: "200.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -626,7 +626,7 @@ const mapPlanoData = [
       height: 12,
       area: 156,
       USDm2: "200.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -641,7 +641,7 @@ const mapPlanoData = [
       height: 12,
       area: 156,
       USDm2: "200.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -656,7 +656,7 @@ const mapPlanoData = [
       height: 12,
       area: 156,
       USDm2: "200.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -671,7 +671,7 @@ const mapPlanoData = [
       height: 12,
       area: 260,
       USDm2: "274.32",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -686,7 +686,7 @@ const mapPlanoData = [
       height: 12,
       area: 298,
       USDm2: "275.85",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -701,7 +701,7 @@ const mapPlanoData = [
       height: 12,
       area: 218,
       USDm2: "261.35",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -716,7 +716,7 @@ const mapPlanoData = [
       height: 12,
       area: 159,
       USDm2: "199.40",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -731,7 +731,7 @@ const mapPlanoData = [
       height: 12,
       area: 193,
       USDm2: "260.63",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -746,7 +746,7 @@ const mapPlanoData = [
       height: 12,
       area: 196,
       USDm2: "260.70",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -761,7 +761,7 @@ const mapPlanoData = [
       height: 12,
       area: 235,
       USDm2: "275.26",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -776,7 +776,7 @@ const mapPlanoData = [
       height: 12,
       area: 294,
       USDm2: "275.51",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -791,7 +791,7 @@ const mapPlanoData = [
       height: 12,
       area: 240,
       USDm2: "275.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -806,7 +806,7 @@ const mapPlanoData = [
       height: 12,
       area: 240,
       USDm2: "275.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -821,7 +821,7 @@ const mapPlanoData = [
       height: 12,
       area: 240,
       USDm2: "275.00",
-      available: true,
+      available: 0,
     },
   },
   {
@@ -836,7 +836,7 @@ const mapPlanoData = [
       height: 12,
       area: 240,
       USDm2: "275.00",
-      available: true,
+      available: 0,
     },
   },
 ];

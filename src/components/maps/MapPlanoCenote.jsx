@@ -1,15 +1,19 @@
 import { useState } from "react";
 import mapPlanoData from "./mapPlanoData";
+import MapPlanoModal from "./MapPlanoModal";
 
 const MapPlanoCenote = () => {
   const [modal, setModal] = useState({
     data: {},
-    display: "none",
+    show: false,
   });
 
   // Manejador para mostrar el modal
   const handlerOpenModal = (data) => {
-    console.log(data);
+    setModal({
+      data,
+      show: true,
+    });
   };
 
   // Componente funcional que representa un círculo en el SVG
@@ -42,7 +46,14 @@ const MapPlanoCenote = () => {
   }
 
   return (
-    <section className="MapPlanoCenote hidden md:block lg:px-8 xl:px-12 container overflow-hidden">
+    <section className="MapPlanoCenote block lg:px-8 xl:px-12 container overflow-hidden">
+      {modal.show && (
+        <MapPlanoModal
+          modal={modal}
+          closeModal={() => setModal({ show: false })}
+        />
+      )}
+
       <svg
         className="md:w-full"
         viewBox="0 0 1440 878"
