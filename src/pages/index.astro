@@ -11,6 +11,9 @@ import imgAmenidades from "@/data/imgAmenidades";
 import MapPointsInterestMobile from "@/components/maps/MapPointsInterestMobile";
 import MapPointsInterestDesk from "@/components/maps/MapPointsInterestDesk";
 import MapPlanoCenote from "@/components/maps/MapPlanoCenote";
+import LocationSection from "@/components/sections/LocationSection.astro";
+import AvailabilitySection from "@/components/sections/AvailabilitySection.astro";
+import InvestSection from "@/components/sections/InvestSection.astro";
 ---
 
 <Layout title="Cenote gardens">
@@ -20,9 +23,12 @@ import MapPlanoCenote from "@/components/maps/MapPlanoCenote";
   <PromotionSection />
   <AmenitiesSection />
   <SliderComponent client:load imgPaths={imgAmenidades} />
-
   <MapPlanoCenote client:load />
   <MapPointsInterestDesk client:visible />
   <MapPointsInterestMobile client:visible />
-
+  <LocationSection />
+  <MapPointsInterestDesk client:load />
+  <MapPointsInterestMobile client:load />
+  <AvailabilitySection />
+  <InvestSection />
 </Layout>
