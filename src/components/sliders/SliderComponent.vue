@@ -1,21 +1,22 @@
 <template>
-  <swiper :navigation="true" :modules="modules" class="mySwiper">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+  <swiper :navigation="true" :modules="modules" class="mySwiper my-5">
+    <swiper-slide v-for="(item, index) in items" :key="index">
+      <div class="slider-content">
+        <img
+          :src="item.pathImg.src"
+          class="img"
+          :alt="'img-carrousel-' + index"
+        />
+      </div>
+    </swiper-slide>
   </swiper>
 </template>
 <script>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import "./style.css";
-
 // import required modules
 import { Navigation } from "swiper/modules";
 
@@ -24,9 +25,20 @@ export default {
     Swiper,
     SwiperSlide,
   },
+  props: {
+    imgPaths: {
+      type: Array,
+      default: Array,
+    },
+  },
   setup() {
     return {
       modules: [Navigation],
+    };
+  },
+  data() {
+    return {
+      items: this.imgPaths,
     };
   },
 };

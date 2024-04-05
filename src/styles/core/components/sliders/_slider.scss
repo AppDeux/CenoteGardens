@@ -1,0 +1,79 @@
+// TODO: revisar el como se ponen los colores
+.swiper.mySwiper {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  transition:
+    width 300ms ease-in-out,
+    height 300ms ease-in-out;
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slider-content {
+      transition: all 300ms ease-in;
+      height: 100%;
+      width: calc(100% - 2rem);
+      .img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: #ffffff99;
+    opacity: 1;
+    padding: calc(4rem / 2);
+    &::after {
+      color: black;
+      opacity: 1;
+    }
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper.mySwiper {
+    max-width: 102rem;
+    max-height: 45rem;
+    height: 45rem;
+    width: 100%;
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      background: transparent;
+      justify-content: center;
+      align-items: center;
+      .slider-content {
+        height: 100%;
+        width: calc(100% - 12rem);
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: transparent;
+      padding: 0 calc(4rem / 2);
+    }
+    .slider-content {
+      height: 720px;
+      .img {
+        object-position: center;
+        object-fit: cover;
+      }
+    }
+  }
+}
