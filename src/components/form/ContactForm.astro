@@ -35,7 +35,7 @@ const optimizedBackground = await getImage({
       });
     </script>
   </div>
-  <div class="contact__phone p-4 flex gap-2">
+  <a href="tel:+52 777 223 5855" class="contact__phone p-4 flex gap-2">
     <div class="icon">
       <svg
         width="24"
@@ -49,19 +49,23 @@ const optimizedBackground = await getImage({
           fill="white"></path>
       </svg>
     </div>
-    <a href="tel:+52 777 223 5855">+52 777 223 5855</a>
-  </div>
+    <span>+52 777 223 5855</span>
+  </a>
 </div>
 
 <style lang="scss">
   .contactForm__container {
-    width: 100vw !important;
+    width: 100%;
     background-position: bottom center;
     background-size: cover;
   }
   .contact__phone {
     border: 1px solid;
-    @apply border-gray-50;
+    @apply border-gray-50 hover:bg-accent-50 hover:text-accent-700;
+
+    &:hover > .icon > svg > path {
+      fill: #355442
+    }
   }
   .icon {
     width: 24px;
