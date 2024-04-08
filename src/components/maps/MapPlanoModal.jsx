@@ -86,7 +86,7 @@ const MapPlanoModal = ({ modal, closeModal }) => {
 
         <a
           href="#contacto"
-          className="w-4/6 mb-4 bg-accent-700  px-6 py-3 text-white"
+          className="w-4/6 mb-4 bg-accent-700 hover:bg-accent-800   px-6 py-3 text-white"
         >
           I want to know more
         </a>

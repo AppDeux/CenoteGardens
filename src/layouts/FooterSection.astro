@@ -13,24 +13,27 @@ const optimizedBackground = await getImage({
 });
 ---
 
-<section
+<footer
   class="footer_section w-full relative
-    h-[28rem] md:h-[20rem] lg:h-[26rem]
+    px-4 md:px-0
     bg-cover bg-center"
   style={`background-image: url(${optimizedBackground.src});`}
 >
   <div>
-    <div class="flex mt-10 mb-10 h-[5rem] justify-center align-top">
-      <Image src={logoHeader} alt="Logo Cenotes" />
+    <div class="flex mt-10 mb-10 justify-center">
+      <Image class="max-w-md" src={logoHeader} alt="Logo Cenotes" />
     </div>
     <div>
       <div class="text-accent-50 flex flex-col items-center">
-        <div class="m-"><p>© 2024 Cenote Gardens</p></div>
+        <div class=""><p>© 2024 Cenote Gardens</p></div>
         <div class="mb-8"><p>Privacy Policy</p></div>
         <div>
           <div class="grid grid-cols-4 md:gap-x-2">
             <div>
-              <a href="">
+              <a
+                href="https://www.facebook.com/profile.php?id=61556299153417&locale=es_LA"
+                target="_blank"
+              >
                 <Image
                   class="footer__iconFacebook w-10 pt-4 pb-4 m-1"
                   src={IconFacebook}
@@ -39,7 +42,10 @@ const optimizedBackground = await getImage({
               </a>
             </div>
             <div>
-              <a href="">
+              <a
+                href="https://www.instagram.com/cenotegardens/"
+                target="_blank"
+              >
                 <Image
                   class="footer__iconinstagram w-10 pt-4 pb-4 m-1"
                   src={Iconinstagram}
@@ -48,7 +54,7 @@ const optimizedBackground = await getImage({
               </a>
             </div>
             <div>
-              <a href="">
+              <a href="https://www.tiktok.com/@cenote.gardens" target="_blank">
                 <Image
                   class="footer__icontiktok w-10 pt-4 pb-4 m-1"
                   src={Icontiktok}
@@ -57,7 +63,10 @@ const optimizedBackground = await getImage({
               </a>
             </div>
             <div>
-              <a href="">
+              <a
+                href="https://www.youtube.com/@TulumCenoteGardens/featured"
+                target="_blank"
+              >
                 <Image
                   class="footer__iconyoutube w-10 pt-4 pb-4 m-1"
                   src={Iconyoutube}
@@ -67,8 +76,8 @@ const optimizedBackground = await getImage({
             </div>
           </div>
         </div>
-        <div><p>Produced by YGU Comunicaxion</p></div>
+        <div class="mb-2"><p>Produced by YGU Comunicaxion</p></div>
       </div>
     </div>
   </div>
-</section>
+</footer>

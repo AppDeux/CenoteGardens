@@ -121,7 +121,7 @@ const MapPlanoCenote = () => {
       <div className="flex items-center mt-8`">
         <a
           href="#contacto"
-          className="max-w-56 mb-4 bg-accent-700  px-6 py-3 text-white m-auto text-center"
+          className="max-w-56 mb-4 bg-accent-700 hover:bg-accent-800  px-6 py-3 text-white m-auto text-center"
         >
           I want to know more
         </a>
