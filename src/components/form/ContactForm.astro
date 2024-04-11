@@ -9,6 +9,7 @@ const optimizedBackground = await getImage({
 ---
 
 <section
+  id="contact"
   class="contactForm__container py-12 flex justify-center flex-col text-center items-center text-white"
   style={`background-image: url(${optimizedBackground.src});`}
 >
@@ -64,7 +65,7 @@ const optimizedBackground = await getImage({
     @apply border-gray-50 hover:bg-accent-50 hover:text-accent-700;
 
     &:hover > .icon > svg > path {
-      fill: #355442
+      fill: #355442;
     }
   }
   .icon {

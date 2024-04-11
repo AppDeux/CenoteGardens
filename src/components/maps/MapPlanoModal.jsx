@@ -28,7 +28,7 @@ const MapPlanoModal = ({ modal, closeModal, url }) => {
   return (
     <div
       className={`
-      transition-all z-20
+      transition-all z-10
       MapPlanoCenote__modal ${modal.display} 
       grid grid-cols-2 items-center bg-slate-200 gap-0.5
       w-3/4 md:w-1/2 lg:w-1/3 font-semibold
@@ -97,8 +97,9 @@ const MapPlanoModal = ({ modal, closeModal, url }) => {
         </p>
 
         <a
-          href="#contacto"
+          href="#contact"
           className="w-4/6 mb-4 bg-accent-700 hover:bg-accent-800 px-6 py-3 text-white"
+          onClick={closeModal}
         >
           {t("btnToContact")}
         </a>
