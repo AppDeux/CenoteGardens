@@ -46,7 +46,7 @@ const MapPlanoCenote = () => {
   }
 
   return (
-    <section className="MapPlanoCenote block lg:px-8 xl:px-12 container">
+    <section className="MapPlanoCenote block w-full lg:px-8 xl:px-12 container md:max-w-6xl">
       {modal.show && (
         <MapPlanoModal
           modal={modal}

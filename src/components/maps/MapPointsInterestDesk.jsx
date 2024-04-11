@@ -51,7 +51,7 @@ const MapPointsInterestDesk = () => {
   };
 
   return (
-    <section className="MapPointsInterest hidden md:block lg:px-8 xl:px-12 container overflow-hidden">
+    <section className="MapPointsInterest hidden md:block lg:px-8 xl:px-12 container overflow-hidden md:max-w-6xl">
       <svg
         className="md:w-full"
         viewBox="0 0 1440 632"

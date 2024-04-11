@@ -59,6 +59,19 @@ export const ui = {
       "Pickleball, Outdoor gym, Hammock area & co-working space.",
     "amenitiesCarousel.title":
       "<b>Investing in Cenote Gardens</b> presents an exceptional opportunity to <b>capitalize on the upside potential of Tulum's growth.</b>",
+    "locationSection.title": "PREMIUM LOCATION",
+    "locationSection.desc":
+      "<b>Cenote Gardens is</b> located in Jacinto Pat, <b>15 minutes away from Tulum.</b> An untapped region that emerges as a revitalized sanctuary. It offers atranquil haven without sacrificing accessibility to essential amenities.",
+    "locationSection.desc2":
+      "Surrounded by the lively jungle and the enchanting allure of cenotes, residents are seamlessly connected to nature. At the same time, nearby Soliman Bay Beach is a constant reminder of the region's coastal charm.",
+    "locationSection.desc3":
+      "<b>Jacinto Pat</b> prioritizes <b>sustainability and low construction density</b>, steering clear of the pitfalls that have plagued Tulum's development inrecent years.",
+    "locationSection.desc4":
+      "The Jacinto Pat region embodies more than just a specific place on a map, it offers a blueprint for an enriched and revitalized way of life.",
+    "locationSection.cardTitle1": "Dedication to sustainability",
+    "locationSection.cardTitle2": "Strategic seclusion from urban chaos",
+    "locationSection.cardTitle3":
+      "Aligned with the natural rhythms of the Riviera Maya",
   },
   es: {
     "nav.home": "Inicio",
@@ -112,5 +125,17 @@ export const ui = {
       "Pickleball, Gimnasio al aire libre, Zona de hamacas y Espacio de co-working.",
     "amenitiesCarousel.title":
       "<b>Invertir en Cenote Gardens</b> representa una oportunidad excepcional de <b>capitalizar el potencial alcista del crecimiento de Tulum.</b>",
+    "locationSection.title": "UBICACIÓN PREMIUM",
+    "locationSection.desc":
+      "<b>Cenote Gardens se ubica</b> en Jacinto Pat, <b>a 15 minutos de distancia de Tulum.</b> Una región virgen que emerge como un santuario em e; que puedes <b> vivir en un lugar tranquilo sin sacrificar la accesibilidad </b> a los servicios esenciales.",
+    "locationSection.desc2":
+      "Rodeado por el encanto de la selva y los cenotes, los residentes están perfectamente conectados con la naturaleza. Además, la cercanía con Soliman Bay es un recordatorio de la magia costera de la región.",
+    "locationSection.desc3":
+      "<b>Jacinto Pat</b> prioriza la <b>sostenibilidad y construcción controlada</b> para evitar la actual densificación del renombrado Tulum.",
+    "locationSection.desc4":
+      "Jacinto Pat es más que un lugar en el mapa, ofrece un estilo de vida revitalizante.",
+    "locationSection.cardTitle1": "DiseÑado para ser sustentable",
+    "locationSection.cardTitle2": "Aislamiento del caos urbano",
+    "locationSection.cardTitle3": "Alineado al ritmo de la Riviera Maya",
   },
 } as const;

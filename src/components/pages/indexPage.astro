@@ -24,12 +24,14 @@ import FooterSection from "@/layouts/FooterSection.astro";
   <BannerParallax />
   <PromotionSection />
   <AmenitiesSection />
-  <SliderComponent client:load imgPaths={imgAmenidades} />
+  <section class="md:max-w-6xl">
+    <SliderComponent client:load imgPaths={imgAmenidades} />
+  </section>
   <LocationSection />
   <MapPointsInterestDesk client:visible />
   <MapPointsInterestMobile client:visible />
   <AvailabilitySection />
-  <MapPlanoCenote client:load />
+    <MapPlanoCenote client:load />
   <InvestSection />
   <ContactForm />
   <FooterSection />

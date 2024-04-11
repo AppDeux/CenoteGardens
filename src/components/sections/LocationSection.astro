@@ -5,6 +5,11 @@ import jumpingImage from "@/assets/imgs/jumping.png";
 import grottoImage from "@/assets/imgs/grotto.png";
 import swimmingImage from "@/assets/imgs/swimming.png";
 import personImage from "@/assets/imgs/person.png";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section
@@ -14,7 +19,7 @@ import personImage from "@/assets/imgs/person.png";
   <h1
     class="font-title uppercase pt-12 md:px-24 mb-4 text-2xl text-center md:text-[2.5rem] md:pb-6"
   >
-    PREMIUM LOCATION
+    {t("locationSection.title")}
   </h1>
   <div
     class="text-accent-700 grid grid-cols-1 md:grid-cols-3 md:gap-y-0 md:gap-x-16 mb-12 px-4 md:px-8 pt-12 text-sm md:text-base lg:text-lg"
@@ -27,12 +32,7 @@ import personImage from "@/assets/imgs/person.png";
       />
     </div>
     <div class="pt-4 pb-4 md:col-span-2 min-[1400px]:px-8">
-      <p>
-        <b>Cenote Gardens is</b> located in Jacinto Pat, <b
-          >15 minutes away from Tulum.</b
-        > An untapped region that emerges as a revitalized sanctuary. It offers a
-        tranquil haven without sacrificing accessibility to essential amenities.
-      </p>
+      <p set:html={t("locationSection.desc")} />
       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 xl:pt-4">
         <div class="md:pt-16 flex flex-col items-center">
           <Image
@@ -42,32 +42,19 @@ import personImage from "@/assets/imgs/person.png";
           />
         </div>
         <div class="pt-4 md:pt-28 lg:pt-28 xl:pt-28 min-[2560px]:pt-60">
-          <p>
-            Surrounded by the lively jungle and the enchanting allure of
-            cenotes, residents are seamlessly connected to nature. At the same
-            time, nearby Soliman Bay Beach is a constant reminder of the
-            region's coastal charm.
-          </p>
+          <p set:html={t("locationSection.desc2")} />
         </div>
       </div>
     </div>
   </div>
   <div class="bg-accent-700 text-accent-50 p-8">
-    <p>
-      <b>Jacinto Pat</b> prioritizes <b
-        >sustainability and low construction density</b
-      >, steering clear of the pitfalls that have plagued Tulum's development in
-      recent years.
-    </p>
+    <p set:html={t("locationSection.desc3")} />
   </div>
   <div
     class="grid grid-cols-1 md:grid-cols-4 md:gap-y-0 md:gap-x-12 px-4 md:px-8 md:text-sm lg:text-base"
   >
     <div class="pt-4 md:pt-20 lg:pt-32">
-      <p>
-        The Jacinto Pat region embodies more than just a specific place on a
-        map, it offers a blueprint for an enriched and revitalized way of life.
-      </p>
+      <p set:html={t("locationSection.desc4")} />
     </div>
     <div class="md:pt-16 flex flex-col items-center">
       <Image
@@ -75,7 +62,9 @@ import personImage from "@/assets/imgs/person.png";
         src={grottoImage}
         alt="Grotto Image"
       />
-      <h2 class="font-subtitle text-center">Dedication to sustainability</h2>
+      <h2 class="font-subtitle text-center">
+        {t("locationSection.cardTitle1")}
+      </h2>
     </div>
     <div class="md:pt-16 flex flex-col items-center">
       <Image
@@ -84,7 +73,7 @@ import personImage from "@/assets/imgs/person.png";
         alt="Swimming Image"
       />
       <h2 class="font-subtitle text-center">
-        Strategic seclusion from urban chaos
+        {t("locationSection.cardTitle2")}
       </h2>
     </div>
     <div class="md:pt-16 flex flex-col items-center">
@@ -94,7 +83,7 @@ import personImage from "@/assets/imgs/person.png";
         alt="Person Image"
       />
       <h2 class="font-subtitle text-center">
-        Aligned with the natural rhythms of the Riviera Maya
+        {t("locationSection.cardTitle3")}
       </h2>
     </div>
   </div>
