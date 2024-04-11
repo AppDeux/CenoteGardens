@@ -9,6 +9,11 @@ import iconPlug from "@/assets/svgs/icon_plug.svg";
 import iconHand from "@/assets/svgs/icon_hand.svg";
 import iconSun from "@/assets/svgs/icon_sun.svg";
 import iconHammer from "@/assets/svgs/icon_hammer.svg";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="container description_section items-center px-4 md:px-0 mb-10">
@@ -17,8 +22,7 @@ import iconHammer from "@/assets/svgs/icon_hammer.svg";
       <Image class="presentation__iconWorld" src={iconWorld} alt="Icon World" />
     </div>
     <p>
-      Escape to a world where nature embraces contemporary comfort—nestled in
-      the vibrant jungles of Tulum.
+      {t("descriptionSection.about")}
     </p>
     <br />
     <p>
@@ -71,7 +75,9 @@ import iconHammer from "@/assets/svgs/icon_hammer.svg";
       Sustainability is our core vision
     </h1>
   </div>
-  <div class="characteristics grid grid-cols-1 md:grid-cols-3 gap-8 px-10 max-w-5xl">
+  <div
+    class="characteristics grid grid-cols-1 md:grid-cols-3 gap-8 px-10 max-w-5xl"
+  >
     <div class="">
       <div class="flex flex-col items-center pt-4 pb-4">
         <Image
