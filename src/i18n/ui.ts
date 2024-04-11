@@ -86,6 +86,36 @@ export const ui = {
     "mapPlanoModal.levels": "Allowed levels",
     "mapPlanoModal.area": "Allowed Construction Area",
     "mapPlanoModal.price": "Price USD",
+    "investSection.title": "Why invest in Tulum?",
+    "investSection.desc": `
+      Government initiatives like the <b>Tulum International Airport, Mayan Train, and Jaguar Park are
+      expected to increase the flow of tourism in Tulum</b>, with the new airport anticipated to attract over <b>5 million new visitors</b> annually.<br />
+      The expansion of global companies into Tulum underscores <b>confidence in the market</b>, while the potential influx of tourists from India, Japan, and China
+      further enhances this promising outlook.
+    `,
+    "investSection.card1.title": "#1 Ranking",
+    "investSection.card1.desc": "Tourist destination in Mexico.",
+    "investSection.card2.title": "6.5+ million",
+    "investSection.card2.desc":
+      "Tourists per year (#1 hotspot in all Latin America).",
+    "investSection.card3.title": "$7.1+ Billion",
+    "investSection.card3.desc":
+      "Yearly spent by tourists ($1,000+ avg. per visitor).",
+    "investSection.card4.title": "87% of tourists",
+    "investSection.card4.desc": "Are foreigners with high purchase power.",
+    "investSection.desc2":
+      "With the recent announcement of the government infrastructure program, Cenote Gardens is not just about sustainable luxury living; it is a savvy investment in a tangible asset poised for appreciation.",
+    "investSection.subTitle": "Tulum industry awards & media recognitions",
+    "investSection.airBnB":
+      "“Destination with the 4th most reservations globally for New Years.”",
+    "investSection.financialTimes":
+      "“One of the markets with the most growth in the world.”",
+    "investSection.tripAdvisor":
+      "“Best up and coming travel destination in the world.”",
+    "investSection.cnbc": "“Most tourist destination in the planet.”",
+    "investSection.wordTravel":
+      "“Leading beach destination in Mexico and Central America.”",
+    "investSection.globalWellness": "“Tulum is the global capital of yoga”",
   },
   es: {
     "nav.home": "Inicio",
@@ -165,5 +195,29 @@ export const ui = {
     "mapPlanoModal.height": "Altura máxima permitida",
     "mapPlanoModal.area": "Área de Construcción Permitida",
     "mapPlanoModal.price": "Precio USD",
+    "investSection.title": "¿Por qué invertir en Tulum?",
+    "investSection.card1.title": "#1 en Ranking",
+    "investSection.card1.desc": "Destino turístico en México.",
+    "investSection.card2.title": "+6.5 millones",
+    "investSection.card2.desc":
+      "Turistas al año (el principal destino en toda América Latina).",
+    "investSection.card3.title": "+$7.1 mil billones",
+    "investSection.card3.desc":
+      "Gasto anual de los turistas (promedio de +$1,000 por visitante).",
+    "investSection.card4.title": "87% de los turistas",
+    "investSection.card4.desc": "Son extranjeros con alto poder adquisitivo.",
+    "investSection.desc2":
+      "Con el reciente anuncio del programa de infraestructura del gobierno, Cenote Gardens no solo se trata de un estilo de vida lujoso y sostenible; es una inversión inteligente en un activo tangible.",
+    "investSection.subTitle":
+      "Premios de la industria en Tulum y reconocimientos de medios",
+    "investSection.airBnB":
+      "“4° destino con el mayor número de reservas a nivel mundial para NYE”",
+    "investSection.financialTimes":
+      "“Uno de los mercados con más crecimiento en el mundo.”",
+    "investSection.tripAdvisor": "“Mejor destino de viaje en el mundo.”",
+    "investSection.cnbc": "“Destino más turístico del planeta.”",
+    "investSection.wordTravel":
+      "“Destino de playa líder en México y Centro América.”",
+    "investSection.globalWellness": "“Tulum es la capital mundial del Yoga”",
   },
 } as const;
