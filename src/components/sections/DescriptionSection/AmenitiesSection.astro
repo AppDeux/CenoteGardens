@@ -3,6 +3,11 @@ import { Image } from "astro:assets";
 import iconWorld from "@/assets/svgs/icon_world.svg";
 import iconLeaves from "@/assets/svgs/icon_leaves.svg";
 import iconLine from "@/assets/svgs/icon_line.svg";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section
@@ -13,7 +18,7 @@ import iconLine from "@/assets/svgs/icon_line.svg";
       <h1
         class="font-title uppercase px-4 md:px-8 mb-4 text-2xl md:text-[2rem] md:pb-6"
       >
-        State-of-the-art amenities
+        {t("amenitiesSection.title")}
       </h1>
     </div>
     <div
@@ -26,10 +31,10 @@ import iconLine from "@/assets/svgs/icon_line.svg";
           alt="Icon World"
         />
         <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
-          Wellness
+          {t("amenitiesSection.card1.title")}
         </h2>
         <hr class="bg-accent-700 w-16 h-[2px]" />
-        <p class="pt-2">Temazcal, Ice Plunge & Holistic Meditation Area.</p>
+        <p class="pt-2">{t("amenitiesSection.card1.desc")}</p>
       </div>
       <div class="flex flex-col items-start pt-4 pb-4">
         <Image
@@ -38,10 +43,12 @@ import iconLine from "@/assets/svgs/icon_line.svg";
           alt="Icon LeaesiconLeaves"
         />
         <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
-          Nature connection
+          {t("amenitiesSection.card2.title")}
         </h2>
         <hr class="bg-accent-700 w-16 h-[2px]" />
-        <p class="pt-2">Cenote, Fire pit, Sightseeing Tower & Pet Area.</p>
+        <p class="pt-2">
+          {t("amenitiesSection.card2.desc")}
+        </p>
       </div>
       <div class="flex flex-col items-start pt-4 pb-4">
         <Image
@@ -50,19 +57,16 @@ import iconLine from "@/assets/svgs/icon_line.svg";
           alt="Icon Line"
         />
         <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
-          Sports & recreation
+          {t("amenitiesSection.card3.title")}
         </h2>
         <hr class="bg-accent-700 w-16 h-[2px]" />
         <p class="pt-2">
-          Pickleball, Outdoor gym, Hammock area & co-working space.
+          {t("amenitiesSection.card3.desc")}
         </p>
       </div>
     </div>
     <div class="px-4 md:px-8">
-      <p>
-        <b>Investing in Cenote Gardens</b> presents an exceptional opportunity to
-        <b>capitalize on the upside potential of Tulum's growth.</b>
-      </p>
+      <p class="text-lg" set:html={t("amenitiesCarousel.title")} />
     </div>
   </div>
 </section>

@@ -47,6 +47,18 @@ export const ui = {
     "promotionSection.card3.title": "Private Cenote and Luxurious Amenities",
     "promotionSection.card3.desc":
       "Cenote Gardens' Palapa Club offers <b>state-of-the-art amenities</b>, including a cozy fire pit and a traditional temazcal for a rejuvenating experience.",
+    "amenitiesSection.title": "State-of-the-art amenities",
+    "amenitiesSection.card1.title": "Wellness",
+    "amenitiesSection.card1.desc":
+      "Temazcal, Ice Plunge & Holistic Meditation Area.",
+    "amenitiesSection.card2.title": "Nature connection",
+    "amenitiesSection.card2.desc":
+      "Cenote, Fire pit, Sightseeing Tower & Pet Area.",
+    "amenitiesSection.card3.title": "Sports & recreation",
+    "amenitiesSection.card3.desc":
+      "Pickleball, Outdoor gym, Hammock area & co-working space.",
+    "amenitiesCarousel.title":
+      "<b>Investing in Cenote Gardens</b> presents an exceptional opportunity to <b>capitalize on the upside potential of Tulum's growth.</b>",
   },
   es: {
     "nav.home": "Inicio",
@@ -88,5 +100,17 @@ export const ui = {
     "promotionSection.card3.title": "Cenote Privado y Amenidades de Lujo",
     "promotionSection.card3.desc":
       "El Palapa Club de Cenote Gardens ofrece <b>comodidades de última generación</b>, incluyendo una acogedora fogata y un temazcal tradicional para una experiencia rejuvenecedora.",
+    "amenitiesSection.title": "Comodidades de última generación",
+    "amenitiesSection.card1.title": "Bienestar",
+    "amenitiesSection.card1.desc":
+      "Temazcal, Piscina de agua fría y Área de Meditación Holística.",
+    "amenitiesSection.card2.title": "Conexión con la naturaleza",
+    "amenitiesSection.card2.desc":
+      "Cenote, Fogata, Mirador y Área para mascotas.",
+    "amenitiesSection.card3.title": "Deportes y recreación",
+    "amenitiesSection.card3.desc":
+      "Pickleball, Gimnasio al aire libre, Zona de hamacas y Espacio de co-working.",
+    "amenitiesCarousel.title":
+      "<b>Invertir en Cenote Gardens</b> representa una oportunidad excepcional de <b>capitalizar el potencial alcista del crecimiento de Tulum.</b>",
   },
 } as const;
