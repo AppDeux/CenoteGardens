@@ -2,6 +2,11 @@
 import { Image } from "astro:assets";
 import peopleImage from "@/assets/imgs/peopePlaying.png";
 import waterfallImage from "@/assets/imgs/waterfall.png";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section
@@ -15,17 +20,10 @@ import waterfallImage from "@/assets/imgs/waterfall.png";
       <div
         class="md:pt-4 flex flex-col items-start md:col-span-2 order-1 md:mr-12"
       >
-        <h1 class="font-title uppercase text-xl md:text-5xl md:mb-12">
-          Availability
-        </h1>
-        <p>
-          Cenote Gardens is the perfect canvas for your dream home. Every lot
-          offers ample space, ranging from <b>250 sq m to 600 sq m</b>,
-          providing you with the flexibility to design and create your ideal
-          living environment. Choose it as your gateway to a <b
-            >lifestyle of tranquility, luxury, and investment potential.</b
-          >
-        </p>
+        <h2 class="font-title uppercase text-xl md:text-5xl md:mb-12">
+          {t("availabilitySection.title")}
+        </h2>
+        <p set:html={t("availabilitySection.desc")} />
       </div>
       <div class="order-3 md:col-span-2">
         <Image
@@ -33,11 +31,8 @@ import waterfallImage from "@/assets/imgs/waterfall.png";
           src={peopleImage}
           alt="people Image"
         />
-        <div class="pt-8 md:max-w-[550px] md:text-2xl">
-          <p>
-            Explore the available lots today and start envisioning your future
-            in this idyllic enclave in the heart of Tulum's jungle.
-          </p>
+        <div class="pt-8 md:max-w-[550px] md:text-xl">
+          <p set:html={t("availabilitySection.desc2")} />
         </div>
       </div>
       <div class="col-span-1 order-2 md:row-span-2">
@@ -47,14 +42,9 @@ import waterfallImage from "@/assets/imgs/waterfall.png";
           alt="waterfall Image"
         />
         <div
-          class="pt-4 border-2 border-accent-700 text-accent-700 bg-accent-100 bg-opacity-50 p-4 md:absolute md:top-[60%] md:max-w-xl md:m-auto md:left-[20%]"
+          class="pt-4 border-2 border-accent-700 text-accent-700 bg-[#FFF9E1] bg-opacity-80 p-4 md:absolute md:top-[60%] md:max-w-xl md:m-auto md:left-[20%] md:px-8"
         >
-          <p>
-            Whether you envision a <b
-              >cozy retreat nestled in the jungle, a luxurious vacation rental
-              property, or simply a tangible opportunity for growth</b
-            >, the spacious lots in Cenote Gardens offer endless possibilities.
-          </p>
+          <p set:html={t("availabilitySection.desc3")} />
         </div>
       </div>
     </div>

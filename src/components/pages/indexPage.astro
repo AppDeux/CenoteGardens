@@ -31,7 +31,7 @@ import FooterSection from "@/layouts/FooterSection.astro";
   <MapPointsInterestDesk client:visible />
   <MapPointsInterestMobile client:visible />
   <AvailabilitySection />
-    <MapPlanoCenote client:load />
+  <MapPlanoCenote client:load url={Astro.url} />
   <InvestSection />
   <ContactForm />
   <FooterSection />

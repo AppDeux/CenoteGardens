@@ -72,6 +72,20 @@ export const ui = {
     "locationSection.cardTitle2": "Strategic seclusion from urban chaos",
     "locationSection.cardTitle3":
       "Aligned with the natural rhythms of the Riviera Maya",
+    "availabilitySection.title": "Availability",
+    "availabilitySection.desc":
+      "Cenote Gardens is the perfect canvas for your dream home. Every lot offers ample space, ranging from <b>250 sq m to 600 sq m</b>, providing you with the flexibility to design and create your ideal living environment. Choose it as your gateway to a <b>lifestyle of tranquility, luxury, and investment potential.</b>",
+    "availabilitySection.desc2":
+      "Explore the available lots today and start envisioning your future in this idyllic enclave in the heart of Tulum's jungle.",
+    "availabilitySection.desc3":
+      "Whether you envision a <b>cozy retreat nestled in the jungle, a luxurious vacation rental property, or simply a tangible opportunity for growth</b>, the spacious lots in Cenote Gardens offer endless possibilities.",
+    btnToContact: "I want to know more",
+    "mapPlanoModal.typology": "Typology",
+    "mapPlanoModal.surface": "Surface",
+    "mapPlanoModal.height": "Allowed Height",
+    "mapPlanoModal.levels": "Allowed levels",
+    "mapPlanoModal.area": "Allowed Construction Area",
+    "mapPlanoModal.price": "Price USD",
   },
   es: {
     "nav.home": "Inicio",
@@ -137,5 +151,19 @@ export const ui = {
     "locationSection.cardTitle1": "DiseÑado para ser sustentable",
     "locationSection.cardTitle2": "Aislamiento del caos urbano",
     "locationSection.cardTitle3": "Alineado al ritmo de la Riviera Maya",
+    "availabilitySection.title": "Disponibilidad",
+    "availabilitySection.desc":
+      "Cenote Gardens es el lugar perfecto para tu hogar soñado. Cada terreno ofrece un espacio, que va desde <b>250-600 m²</b>, brindándote la flexibilidad para diseñar y crear tu entorno ideal. Elígelo como el camino a un <b>estilo de vida de tranquilidad, lujo y potencial de inversión.</b>",
+    "availabilitySection.desc2":
+      "Descubre los terrenos disponibles y comienza a visualizar tu futuro en este refugio en el corazón de la selva de Tulum.",
+    "availabilitySection.desc3":
+      "Ya sea que busques un lugar <b>acogedor en la selva, una lujosa propiedad para alquiler vacacional, o simplemente una oportunidad tangible de crecimiento</b>, os terrenos en Cenote Gardens ofrecen posibilidades infinitas.",
+    btnToContact: "Quiero saber más",
+    "mapPlanoModal.typology": "Tipología",
+    "mapPlanoModal.surface": "Superficie",
+    "mapPlanoModal.levels": "Niveles permitidos",
+    "mapPlanoModal.height": "Altura máxima permitida",
+    "mapPlanoModal.area": "Área de Construcción Permitida",
+    "mapPlanoModal.price": "Precio USD",
   },
 } as const;

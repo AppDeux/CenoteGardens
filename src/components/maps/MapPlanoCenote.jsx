@@ -1,14 +1,19 @@
 import { useState } from "react";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
 import mapPlanoData from "./mapPlanoData";
 import MapPlanoModal from "./MapPlanoModal";
 
-const MapPlanoCenote = () => {
+const MapPlanoCenote = ({ url }) => {
+  const lang = getLangFromUrl(url);
+  const t = useTranslations(lang);
+
   const [modal, setModal] = useState({
     data: {},
     show: false,
   });
 
-  // Manejador para mostrar el modal
+  // Handler para mostrar el modal
   const handlerOpenModal = (data) => {
     setModal({
       data,
@@ -51,6 +56,7 @@ const MapPlanoCenote = () => {
         <MapPlanoModal
           modal={modal}
           closeModal={() => setModal({ show: false })}
+          url={url}
         />
       )}
 
@@ -123,7 +129,7 @@ const MapPlanoCenote = () => {
           href="#contacto"
           className="max-w-56 mb-4 bg-accent-700 hover:bg-accent-800  px-6 py-3 text-white m-auto text-center"
         >
-          I want to know more
+          {t("btnToContact")}
         </a>
       </div>
     </section>
