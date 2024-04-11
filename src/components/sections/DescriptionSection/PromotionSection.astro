@@ -4,6 +4,11 @@ import { Image } from "astro:assets";
 import iconLeaves from "@/assets/svgs/icon_leaves_white.svg";
 import iconConectivity from "@/assets/svgs/icon_conectivity.svg";
 import iconDome from "@/assets/svgs/icon_dome.svg";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section
@@ -21,7 +26,7 @@ import iconDome from "@/assets/svgs/icon_dome.svg";
       <h1
         class="font-title uppercase pt-12 md:px-24 mb-4 text-2xl text-center md:text-[2.5rem] md:pb-6"
       >
-        What makes Cenote Gardens an enticing investment opportunity?
+        {t("promotionSection.title")}
       </h1>
     </div>
     <div
@@ -36,15 +41,9 @@ import iconDome from "@/assets/svgs/icon_dome.svg";
         <h2
           class="font-subtitle uppercase pb-4 md:pb-4 lg:pb-4 xl:pb-10 text-lg md:text-base"
         >
-          Vision of Sustainable Living
+          {t("promotionSection.card1.title")}
         </h2>
-        <p>
-          Our community is a testament to sustainable living that embraces <b
-            >eco-conscious design</b
-          > principles.<br /> We strive to <b
-            >harmonize with the natural environment</b
-          >, preserving its beauty for generations to come.
-        </p>
+        <p set:html={t("promotionSection.card1.desc")} />
       </div>
       <div class="flex flex-col items-start pt-4 pb-4">
         <Image
@@ -53,14 +52,9 @@ import iconDome from "@/assets/svgs/icon_dome.svg";
           alt="Icon Conectivity"
         />
         <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
-          Essential Services and Connectivity
+          {t("promotionSection.card2.title")}
         </h2>
-        <p>
-          All lots are equipped with reliable electricity, water, and high-speed
-          fiber-optic internet connectivity, ensuring your <b
-            >comfort and connectivity in the heart of nature.</b
-          >
-        </p>
+        <p set:html={t("promotionSection.card2.desc")} />
       </div>
       <div class="flex flex-col items-start pt-4 pb-4">
         <Image
@@ -69,13 +63,9 @@ import iconDome from "@/assets/svgs/icon_dome.svg";
           alt="Icon Dome"
         />
         <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
-          Private Cenote and Luxurious Amenities
+          {t("promotionSection.card3.title")}
         </h2>
-        <p>
-          Cenote Gardens' Palapa Club offers <b>state-of-the-art amenities</b>,
-          including a cozy fire pit and a traditional temazcal for a
-          rejuvenating experience.
-        </p>
+        <p set:html={t("promotionSection.card3.desc")} />
       </div>
     </div>
   </div>

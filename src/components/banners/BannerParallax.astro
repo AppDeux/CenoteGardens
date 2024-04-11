@@ -6,6 +6,11 @@ const optimizedBackground = await getImage({
   src: parallaxBg,
   format: "jpg",
 });
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section
@@ -16,8 +21,7 @@ const optimizedBackground = await getImage({
     <h2
       class="md:max-w-3xl font-sans font-normal text-2xl text-center leading-8 text-white"
     >
-      Cenote Gardens is committed to offering an extraordinary place to live
-      while preserving mother nature.
+      {t("parallaxBanner.title")}
     </h2>
   </div>
 </section>

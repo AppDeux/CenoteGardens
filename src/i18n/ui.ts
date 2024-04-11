@@ -34,6 +34,19 @@ export const ui = {
       "Amenities and driveways designed with eco-friendly materials.",
     "sustainability.card5": "Solar panel buyer rebate program.",
     "sustainability.card6": "Eco-construction guidelines.",
+    "parallaxBanner.title":
+      "Cenote Gardens is committed to offering an extraordinary place to live while preserving mother nature.",
+    "promotionSection.title":
+      "What makes Cenote Gardens an enticing investment opportunity?",
+    "promotionSection.card1.title": "Vision of Sustainable Living",
+    "promotionSection.card1.desc":
+      "Our community is a testament to sustainable living that embraces <b>eco-conscious design</b> principles.<br /> We strive to <b>harmonize with the natural environment</b>, preserving its beauty for generations to come.",
+    "promotionSection.card2.title": "Essential Services and Connectivity",
+    "promotionSection.card2.desc":
+      "All lots are equipped with reliable electricity, water, and high-speed fiber-optic internet connectivity, ensuring your <b>comfort and connectivity in the heart of nature.</b>",
+    "promotionSection.card3.title": "Private Cenote and Luxurious Amenities",
+    "promotionSection.card3.desc":
+      "Cenote Gardens' Palapa Club offers <b>state-of-the-art amenities</b>, including a cozy fire pit and a traditional temazcal for a rejuvenating experience.",
   },
   es: {
     "nav.home": "Inicio",
@@ -62,5 +75,18 @@ export const ui = {
     "sustainability.card5":
       "Programa de descuento comprador de paneles solares.",
     "sustainability.card6": "Lineamientos de construcción ecológica.",
+    "parallaxBanner.title":
+      "Cenote Gardens ofrece un lugar extraordinario para vivir mientras preserva la madre naturaleza.",
+    "promotionSection.title":
+      "¿Por qué Cenote Gardens es una gran oportunidad de inversión?",
+    "promotionSection.card1.title": "VisiÓn de un estilo de vida sostenible",
+    "promotionSection.card1.desc":
+      "Nuestra comunidad es un testimonio de vida sostenible que adopta los principios de diseño<b> eco-consciente</b>. Nos esforzamos por <b>armonizar con el entorno natural</b>, preservando su belleza para las generaciones futuras.",
+    "promotionSection.card2.title": "Servicios Esenciales y Conectividad",
+    "promotionSection.card2.desc":
+      "Todos los terrenos están equipados con electricidad, agua y conectividad de internet, garantizando tu <b>comodidad y conexión en pleno corazón de la naturaleza.</b>",
+    "promotionSection.card3.title": "Cenote Privado y Amenidades de Lujo",
+    "promotionSection.card3.desc":
+      "El Palapa Club de Cenote Gardens ofrece <b>comodidades de última generación</b>, incluyendo una acogedora fogata y un temazcal tradicional para una experiencia rejuvenecedora.",
   },
 } as const;
