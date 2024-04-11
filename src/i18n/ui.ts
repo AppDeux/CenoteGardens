@@ -116,6 +116,9 @@ export const ui = {
     "investSection.wordTravel":
       "“Leading beach destination in Mexico and Central America.”",
     "investSection.globalWellness": "“Tulum is the global capital of yoga”",
+    "contactSection.title": "Contact",
+    "contactSection.desc":
+      "Invest with certainty, invest in paradise. Invest in Cenote Gardens, where abundance flows.",
   },
   es: {
     "nav.home": "Inicio",
@@ -219,5 +222,8 @@ export const ui = {
     "investSection.wordTravel":
       "“Destino de playa líder en México y Centro América.”",
     "investSection.globalWellness": "“Tulum es la capital mundial del Yoga”",
+    "contactSection.title": "Contacto",
+    "contactSection.desc":
+      "Invierte con certeza, invierte en el paraíso. Invierte en Cenote Gardens, donde fluye la abundancia.",
   },
 } as const;

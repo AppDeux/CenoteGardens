@@ -14,8 +14,8 @@ import MapPlanoCenote from "@/components/maps/MapPlanoCenote";
 import LocationSection from "@/components/sections/LocationSection.astro";
 import AvailabilitySection from "@/components/sections/AvailabilitySection.astro";
 import InvestSection from "@/components/sections/InvestSection.astro";
-import ContactForm from "@/components/form/ContactForm.astro";
 import FooterSection from "@/layouts/FooterSection.astro";
+import ContactSection from "../sections/ContactSection.astro";
 ---
 
 <Layout title="Cenote gardens">
@@ -33,6 +33,6 @@ import FooterSection from "@/layouts/FooterSection.astro";
   <AvailabilitySection />
   <MapPlanoCenote client:load url={Astro.url} />
   <InvestSection />
-  <ContactForm />
+  <ContactSection />
   <FooterSection />
 </Layout>
