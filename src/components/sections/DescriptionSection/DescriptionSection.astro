@@ -17,6 +17,12 @@ const t = useTranslations(lang);
 ---
 
 <section class="container description_section items-center px-4 md:px-0 mb-10">
+  <!-- First Part -->
+  <h1
+    class="font-title uppercase pt-12 px-8 mb-4 text-2xl text-center md:text-5xl md:pb-6"
+  >
+    {t("descriptionSection.title")}
+  </h1>
   <div class="presentation text-lg">
     <div>
       <Image class="presentation__iconWorld" src={iconWorld} alt="Icon World" />
@@ -26,12 +32,11 @@ const t = useTranslations(lang);
     </p>
     <br />
     <p>
-      Picture waking up to the beautiful songs of tropical birds, surrounded by
-      the lush jungle in vibrant colors. Every day is like a new adventure
-      waiting to happen.
+      {t("descriptionSection.about2")}
     </p>
   </div>
 
+  <!-- Second part -->
   <div
     class="information grid grid-cols-1 md:grid-cols-2 md:gap-y-0 md:gap-x-16 mb-12"
   >
@@ -45,19 +50,9 @@ const t = useTranslations(lang);
     <div
       class="informationText flex flex-col items-center md:items-start text-base mb-6 md:max-w-[26rem] md:mt-4"
     >
-      <p class="mb-4">
-        Cenote Gardens offers <b>56 residential lots</b> that bring a unique opportunity
-        to be part of an extraordinary living experience.
-      </p>
-      <p class="mb-4">
-        It is the perfect place for those looking for <b
-          >a lifestyle respectful of nature</b
-        > and the biodiversity of the Mayan jungle.
-      </p>
-      <p>
-        Ideal to find <b>privacy</b> and coexistence with other people seeking wellness,
-        spirituality, and expansion of consciousness.
-      </p>
+      <p class="mb-4" set:html={t("descriptionSection.aboutSecond")} />
+      <p class="mb-4" set:html={t("descriptionSection.aboutSecond2")} />
+      <p set:html={t("descriptionSection.aboutSecond3")} />
     </div>
     <div class="flex justify-end">
       <Image
@@ -68,116 +63,115 @@ const t = useTranslations(lang);
     </div>
   </div>
 
-  <div class="">
+  <div class="flex flex-col items-center">
     <h1
-      class="font-title uppercase pt-12 px-8 mb-4 text-2xl text-center md:text-5xl md:pb-6"
+      class="font-title uppercase pt-12 px-8 mb-4 text-2xl text-center md:text-5xl md:pb-6 xl:max-w-5xl"
     >
-      Sustainability is our core vision
+      {t("sustainability.title")}
     </h1>
+    <div
+      class="characteristics grid grid-cols-1 md:grid-cols-3 gap-8 px-10 max-w-5xl"
+    >
+      <div class="">
+        <div class="flex flex-col items-center pt-4 pb-4">
+          <Image
+            class="characteristics__house w-16"
+            src={iconHouse}
+            alt="House Image"
+          />
+        </div>
+        <p class="text-center">
+          {t("sustainability.card1")}
+        </p>
+      </div>
+      <div class="">
+        <div class="flex flex-col items-center pt-4 pb-4">
+          <Image
+            class="characteristics__drop w-16"
+            src={iconDrop}
+            alt="Drop Image"
+          />
+        </div>
+        <p class="text-center">
+          {t("sustainability.card2")}
+        </p>
+      </div>
+      <div class="">
+        <div class="flex flex-col items-center pt-4 pb-4">
+          <Image
+            class="characteristics__plug w-16"
+            src={iconPlug}
+            alt="Plug Image"
+          />
+        </div>
+        <p class="text-center">
+          {t("sustainability.card3")}
+        </p>
+      </div>
+      <div class="">
+        <div class="flex flex-col items-center pt-4 pb-4">
+          <Image
+            class="characteristics__hand w-16"
+            src={iconHand}
+            alt="Hand Image"
+          />
+        </div>
+        <p class="text-center">
+          {t("sustainability.card4")}
+        </p>
+      </div>
+      <div class="">
+        <div class="flex flex-col items-center pt-4 pb-4">
+          <Image
+            class="characteristics__sun w-16"
+            src={iconSun}
+            alt="Sun Image"
+          />
+        </div>
+        <p class="text-center">{t("sustainability.card5")}</p>
+      </div>
+      <div class="">
+        <div class="flex flex-col items-center pt-4 pb-4">
+          <Image
+            class="characteristics__hammer w-16"
+            src={iconHammer}
+            alt="Hammer Image"
+          />
+        </div>
+        <p class="text-center">{t("sustainability.card6")}</p>
+      </div>
+    </div>
   </div>
-  <div
-    class="characteristics grid grid-cols-1 md:grid-cols-3 gap-8 px-10 max-w-5xl"
-  >
-    <div class="">
-      <div class="flex flex-col items-center pt-4 pb-4">
-        <Image
-          class="characteristics__house w-16"
-          src={iconHouse}
-          alt="House Image"
-        />
-      </div>
-      <p class="text-center">
-        Low construction density (+60% of untouched green areas).
-      </p>
-    </div>
-    <div class="">
-      <div class="flex flex-col items-center pt-4 pb-4">
-        <Image
-          class="characteristics__drop w-16"
-          src={iconDrop}
-          alt="Drop Image"
-        />
-      </div>
-      <p class="text-center">
-        Private eco-friendly sewage system that completes the water cycle (water
-        reuse).
-      </p>
-    </div>
-    <div class="">
-      <div class="flex flex-col items-center pt-4 pb-4">
-        <Image
-          class="characteristics__plug w-16"
-          src={iconPlug}
-          alt="Plug Image"
-        />
-      </div>
-      <p class="text-center">
-        Renewable energy for the lighting of driveways and power of amenities.
-      </p>
-    </div>
-    <div class="">
-      <div class="flex flex-col items-center pt-4 pb-4">
-        <Image
-          class="characteristics__hand w-16"
-          src={iconHand}
-          alt="Hand Image"
-        />
-      </div>
-      <p class="text-center">
-        Amenities and driveways designed with eco-friendly materials.
-      </p>
-    </div>
-    <div class="">
-      <div class="flex flex-col items-center pt-4 pb-4">
-        <Image
-          class="characteristics__sun w-16"
-          src={iconSun}
-          alt="Sun Image"
-        />
-      </div>
-      <p class="text-center">Solar panel buyer rebate program.</p>
-    </div>
-    <div class="">
-      <div class="flex flex-col items-center pt-4 pb-4">
-        <Image
-          class="characteristics__hammer w-16"
-          src={iconHammer}
-          alt="Hammer Image"
-        />
-      </div>
-      <p class="text-center">Eco-construction guidelines.</p>
-    </div>
-  </div>
-</section>
 
-<style lang="scss">
-  .description_section {
-    display: flex;
-    justify-content: center;
-    @apply text-accent-700;
-    padding-top: 3rem;
-    flex-direction: column;
-  }
-  .presentation {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0rem 1rem;
-    margin-bottom: 3.5rem;
-  }
-  .presentation__iconWorld {
-    margin-bottom: 1.5rem;
-    max-width: 5.75rem;
-  }
-  @media (min-width: 768px) {
-    .presentation__iconWorld {
-      max-width: 6.25rem;
+  <style lang="scss">
+    .description_section {
+      display: flex;
+      justify-content: center;
+      @apply text-accent-700;
+      padding-top: 3rem;
+      flex-direction: column;
     }
     .presentation {
-      max-width: 620px;
-      font-size: 1.25rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0rem 1rem;
+      margin-bottom: 3.5rem;
     }
-  }
-</style>
+    .presentation__iconWorld {
+      margin-bottom: 1.5rem;
+      max-width: 5.75rem;
+    }
+    @media (min-width: 768px) {
+      .presentation__iconWorld {
+        max-width: 6.25rem;
+      }
+      .presentation {
+        max-width: 620px;
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</section>
