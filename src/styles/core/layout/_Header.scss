@@ -1,7 +1,7 @@
 .Header {
   &__content {
     &__links {
-      @media (max-width: 1024px) {
+      @media (max-width: 1023px) {
         position: absolute;
         z-index: 10;
         width: 100vw;

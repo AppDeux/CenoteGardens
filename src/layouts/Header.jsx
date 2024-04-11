@@ -1,12 +1,22 @@
 import { useEffect, useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import logoHeader from "@/assets/svgs/logo_header.svg";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@/i18n/utils";
 
-const Header = () => {
+const Header = ({ url }) => {
+  const lang = getLangFromUrl(url);
+  const t = useTranslations(lang);
+  const translatePath = useTranslatedPath(lang);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [scrollNumber, setScrollNumber] = useState(0);
 
   useEffect(() => {
+    setScrollNumber(window.scrollY);
+
     const smoothScroll = () => {
       const links = document.querySelectorAll('a[href^="#"]');
       links.forEach((link) => {
@@ -98,25 +108,27 @@ const Header = () => {
           className={`Header__content__links font-subtitle text-grey-50
             ${showMobileMenu ? "Header__content__links--active" : "hidden"}
             transition-all delay-300 ease-in
-            lg:order-2 lg:col-span-7 w-full lg:pr-8 lg:text-sm xl:text-base
+            lg:h-14
+            lg:order-2 lg:col-span-7 w-full lg:pr-8 lg:text-sm  lg:text-center
             lg:flex lg:items-center lg:justify-evenly lg:gap-8`}
         >
           <a className="cursor-pointer" onClick={scrollToTop}>
-            Home
+            {t("nav.home")}
           </a>
-          <a href="#location">Location</a>
-          <a href="#availability">Availability</a>
-          <a href="#invest">Why invest in tulum?</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
+          <a href="#location">{t("nav.location")}</a>
+          <a href="#availability">{t("nav.availability")}</a>
+          <a href="#invest">{t("nav.invest")}</a>
+          <a href="#blog">{t("nav.blog")}</a>
+          <a href="#contact">{t("nav.contact")}</a>
         </div>
 
         <div
           className="flex gap-4 order-3 col-span-2 lg:col-span-2
             justify-self-end
-            font-semibold text-xl lg:text-lg text-grey-50"
+            font-semibold text-xl lg:text-base text-grey-50"
         >
-          <a>EN</a> | <a>ES</a>
+          <a href={translatePath("/", "en")}>EN</a> |{" "}
+          <a href={translatePath("/", "es")}>ES</a>
         </div>
       </div>
     </header>
