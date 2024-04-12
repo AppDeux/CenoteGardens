@@ -11,6 +11,11 @@ const optimizedBackground = await getImage({
   src: imgFooterBannerMain,
   format: "jpg",
 });
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <footer
@@ -26,7 +31,7 @@ const optimizedBackground = await getImage({
     <div>
       <div class="text-accent-50 flex flex-col items-center">
         <div class=""><p>© 2024 Cenote Gardens</p></div>
-        <div class="mb-8"><p>Privacy Policy</p></div>
+        <div class="mb-8"><p>{t("footer.privacy")}</p></div>
         <div>
           <div class="grid grid-cols-4 md:gap-x-2">
             <div>
@@ -76,7 +81,7 @@ const optimizedBackground = await getImage({
             </div>
           </div>
         </div>
-        <div class="mb-2"><p>Produced by YGU Comunicaxion</p></div>
+        <div class="mb-2"><p>{t("footer.produced")}</p></div>
       </div>
     </div>
   </div>

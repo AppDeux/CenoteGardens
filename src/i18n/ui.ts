@@ -119,6 +119,8 @@ export const ui = {
     "contactSection.title": "Contact",
     "contactSection.desc":
       "Invest with certainty, invest in paradise. Invest in Cenote Gardens, where abundance flows.",
+    "footer.privacy": "Privacy Policy",
+    "footer.produced": "Produced by YGU Comunicaxion",
   },
   es: {
     "nav.home": "Inicio",
@@ -225,5 +227,7 @@ export const ui = {
     "contactSection.title": "Contacto",
     "contactSection.desc":
       "Invierte con certeza, invierte en el paraíso. Invierte en Cenote Gardens, donde fluye la abundancia.",
+    "footer.privacy": "Política de privacidad",
+    "footer.produced": "Elaborado por YGU Comunicaxion",
   },
 } as const;
