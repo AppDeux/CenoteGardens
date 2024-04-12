@@ -23,7 +23,7 @@ export const ui = {
       "It is the perfect place for those looking for <b>a lifestyle respectful of nature</b> and the biodiversity of the Mayan jungle.",
     "descriptionSection.aboutSecond3":
       "Ideal to find <b>privacy</b> and coexistence with other people seeking wellness, spirituality, and expansion of consciousness.",
-    "sustainability.title": "Sustainability is our core vision",
+    "sustainability.title": "Un desarrollo ecológico en la Riviera Maya",
     "sustainability.card1":
       "Low construction density (+60% of untouched green areas).",
     "sustainability.card2":
@@ -37,7 +37,7 @@ export const ui = {
     "parallaxBanner.title":
       "Cenote Gardens is committed to offering an extraordinary place to live while preserving mother nature.",
     "promotionSection.title":
-      "What makes Cenote Gardens an enticing investment opportunity?",
+      "What makes Cenote Gardens an enticing investment opportunity in tulum?",
     "promotionSection.card1.title": "Vision of Sustainable Living",
     "promotionSection.card1.desc":
       "Our community is a testament to sustainable living that embraces <b>eco-conscious design</b> principles.<br /> We strive to <b>harmonize with the natural environment</b>, preserving its beauty for generations to come.",
@@ -137,7 +137,7 @@ export const ui = {
       "Es el lugar perfecto para aquellos que buscan <b>un estilo de vida respetuoso con la naturaleza</b> y la biodiversidad de la selva maya.",
     "descriptionSection.aboutSecond3":
       "Ideal para encontrar <b>privacidad</b> y convivencia con otras personas que buscan bienestar, espiritualidad y expansión de la conciencia.",
-    "sustainability.title": "La sostenibilidad es nuestra visión central",
+    "sustainability.title": "An ecological development in the Mayan Riviera",
     "sustainability.card1":
       "Baja densidad de construcción (+60% de áreas verdes vírgenes).",
     "sustainability.card2":
@@ -152,7 +152,7 @@ export const ui = {
     "parallaxBanner.title":
       "Cenote Gardens ofrece un lugar extraordinario para vivir mientras preserva la madre naturaleza.",
     "promotionSection.title":
-      "¿Por qué Cenote Gardens es una gran oportunidad de inversión?",
+      "¿Por qué Cenote Gardens es una gran oportunidad para invertir en Tulum?",
     "promotionSection.card1.title": "VisiÓn de un estilo de vida sostenible",
     "promotionSection.card1.desc":
       "Nuestra comunidad es un testimonio de vida sostenible que adopta los principios de diseño<b> eco-consciente</b>. Nos esforzamos por <b>armonizar con el entorno natural</b>, preservando su belleza para las generaciones futuras.",

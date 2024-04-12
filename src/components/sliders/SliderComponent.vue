@@ -1,5 +1,5 @@
 <template>
-  <swiper :navigation="true" :modules="modules" class="mySwiper my-5">
+  <swiper :autoHeight="true" :navigation="true" :modules="modules" class="mySwiper my-5">
     <swiper-slide v-for="(item, index) in items" :key="index">
       <div class="slider-content">
         <img
