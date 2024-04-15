@@ -2,7 +2,7 @@
   position: relative;
   &__modal {
     position: absolute; /* Permite posicionar de forma absoluta */
-    top: 50%; /* Coloca el elemento en la mitad vertical del contenedor */
+    top: 45%; /* Coloca el elemento en la mitad vertical del contenedor */
     left: 50%; /* Coloca el elemento en la mitad horizontal del contenedor */
     transform: translate(-50%, -50%);
 

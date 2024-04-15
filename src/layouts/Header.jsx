@@ -118,7 +118,7 @@ const Header = ({ url }) => {
           <a href="#location">{t("nav.location")}</a>
           <a href="#availability">{t("nav.availability")}</a>
           <a href="#invest">{t("nav.invest")}</a>
-          <a href="#blog">{t("nav.blog")}</a>
+          <a href="http://blog.cenotegardens.com">{t("nav.blog")}</a>
           <a href="#contact">{t("nav.contact")}</a>
         </div>
 
