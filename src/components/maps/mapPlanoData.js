@@ -951,7 +951,7 @@ const mapPlanoData = [
       height: 12,
       area: 240,
       USDm2: "275.00",
-      available: 0,
+      available: 1,
     },
   },
   {
@@ -969,7 +969,7 @@ const mapPlanoData = [
       height: 12,
       area: 240,
       USDm2: "275.00",
-      available: 0,
+      available: 1,
     },
   },
   {
@@ -987,7 +987,7 @@ const mapPlanoData = [
       height: 12,
       area: 240,
       USDm2: "275.00",
-      available: 0,
+      available: 1,
     },
   },
   {
@@ -1005,7 +1005,7 @@ const mapPlanoData = [
       height: 12,
       area: 240,
       USDm2: "275.00",
-      available: 0,
+      available: 1,
     },
   },
 ];

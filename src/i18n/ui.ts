@@ -23,9 +23,9 @@ export const ui = {
       "It is the perfect place for those looking for <b>a lifestyle respectful of nature</b> and the biodiversity of the Mayan jungle.",
     "descriptionSection.aboutSecond3":
       "Ideal to find <b>privacy</b> and coexistence with other people seeking wellness, spirituality, and expansion of consciousness.",
-    "sustainability.title": "Un desarrollo ecológico en la Riviera Maya",
+    "sustainability.title": "An ecological development in the Mayan Riviera",
     "sustainability.card1":
-      "Low construction density (+60% of untouched green areas).",
+      "Low construction density (+70% of untouched green areas).",
     "sustainability.card2":
       "Private eco-friendly sewage system that completes the water cycle (water reuse).",
     "sustainability.card3":
@@ -84,6 +84,7 @@ export const ui = {
     "mapPlanoModal.surface": "Surface",
     "mapPlanoModal.height": "Allowed Height",
     "mapPlanoModal.levels": "Allowed levels",
+    "mapPlanoModal.levels.text": "Levels",
     "mapPlanoModal.area": "Allowed Construction Area",
     "mapPlanoModal.price": "Price USD",
     "investSection.title": "Why invest in Tulum?",
@@ -137,17 +138,17 @@ export const ui = {
       "Es el lugar perfecto para aquellos que buscan <b>un estilo de vida respetuoso con la naturaleza</b> y la biodiversidad de la selva maya.",
     "descriptionSection.aboutSecond3":
       "Ideal para encontrar <b>privacidad</b> y convivencia con otras personas que buscan bienestar, espiritualidad y expansión de la conciencia.",
-    "sustainability.title": "An ecological development in the Mayan Riviera",
+    "sustainability.title": "Un desarrollo ecológico en la Riviera Maya",
     "sustainability.card1":
-      "Baja densidad de construcción (+60% de áreas verdes vírgenes).",
+      "Baja densidad de construcción (+70% de áreas verdes vírgenes).",
     "sustainability.card2":
       "Sistema de alcantarillado ecológico privado que completa el ciclo del agua (reutilización del agua).",
     "sustainability.card3":
-      "Energías renovables para el alumbrado de calzadas y la energía de los servicios.",
+      "Energías renovables para el alumbrado en vialidades y la energía de las áreas comunes",
     "sustainability.card4":
       "Instalaciones y accesos diseñados con materiales ecológicos.",
     "sustainability.card5":
-      "Programa de descuento comprador de paneles solares.",
+      "Programa de reembolso para compradores de paneles solares",
     "sustainability.card6": "Lineamientos de construcción ecológica.",
     "parallaxBanner.title":
       "Cenote Gardens ofrece un lugar extraordinario para vivir mientras preserva la madre naturaleza.",
@@ -165,7 +166,7 @@ export const ui = {
     "amenitiesSection.title": "Comodidades de última generación",
     "amenitiesSection.card1.title": "Bienestar",
     "amenitiesSection.card1.desc":
-      "Temazcal, Piscina de agua fría y Área de Meditación Holística.",
+      "Temazcal, inmersión en hielo y Área de Meditación Holística.",
     "amenitiesSection.card2.title": "Conexión con la naturaleza",
     "amenitiesSection.card2.desc":
       "Cenote, Fogata, Mirador y Área para mascotas.",
@@ -176,7 +177,7 @@ export const ui = {
       "<b>Invertir en Cenote Gardens</b> representa una oportunidad excepcional de <b>capitalizar el potencial alcista del crecimiento de Tulum.</b>",
     "locationSection.title": "UBICACIÓN PREMIUM",
     "locationSection.desc":
-      "<b>Cenote Gardens se ubica</b> en Jacinto Pat, <b>a 15 minutos de distancia de Tulum.</b> Una región virgen que emerge como un santuario em e; que puedes <b> vivir en un lugar tranquilo sin sacrificar la accesibilidad </b> a los servicios esenciales.",
+      "<b>Cenote Gardens se ubica</b> en Jacinto Pat, <b>a 15 minutos de distancia de Tulum.</b> Una región virgen que emerge como un santuario en el que puedes <b> vivir en un lugar tranquilo sin sacrificar la accesibilidad </b> a los servicios esenciales.",
     "locationSection.desc2":
       "Rodeado por el encanto de la selva y los cenotes, los residentes están perfectamente conectados con la naturaleza. Además, la cercanía con Soliman Bay es un recordatorio de la magia costera de la región.",
     "locationSection.desc3":
@@ -192,15 +193,20 @@ export const ui = {
     "availabilitySection.desc2":
       "Descubre los terrenos disponibles y comienza a visualizar tu futuro en este refugio en el corazón de la selva de Tulum.",
     "availabilitySection.desc3":
-      "Ya sea que busques un lugar <b>acogedor en la selva, una lujosa propiedad para alquiler vacacional, o simplemente una oportunidad tangible de crecimiento</b>, os terrenos en Cenote Gardens ofrecen posibilidades infinitas.",
+      "Ya sea que busques un lugar <b>acogedor en la selva, una lujosa propiedad para alquiler vacacional, o simplemente una oportunidad tangible de crecimiento</b>, los terrenos en Cenote Gardens ofrecen posibilidades infinitas.",
     btnToContact: "Quiero saber más",
     "mapPlanoModal.typology": "Tipología",
     "mapPlanoModal.surface": "Superficie",
     "mapPlanoModal.levels": "Niveles permitidos",
+    "mapPlanoModal.levels.text": "Niveles",
     "mapPlanoModal.height": "Altura máxima permitida",
     "mapPlanoModal.area": "Área de Construcción Permitida",
     "mapPlanoModal.price": "Precio USD",
     "investSection.title": "¿Por qué invertir en Tulum?",
+    "investSection.desc": `
+    El <b>Aeropuerto Internacional de Tulum, el Tren Maya y el Parque Jaguar están incrementando el flujo turístico en Tulum.</b>Se pronostica que el nuevo aeropuerto atraiga a más de <b> 5 millones de visitantes</b> anuales.<br />
+    Además, la expansión de empresas globales en Tulum subraya la <b>confianza en el mercado</b>, mientras que el potencial <b>aumento de turistas</b> provenientes de India, Japón y China ofrece un panorama prometedor.
+    `,
     "investSection.card1.title": "#1 en Ranking",
     "investSection.card1.desc": "Destino turístico en México.",
     "investSection.card2.title": "+6.5 millones",

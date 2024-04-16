@@ -42,7 +42,7 @@ const MapPlanoModal = ({ modal, closeModal, url }) => {
       </div>
       <div className="py-3 bg-white">{modal.data.lote}</div>
       <div
-        className="text-center py-3"
+        className="text-center text-white py-3"
         style={{
           backgroundColor: bgAvailable,
         }}
@@ -70,11 +70,9 @@ const MapPlanoModal = ({ modal, closeModal, url }) => {
         <p>${modal.data.USDm2}</p>
       </div>
       <div className="flex flex-col items-center py-2 bg-white h-full">
-        <h5 className="font-light text-sm mb-1">
-          {t("mapPlanoModal.surface")}
-        </h5>
+        <h5 className="font-light text-sm mb-1">{t("mapPlanoModal.levels")}</h5>
         <p>
-          {modal.data.levels} M<sup>2</sup>
+          {modal.data.levels} {t("mapPlanoModal.levels.text")}
         </p>
       </div>
       <div className="flex flex-col items-center py-2 bg-white  h-full">
@@ -92,9 +90,7 @@ const MapPlanoModal = ({ modal, closeModal, url }) => {
         <h5 className="font-light text-base mb-1">
           {t("mapPlanoModal.price")}
         </h5>
-        <p className="text-xl mb-4">
-          ${modal.data.price} M<sup>2</sup>
-        </p>
+        <p className="text-xl mb-4">${modal.data.price}</p>
 
         <a
           href="#contact"

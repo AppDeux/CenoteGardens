@@ -39,12 +39,13 @@ const t = useTranslations(lang);
           alt="Icon Leaves"
         />
         <h2
-          class="font-subtitle uppercase pb-4 md:pb-4 lg:pb-4 xl:pb-10 text-lg md:text-base"
+          class="font-subtitle uppercase pb-4 md:pb-4 lg:pb-4 lg:h-16 text-lg md:text-base"
         >
           {t("promotionSection.card1.title")}
         </h2>
         <p set:html={t("promotionSection.card1.desc")} />
       </div>
+
       <div class="flex flex-col items-start pt-4 pb-4">
         <Image
           class="promotion__iconConectivity w-16 pb-4"
@@ -56,6 +57,7 @@ const t = useTranslations(lang);
         </h2>
         <p set:html={t("promotionSection.card2.desc")} />
       </div>
+
       <div class="flex flex-col items-start pt-4 pb-4">
         <Image
           class="promotion__iconDome w-16 pb-4"
