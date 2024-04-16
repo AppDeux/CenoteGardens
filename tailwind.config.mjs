@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         sans: "'Montserrat', sans-serif",
-        title: "Times New Roman",
+        title: "Carla Sans",
         subtitle: "Carla Sans",
       },
       colors: {
