@@ -204,7 +204,7 @@ export const ui = {
     "mapPlanoModal.price": "Precio USD",
     "investSection.title": "¿Por qué invertir en Tulum?",
     "investSection.desc": `
-    El <b>Aeropuerto Internacional de Tulum, el Tren Maya y el Parque Jaguar están incrementando el flujo turístico en Tulum.</b>Se pronostica que el nuevo aeropuerto atraiga a más de <b> 5 millones de visitantes</b> anuales.<br />
+    El <b>Aeropuerto Internacional de Tulum, el Tren Maya y el Parque Jaguar están incrementando el flujo turístico en Tulum.</b> Se pronostica que el nuevo aeropuerto atraiga a más de <b> 5 millones de visitantes</b> anuales.<br />
     Además, la expansión de empresas globales en Tulum subraya la <b>confianza en el mercado</b>, mientras que el potencial <b>aumento de turistas</b> provenientes de India, Japón y China ofrece un panorama prometedor.
     `,
     "investSection.card1.title": "#1 en Ranking",
