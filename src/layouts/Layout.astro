@@ -19,7 +19,13 @@ const lang = getLangFromUrl(Astro.url);
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+      data-href-light="/favicon.svg"
+      data-href-dark="/favicon-dark.svg"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <!-- Google Tag Manager -->
@@ -55,5 +61,6 @@ const lang = getLangFromUrl(Astro.url);
     </main>
     <GlobalStyles />
     <script src="./viewTransitionsConfig.js"></script>
+    <script src="./favicon.js"></script>
   </body>
 </html>
