@@ -1,3 +1,4 @@
+import img0 from "@/assets/imgs/carrusel/Foto_0.jpg";
 import img1 from "@/assets/imgs/carrusel/Foto_1.jpg";
 import img2 from "@/assets/imgs/carrusel/Foto_2.jpg";
 import img3 from "@/assets/imgs/carrusel/Foto_3.jpg";
@@ -9,6 +10,9 @@ import img8 from "@/assets/imgs/carrusel/Foto_8.jpg";
 import img9 from "@/assets/imgs/carrusel/Foto_9.jpg";
 
 const imgAmenidades = [
+  {
+    pathImg: img0,
+  },
   {
     pathImg: img1,
   },

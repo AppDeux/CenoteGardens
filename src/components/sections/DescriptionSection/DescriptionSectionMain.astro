@@ -1,0 +1,53 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import iconWorld from "@/assets/svgs/icon_world.svg";
+import { Image } from "astro:assets";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="container flex flex-col items-center px-4 md:px-0">
+  <h1
+    class="font-title text-grey-950 uppercase pt-12 px-0 mb-4 text-3xl text-center md:text-4xl md:text-[2.5rem] md:pb-6"
+  >
+    {t("descriptionSection.title")}
+  </h1>
+  <div class="presentation text-lg">
+    <div>
+      <Image class="presentation__iconWorld" src={iconWorld} alt="Icon World" />
+    </div>
+    <p>
+      {t("descriptionSection.about")}
+    </p>
+    <br />
+    <p>
+      {t("descriptionSection.about2")}
+    </p>
+  </div>
+</div>
+
+
+<style lang="scss">
+  .presentation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  .presentation__iconWorld {
+    margin-bottom: 1.5rem;
+    max-width: 5.75rem;
+  }
+  @media (min-width: 768px) {
+    .presentation__iconWorld {
+      max-width: 6.25rem;
+    }
+    .presentation {
+      max-width: 620px;
+      font-size: 1.25rem;
+    }
+  }
+</style>

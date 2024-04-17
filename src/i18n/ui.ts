@@ -23,7 +23,7 @@ export const ui = {
       "It is the perfect place for those looking for <b>a lifestyle respectful of nature</b> and the biodiversity of the Mayan jungle.",
     "descriptionSection.aboutSecond3":
       "Ideal to find <b>privacy</b> and coexistence with other people seeking wellness, spirituality, and expansion of consciousness.",
-    "sustainability.title": "An ecological development in the Mayan Riviera",
+    "sustainability.title": "An ecological development in the riviera maya",
     "sustainability.card1":
       "Low construction density (+70% of untouched green areas).",
     "sustainability.card2":
@@ -37,7 +37,7 @@ export const ui = {
     "parallaxBanner.title":
       "Cenote Gardens is committed to offering an extraordinary place to live while preserving mother nature.",
     "promotionSection.title":
-      "What makes Cenote Gardens an enticing investment opportunity in tulum?",
+      "What makes Cenote Gardens an enticing investment opportunity?",
     "promotionSection.card1.title": "Vision of Sustainable Living",
     "promotionSection.card1.desc":
       "Our community is a testament to sustainable living that embraces <b>eco-conscious design</b> principles.<br /> We strive to <b>harmonize with the natural environment</b>, preserving its beauty for generations to come.",
@@ -50,13 +50,13 @@ export const ui = {
     "amenitiesSection.title": "State-of-the-art amenities",
     "amenitiesSection.card1.title": "Wellness",
     "amenitiesSection.card1.desc":
-      "Temazcal, Ice Plunge & Holistic Meditation Area.",
+      "Temazcal, Ice Plunge, Spa, Zen & meditation and Yoga",
     "amenitiesSection.card2.title": "Nature connection",
     "amenitiesSection.card2.desc":
-      "Cenote, Fire pit, Sightseeing Tower & Pet Area.",
+      "Private Cenote, Fire pit, Mirador Tower, Community harvest garden and Amazonic waterfall.",
     "amenitiesSection.card3.title": "Sports & recreation",
     "amenitiesSection.card3.desc":
-      "Pickleball, Outdoor gym, Hammock area & co-working space.",
+      "Jungle Pickleball, Outdoor gym, Co-working space, Hammock area and Wellness bar",
     "amenitiesCarousel.title":
       "<b>Investing in Cenote Gardens</b> presents an exceptional opportunity to <b>capitalize on the upside potential of Tulum's growth.</b>",
     "locationSection.title": "PREMIUM LOCATION",

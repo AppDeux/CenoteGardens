@@ -1,0 +1,95 @@
+---
+import { Image } from "astro:assets";
+import iconHouse from "@/assets/svgs/icon_house.svg";
+import iconDrop from "@/assets/svgs/icon_drop.svg";
+import iconPlug from "@/assets/svgs/icon_plug.svg";
+import iconHand from "@/assets/svgs/icon_hand.svg";
+import iconSun from "@/assets/svgs/icon_sun.svg";
+import iconHammer from "@/assets/svgs/icon_hammer.svg";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="flex flex-col items-center">
+  <h2
+    class="font-title text-grey-950 uppercase pt-12 md:px-8 mb-4 text-3xl text-center md:text-4xl md:text-[2.5rem] md:pb-6 xl:max-w-5xl"
+  >
+    {t("sustainability.title")}
+  </h2>
+  <div
+    class="characteristics grid grid-cols-1 md:grid-cols-3 gap-8 md:px-10 max-w-5xl"
+  >
+    <div class="">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__house w-16"
+          src={iconHouse}
+          alt="House Image"
+        />
+      </div>
+      <p class="text-center">
+        {t("sustainability.card1")}
+      </p>
+    </div>
+    <div class="">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__drop w-16"
+          src={iconDrop}
+          alt="Drop Image"
+        />
+      </div>
+      <p class="text-center">
+        {t("sustainability.card2")}
+      </p>
+    </div>
+    <div class="">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__plug w-16"
+          src={iconPlug}
+          alt="Plug Image"
+        />
+      </div>
+      <p class="text-center">
+        {t("sustainability.card3")}
+      </p>
+    </div>
+    <div class="">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__hand w-16"
+          src={iconHand}
+          alt="Hand Image"
+        />
+      </div>
+      <p class="text-center">
+        {t("sustainability.card4")}
+      </p>
+    </div>
+    <div class="">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__sun w-16"
+          src={iconSun}
+          alt="Sun Image"
+        />
+      </div>
+      <p class="text-center">{t("sustainability.card5")}</p>
+    </div>
+    <div class="">
+      <div class="flex flex-col items-center pt-4 pb-4">
+        <Image
+          class="characteristics__hammer w-16"
+          src={iconHammer}
+          alt="Hammer Image"
+        />
+      </div>
+      <p class="text-center">{t("sustainability.card6")}</p>
+    </div>
+  </div>
+</div>
+<style></style>
