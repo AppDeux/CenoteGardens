@@ -61,17 +61,18 @@ export const ui = {
       "<b>Investing in Cenote Gardens</b> presents an exceptional opportunity to <b>capitalize on the upside potential of Tulum's growth.</b>",
     "locationSection.title": "PREMIUM LOCATION",
     "locationSection.desc":
-      "<b>Cenote Gardens is</b> located in Jacinto Pat, <b>15 minutes away from Tulum.</b> An untapped region that emerges as a revitalized sanctuary. It offers atranquil haven without sacrificing accessibility to essential amenities.",
+      "Cenote Gardens is located in the Cenote Region, 12 minutes away from Downtown Tulum. An untapped region that emerges as a revitalized sanctuary. It offers a tranquil haven without sacrificing accessibility to essential amenities.",
     "locationSection.desc2":
       "Surrounded by the lively jungle and the enchanting allure of cenotes, residents are seamlessly connected to nature. At the same time, nearby Soliman Bay Beach is a constant reminder of the region's coastal charm.",
     "locationSection.desc3":
       "<b>Jacinto Pat</b> prioritizes <b>sustainability and low construction density</b>, steering clear of the pitfalls that have plagued Tulum's development inrecent years.",
     "locationSection.desc4":
-      "The Jacinto Pat region embodies more than just a specific place on a map, it offers a blueprint for an enriched and revitalized way of life.",
+      "The Cenote Region region embodies more than just a specific place on a map, it offers a blueprint for an enriched and revitalized way of life.",
     "locationSection.cardTitle1": "Dedication to sustainability",
     "locationSection.cardTitle2": "Strategic seclusion from urban chaos",
     "locationSection.cardTitle3":
       "Aligned with the natural rhythms of the Riviera Maya",
+    "locationSection.linkGoogleMaps": "View location on Google Maps",
     "availabilitySection.title": "Availability",
     "availabilitySection.desc":
       "Cenote Gardens is the perfect canvas for your dream home. Every lot offers ample space, ranging from <b>250 sq m to 600 sq m</b>, providing you with the flexibility to design and create your ideal living environment. Choose it as your gateway to a <b>lifestyle of tranquility, luxury, and investment potential.</b>",
@@ -166,18 +167,18 @@ export const ui = {
     "amenitiesSection.title": "Comodidades de última generación",
     "amenitiesSection.card1.title": "Bienestar",
     "amenitiesSection.card1.desc":
-      "Temazcal, inmersión en hielo y Área de Meditación Holística.",
+      "Temazcal, Inmersión en hielo, Spa, Zen & meditación y Yoga.",
     "amenitiesSection.card2.title": "Conexión con la naturaleza",
     "amenitiesSection.card2.desc":
-      "Cenote, Fogata, Mirador y Área para mascotas.",
+      "Cenote privado, Fogata, Torre mirador, Huerto comunitario y Cascada amazónica.",
     "amenitiesSection.card3.title": "Deportes y recreación",
     "amenitiesSection.card3.desc":
-      "Pickleball, Gimnasio al aire libre, Zona de hamacas y Espacio de co-working.",
+      "Pickleball en la selva, Gimnasio al aire libre, Espacio para co-working, Área de hamacas y Bar para bienestar.",
     "amenitiesCarousel.title":
       "<b>Invertir en Cenote Gardens</b> representa una oportunidad excepcional de <b>capitalizar el potencial alcista del crecimiento de Tulum.</b>",
     "locationSection.title": "UBICACIÓN PREMIUM",
     "locationSection.desc":
-      "<b>Cenote Gardens se ubica</b> en Jacinto Pat, <b>a 15 minutos de distancia de Tulum.</b> Una región virgen que emerge como un santuario en el que puedes <b> vivir en un lugar tranquilo sin sacrificar la accesibilidad </b> a los servicios esenciales.",
+      "Cenote Gardens se encuentra en la región Cenote, a 12 minutos del centro de Tulum. Una región sin explotar que emerge como un santuario revitalizado y ofrece un refugio tranquilo sin sacrificar la accesibilidad a los servicios esenciales.",
     "locationSection.desc2":
       "Rodeado por el encanto de la selva y los cenotes, los residentes están perfectamente conectados con la naturaleza. Además, la cercanía con Soliman Bay es un recordatorio de la magia costera de la región.",
     "locationSection.desc3":
@@ -187,6 +188,7 @@ export const ui = {
     "locationSection.cardTitle1": "DiseÑado para ser sustentable",
     "locationSection.cardTitle2": "Aislamiento del caos urbano",
     "locationSection.cardTitle3": "Alineado al ritmo de la Riviera Maya",
+    "locationSection.linkGoogleMaps": "Ver ubicación en google maps",
     "availabilitySection.title": "Disponibilidad",
     "availabilitySection.desc":
       "Cenote Gardens es el lugar perfecto para tu hogar soñado. Cada terreno ofrece un espacio, que va desde <b>250-600 m²</b>, brindándote la flexibilidad para diseñar y crear tu entorno ideal. Elígelo como el camino a un <b>estilo de vida de tranquilidad, lujo y potencial de inversión.</b>",
