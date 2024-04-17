@@ -111,8 +111,7 @@ export const ui = {
       "“Destination with the 4th most reservations globally for New Years.”",
     "investSection.financialTimes":
       "“One of the markets with the most growth in the world.”",
-    "investSection.tripAdvisor":
-      "“Best up and coming travel destination in the world.”",
+    "investSection.tripAdvisor": "“Best global honeymoon destination.”",
     "investSection.cnbc": "“Most tourist destination in the planet.”",
     "investSection.wordTravel":
       "“Leading beach destination in Mexico and Central America.”",
