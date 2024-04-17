@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getLangFromUrl } from "@/i18n/utils";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 // Componente funcional que representa un círculo en el SVG
 function Circle({ cx, cy, r, minutes, placeName, handleClick, fill }) {
@@ -20,6 +20,7 @@ function Circle({ cx, cy, r, minutes, placeName, handleClick, fill }) {
 
 const MapPointsInterestDesk = ({ url }) => {
   const lang = getLangFromUrl(url);
+  const t = useTranslations(lang);
 
   const [tooltip, setTooltip] = useState({
     x: 0,
@@ -814,6 +815,17 @@ const MapPointsInterestDesk = ({ url }) => {
         }}
       >
         {tooltip.text}
+      </div>
+
+      <div className="text-end pt-1">
+        <a
+          className="underline hover:text-accent-500"
+          href="https://maps.app.goo.gl/2jYDVhDxmBudcALt8?g_st=iw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("locationSection.linkGoogleMaps")}
+        </a>
       </div>
     </section>
   );
