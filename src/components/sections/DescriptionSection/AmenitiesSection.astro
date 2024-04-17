@@ -30,10 +30,10 @@ const t = useTranslations(lang);
           src={iconWorld}
           alt="Icon World"
         />
-        <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
+        <h2 class="font-subtitle uppercase pb-2 text-xl">
           {t("amenitiesSection.card1.title")}
         </h2>
-        <hr class="bg-accent-700 w-16 h-[2px]" />
+        <hr class="bg-accent-700 w-16 h-[2px] mb-2" />
         <p class="pt-2">{t("amenitiesSection.card1.desc")}</p>
       </div>
       <div class="flex flex-col items-start pt-4 pb-4">
@@ -42,7 +42,7 @@ const t = useTranslations(lang);
           src={iconLeaves}
           alt="Icon LeaesiconLeaves"
         />
-        <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
+        <h2 class="font-subtitle uppercase pb-4 text-xl">
           {t("amenitiesSection.card2.title")}
         </h2>
         <hr class="bg-accent-700 w-16 h-[2px]" />
@@ -56,7 +56,7 @@ const t = useTranslations(lang);
           src={iconLine}
           alt="Icon Line"
         />
-        <h2 class="font-subtitle uppercase pb-4 text-lg md:text-base">
+        <h2 class="font-subtitle uppercase pb-4 text-xl">
           {t("amenitiesSection.card3.title")}
         </h2>
         <hr class="bg-accent-700 w-16 h-[2px]" />
@@ -66,7 +66,7 @@ const t = useTranslations(lang);
       </div>
     </div>
     <div class="px-4 md:px-8">
-      <p class="text-lg" set:html={t("amenitiesCarousel.title")} />
+      <p class="text-base" set:html={t("amenitiesCarousel.title")} />
     </div>
   </div>
 </section>
