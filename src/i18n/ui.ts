@@ -224,7 +224,7 @@ export const ui = {
       "“4° destino con el mayor número de reservas a nivel mundial para NYE”",
     "investSection.financialTimes":
       "“Uno de los mercados con más crecimiento en el mundo.”",
-    "investSection.tripAdvisor": "“Mejor destino de viaje en el mundo.”",
+    "investSection.tripAdvisor": "“Mejor destino mundial de luna de miel.”",
     "investSection.cnbc": "“Destino más turístico del planeta.”",
     "investSection.wordTravel":
       "“Destino de playa líder en México y Centro América.”",
