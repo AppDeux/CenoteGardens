@@ -109,7 +109,7 @@ const Header = ({ url }) => {
             ${showMobileMenu ? "Header__content__links--active" : "hidden"}
             transition-all delay-300 ease-in
             lg:h-14
-            lg:order-2 lg:col-span-7 w-full lg:pr-8 lg:text-sm  lg:text-center
+            lg:order-2 lg:col-span-7 w-full lg:pr-8 lg:text-base lg:text-center
             lg:flex lg:items-center lg:justify-evenly lg:gap-8`}
         >
           <a className="cursor-pointer" onClick={scrollToTop}>

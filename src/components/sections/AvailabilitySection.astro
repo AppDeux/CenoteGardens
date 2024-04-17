@@ -20,9 +20,11 @@ const t = useTranslations(lang);
       <div
         class="md:pt-4 flex flex-col items-start md:col-span-2 order-1 md:mr-12"
       >
-        <h2 class="font-title text-grey-950 uppercase text-3xl mb-4 md:text-5xl md:mb-12">
+        <h1
+          class="w-full font-title text-grey-950 uppercase text-center text-3xl md:text-5xl mb-4 md:mb-12"
+        >
           {t("availabilitySection.title")}
-        </h2>
+        </h1>
         <p set:html={t("availabilitySection.desc")} />
       </div>
       <div class="order-3 md:col-span-2">
