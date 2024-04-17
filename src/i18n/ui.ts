@@ -65,7 +65,7 @@ export const ui = {
     "locationSection.desc2":
       "Surrounded by the lively jungle and the enchanting allure of cenotes, residents are seamlessly connected to nature. At the same time, nearby Soliman Bay Beach is a constant reminder of the region's coastal charm.",
     "locationSection.desc3":
-      "<b>Jacinto Pat</b> prioritizes <b>sustainability and low construction density</b>, steering clear of the pitfalls that have plagued Tulum's development inrecent years.",
+      "<b>Cenote Region</b> prioritizes <b>sustainability and low construction density</b>, steering clear of the pitfalls that have plagued Tulum's development inrecent years.",
     "locationSection.desc4":
       "The Cenote Region region embodies more than just a specific place on a map, it offers a blueprint for an enriched and revitalized way of life.",
     "locationSection.cardTitle1": "Dedication to sustainability",
@@ -182,9 +182,9 @@ export const ui = {
     "locationSection.desc2":
       "Rodeado por el encanto de la selva y los cenotes, los residentes están perfectamente conectados con la naturaleza. Además, la cercanía con Soliman Bay es un recordatorio de la magia costera de la región.",
     "locationSection.desc3":
-      "<b>Jacinto Pat</b> prioriza la <b>sostenibilidad y construcción controlada</b> para evitar la actual densificación del renombrado Tulum.",
+      "<b>Cenote Region</b> prioriza la <b>sostenibilidad y construcción controlada</b> para evitar la actual densificación del renombrado Tulum.",
     "locationSection.desc4":
-      "Jacinto Pat es más que un lugar en el mapa, ofrece un estilo de vida revitalizante.",
+      "Cenote Region es más que un lugar en el mapa, ofrece un estilo de vida revitalizante.",
     "locationSection.cardTitle1": "DiseÑado para ser sustentable",
     "locationSection.cardTitle2": "Aislamiento del caos urbano",
     "locationSection.cardTitle3": "Alineado al ritmo de la Riviera Maya",
