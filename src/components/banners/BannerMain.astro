@@ -10,14 +10,33 @@ const optimizedBackground = await getImage({
 ---
 
 <section
-  class="w-full relative
-    h-[26rem] md:h-[32rem] lg:h-[36rem]
-    bg-cover bg-center"
+  class="w-full relative h-[26rem] md:h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section"
   style={`background-image: url(${optimizedBackground.src});`}
 >
-  <div class="flex h-full justify-center">
-    <Image src={logoHeader} alt="Logo Cenotes" />
+  <div class="flex h-full px-4 md:px-0 justify-center items-center banner-content">
+    <Image id="logoImage" src={logoHeader} alt="Logo Cenotes" />
   </div>
 </section>
 
-<style></style>
+<script>
+  const logoImage = document.getElementById('logoImage');
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY
+
+    if (currentScroll > 20) {
+      // Scroll hacia abajo
+      logoImage.style.opacity = '0';
+    } else {
+      // Scroll hacia arriba
+      logoImage.style.opacity = '1';
+    }
+  });
+</script>
+
+<style>
+  #logoImage {
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>
+
