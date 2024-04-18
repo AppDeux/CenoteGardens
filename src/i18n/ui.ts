@@ -91,10 +91,10 @@ export const ui = {
     "mapPlanoModal.price": "Price USD",
     "investSection.title": "Why invest in Tulum?",
     "investSection.desc": `
-      Government initiatives like the <b>Tulum International Airport, Mayan Train, and Jaguar Park are
-      expected to increase the flow of tourism in Tulum</b>, with the new airport anticipated to attract over <b>5 million new visitors</b> annually.<br />
-      The expansion of global companies into Tulum underscores <b>confidence in the market</b>, while the potential influx of tourists from India, Japan, and China
-      further enhances this promising outlook.
+    Government initiatives like the Tulum International Airport, Mayan Train, and Jaguar Park are expected to increase the flow of tourism in Tulum by more than 10 million tourists per year.
+    <br/>
+    <br/>
+    The expansion of global companies into Tulum underscores confidence in the market, while the potential influx of tourists from India, Japan, and China further enhances this promising outlook.
     `,
     "investSection.card1.title": "#1 Ranking",
     "investSection.card1.desc": "Tourist destination in Mexico.",
@@ -107,7 +107,7 @@ export const ui = {
     "investSection.card4.title": "87% of tourists",
     "investSection.card4.desc": "Are foreigners with high purchase power.",
     "investSection.desc2":
-      "With the recent announcement of the government infrastructure program, Cenote Gardens is not just about sustainable luxury living; it is a savvy investment in a tangible asset poised for appreciation.",
+      "Cenote Gardens is not just about sustainable luxury living; it is a savvy investment in a tangible asset poised for appreciation.",
     "investSection.subTitle": "Tulum industry awards & media recognitions",
     "investSection.airBnB":
       "“Destination with the 4th most reservations globally for New Years.”",
@@ -207,8 +207,10 @@ export const ui = {
     "mapPlanoModal.price": "Precio USD",
     "investSection.title": "¿Por qué invertir en Tulum?",
     "investSection.desc": `
-    El <b>Aeropuerto Internacional de Tulum, el Tren Maya y el Parque Jaguar están incrementando el flujo turístico en Tulum.</b> Se pronostica que el nuevo aeropuerto atraiga a más de <b> 5 millones de visitantes</b> anuales.<br />
-    Además, la expansión de empresas globales en Tulum subraya la <b>confianza en el mercado</b>, mientras que el potencial <b>aumento de turistas</b> provenientes de India, Japón y China ofrece un panorama prometedor.
+    Se espera que iniciativas gubernamentales como el Aeropuerto Internacional de Tulum, el Tren Maya y el Parque Jaguar aumenten el flujo turístico en Tulum en más de 10 millones de turistas al año.
+    <br />
+    <br />
+    La expansión de empresas globales en Tulum subraya la confianza en el mercado; mientras que la posible afluencia de turistas de la India, Japón y China realza aún más esta perspectiva prometedora.
     `,
     "investSection.card1.title": "#1 en Ranking",
     "investSection.card1.desc": "Destino turístico en México.",
@@ -221,7 +223,7 @@ export const ui = {
     "investSection.card4.title": "87% de los turistas",
     "investSection.card4.desc": "Son extranjeros con alto poder adquisitivo.",
     "investSection.desc2":
-      "Con el reciente anuncio del programa de infraestructura del gobierno, Cenote Gardens no solo se trata de un estilo de vida lujoso y sostenible; es una inversión inteligente en un activo tangible.",
+      "Cenote Gardens no solo se trata de un estilo de vida lujoso y sostenible; es una inversión inteligente en un activo tangible.",
     "investSection.subTitle":
       "Premios de la industria en Tulum y reconocimientos de medios",
     "investSection.airBnB":
