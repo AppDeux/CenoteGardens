@@ -6,9 +6,10 @@ import GlobalStyles from "@/styles/GlobalStyles.astro";
 
 interface Props {
   title: string;
+  header: boolean;
 }
 
-const { title } = Astro.props;
+const { title, header } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 ---
@@ -17,7 +18,10 @@ const lang = getLangFromUrl(Astro.url);
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Escape to a world where nature embraces contemporary comfort—nestled in the vibrant jungles of Tulum" />
+    <meta
+      name="description"
+      content="Escape to a world where nature embraces contemporary comfort—nestled in the vibrant jungles of Tulum"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
@@ -54,7 +58,7 @@ const lang = getLangFromUrl(Astro.url);
         style="display:none;visibility:hidden"></iframe></noscript
     >
 
-    <Header client:load url={Astro.url} />
+    {header && <Header client:load url={Astro.url} />}
 
     <main class="flex flex-col items-center">
       <slot />
