@@ -180,15 +180,15 @@ export const ui = {
     "locationSection.desc":
       "Cenote Gardens se encuentra en la región Cenote, a 12 minutos del centro de Tulum. Una región sin explotar que emerge como un santuario revitalizado y ofrece un refugio tranquilo sin sacrificar la accesibilidad a los servicios esenciales.",
     "locationSection.desc2":
-      "Rodeado por el encanto de la selva y los cenotes, los residentes están perfectamente conectados con la naturaleza. Además, la cercanía con Soliman Bay es un recordatorio de la magia costera de la región.",
+      "Rodeado por el encanto de la selva y los cenotes, los residentes están perfectamente conectados con la naturaleza. Además, la cercanía con Bahía Soliman es un recordatorio de la magia costera de la región.",
     "locationSection.desc3":
-      "<b>Cenote Region</b> prioriza la <b>sostenibilidad y construcción controlada</b> para evitar la actual densificación del renombrado Tulum.",
+      "<b>La Región Cenote</b> prioriza la <b>sostenibilidad y construcción controlada</b> para evitar la actual densificación del renombrado Tulum.",
     "locationSection.desc4":
-      "Cenote Region es más que un lugar en el mapa, ofrece un estilo de vida revitalizante.",
+      "La Región Cenote es más que un lugar en el mapa, ofrece un estilo de vida revitalizante.",
     "locationSection.cardTitle1": "DiseÑado para ser sustentable",
     "locationSection.cardTitle2": "Aislamiento del caos urbano",
     "locationSection.cardTitle3": "Alineado al ritmo de la Riviera Maya",
-    "locationSection.linkGoogleMaps": "Ver ubicación en google maps",
+    "locationSection.linkGoogleMaps": "Ver ubicación en google maps",
     "availabilitySection.title": "Disponibilidad",
     "availabilitySection.desc":
       "Cenote Gardens es el lugar perfecto para tu hogar soñado. Cada terreno ofrece un espacio, que va desde <b>250-600 m²</b>, brindándote la flexibilidad para diseñar y crear tu entorno ideal. Elígelo como el camino a un <b>estilo de vida de tranquilidad, lujo y potencial de inversión.</b>",
