@@ -154,7 +154,7 @@ export const ui = {
     "parallaxBanner.title":
       "Cenote Gardens ofrece un lugar extraordinario para vivir mientras preserva la madre naturaleza.",
     "promotionSection.title":
-      "¿Por qué Cenote Gardens es una gran oportunidad para invertir en Tulum?",
+      "¿Por qué Cenote Gardens es una gran oportunidad para invertir?",
     "promotionSection.card1.title": "VisiÓn de un estilo de vida sostenible",
     "promotionSection.card1.desc":
       "Nuestra comunidad es un testimonio de vida sostenible que adopta los principios de diseño<b> eco-consciente</b>. Nos esforzamos por <b>armonizar con el entorno natural</b>, preservando su belleza para las generaciones futuras.",
