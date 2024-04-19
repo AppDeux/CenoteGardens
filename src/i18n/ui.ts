@@ -50,13 +50,13 @@ export const ui = {
     "amenitiesSection.title": "State-of-the-art amenities",
     "amenitiesSection.card1.title": "Wellness",
     "amenitiesSection.card1.desc":
-      "Temazcal, Ice Plunge, Spa, Zen & meditation and Yoga",
+      "Temazcal<br/>Ice Plunge<br/>Spa<br/>Zen & meditation<br/>Yoga",
     "amenitiesSection.card2.title": "Nature connection",
     "amenitiesSection.card2.desc":
-      "Private Cenote, Fire pit, Mirador Tower, Community harvest garden and Amazonic waterfall.",
+      "Private Cenote<br/>Fire pit<br/>Mirador Tower<br/>Community harvest garden<br/>Amazonic waterfall",
     "amenitiesSection.card3.title": "Sports & recreation",
     "amenitiesSection.card3.desc":
-      "Jungle Pickleball, Outdoor gym, Co-working space, Hammock area and Wellness bar",
+      "Jungle Pickleball<br/>Outdoor gym<br/>Co-working space<br/>Hammock area<br/>Wellness bar",
     "amenitiesCarousel.title":
       "<b>Investing in Cenote Gardens</b> presents an exceptional opportunity to <b>capitalize on the upside potential of Tulum's growth.</b>",
     "locationSection.title": "PREMIUM LOCATION",
@@ -167,13 +167,13 @@ export const ui = {
     "amenitiesSection.title": "Comodidades de última generación",
     "amenitiesSection.card1.title": "Bienestar",
     "amenitiesSection.card1.desc":
-      "Temazcal, Inmersión en hielo, Spa, Zen & meditación y Yoga.",
+      "Temazcal<br/>Inmersión en hielo<br/>Spa<br/>Zen & meditación<br/>Yoga",
     "amenitiesSection.card2.title": "Conexión con la naturaleza",
     "amenitiesSection.card2.desc":
-      "Cenote privado, Fogata, Torre mirador, Huerto comunitario y Cascada amazónica.",
+      "Cenote privado<br/>Fogata<br/>Torre mirador<br/>Huerto comunitario<br/>Cascada amazónica",
     "amenitiesSection.card3.title": "Deportes y recreación",
     "amenitiesSection.card3.desc":
-      "Pickleball en la selva, Gimnasio al aire libre, Espacio para co-working, Área de hamacas y Bar para bienestar.",
+      "Pickleball en la selva<br/>Gimnasio al aire libre<br/>Espacio para co-working<br/>Área de hamacas<br/>Bar para bienestar",
     "amenitiesCarousel.title":
       "<b>Invertir en Cenote Gardens</b> representa una oportunidad excepcional de <b>capitalizar el potencial alcista del crecimiento de Tulum.</b>",
     "locationSection.title": "UBICACIÓN PREMIUM",

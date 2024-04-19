@@ -26,7 +26,7 @@ const t = useTranslations(lang);
     >
       <div class="flex flex-col items-start pt-4 pb-4">
         <Image
-          class="amenities__iconWorld w-16 pb-4"
+          class="amenities__iconWorld w-16 mb-2 md:mb-4"
           src={iconWorld}
           alt="Icon World"
         />
@@ -34,35 +34,31 @@ const t = useTranslations(lang);
           {t("amenitiesSection.card1.title")}
         </h2>
         <hr class="bg-accent-700 w-16 h-[2px] mb-2" />
-        <p class="pt-2">{t("amenitiesSection.card1.desc")}</p>
+        <p class="pt-2" set:html={t("amenitiesSection.card1.desc")} />
       </div>
       <div class="flex flex-col items-start pt-4 pb-4">
         <Image
-          class="amenities__iconLeaves w-16 pb-4 md:pt-4 md:pb-4"
+          class="amenities__iconLeaves w-16 mb-2 md:mb-4"
           src={iconLeaves}
           alt="Icon LeaesiconLeaves"
         />
         <h2 class="font-subtitle uppercase pb-4 text-xl">
           {t("amenitiesSection.card2.title")}
         </h2>
-        <hr class="bg-accent-700 w-16 h-[2px]" />
-        <p class="pt-2">
-          {t("amenitiesSection.card2.desc")}
-        </p>
+        <hr class="bg-accent-700 w-16 h-[2px] mb-2" />
+        <p class="pt-2" set:html={t("amenitiesSection.card2.desc")} />
       </div>
       <div class="flex flex-col items-start pt-4 pb-4">
         <Image
-          class="amenities__iconLine w-16 pb-4 md:pb-6 md:pt-6"
+          class="amenities__iconLine w-16 mb-2 md:mb-4"
           src={iconLine}
           alt="Icon Line"
         />
         <h2 class="font-subtitle uppercase pb-4 text-xl">
           {t("amenitiesSection.card3.title")}
         </h2>
-        <hr class="bg-accent-700 w-16 h-[2px]" />
-        <p class="pt-2">
-          {t("amenitiesSection.card3.desc")}
-        </p>
+        <hr class="bg-accent-700 w-16 h-[2px] mb-2" />
+        <p class="pt-2" set:html={t("amenitiesSection.card3.desc")} />
       </div>
     </div>
     <div class="px-4 md:px-8">
