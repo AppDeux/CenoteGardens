@@ -92,6 +92,8 @@ const Header = ({ url }) => {
             onClick={() => {
               setShowMobileMenu(!showMobileMenu);
             }}
+            label="false"
+            role="button"
           />
         </div>
 

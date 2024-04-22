@@ -1,6 +1,10 @@
 .Header {
   &__content {
     &__links {
+      a:hover {
+        @apply text-primary-100;
+      }
+
       @media (max-width: 1023px) {
         position: absolute;
         z-index: 10;
