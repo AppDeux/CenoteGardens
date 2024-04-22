@@ -59,7 +59,8 @@ const Header = ({ url }) => {
     }
   }, [scrollNumber, showMobileMenu]);
 
-  const scrollToTop = () => {
+  const scrollToTop = (e) => {
+    e.preventDefault();
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -112,7 +113,7 @@ const Header = ({ url }) => {
             lg:order-2 lg:col-span-7 w-full lg:pr-8 lg:text-sm xl:text-base lg:text-center
             lg:flex lg:items-center lg:justify-evenly lg:gap-8`}
         >
-          <a className="cursor-pointer" onClick={scrollToTop}>
+          <a href="/" className="cursor-pointer" onClick={scrollToTop}>
             {t("nav.home")}
           </a>
           <a href="#location">{t("nav.location")}</a>
