@@ -15,11 +15,11 @@ const t = useTranslations(lang);
 >
   <div class="amenities_section text-accent-700 text-xs md:text-xs">
     <div>
-      <h1
+      <h2
         class="font-title text-center text-grey-950 uppercase px-4 md:px-8 mb-4 text-3xl md:text-4xl md:text-[2.5rem] md:pb-6"
       >
         {t("amenitiesSection.title")}
-      </h1>
+      </h2>
     </div>
     <div
       class="chance grid grid-cols-1 md:grid-cols-3 md:gap-y-0 md:gap-x-0 mb-12 px-4 md:px-8"
@@ -30,11 +30,11 @@ const t = useTranslations(lang);
           src={iconWorld}
           alt="Icon World"
         />
-        <h2
+        <h3
           class="font-subtitle uppercase md:flex md:items-end md:h-14 mb-4 text-xl"
         >
           {t("amenitiesSection.card1.title")}
-        </h2>
+        </h3>
         <hr class="bg-accent-700 w-16 h-[2px] mb-2" />
         <p class="pt-2" set:html={t("amenitiesSection.card1.desc")} />
       </div>
@@ -44,11 +44,11 @@ const t = useTranslations(lang);
           src={iconLeaves}
           alt="Icon LeaesiconLeaves"
         />
-        <h2
+        <h3
           class="font-subtitle uppercase md:flex md:items-end md:h-14 mb-4 text-xl"
         >
           {t("amenitiesSection.card2.title")}
-        </h2>
+        </h3>
         <hr class="bg-accent-700 w-16 h-[2px] mb-2" />
         <p class="pt-2" set:html={t("amenitiesSection.card2.desc")} />
       </div>
@@ -58,11 +58,11 @@ const t = useTranslations(lang);
           src={iconLine}
           alt="Icon Line"
         />
-        <h2
+        <h3
           class="font-subtitle uppercase md:flex md:items-end md:h-14 mb-4 text-xl"
         >
           {t("amenitiesSection.card3.title")}
-        </h2>
+        </h3>
         <hr class="bg-accent-700 w-16 h-[2px] mb-2" />
         <p class="pt-2" set:html={t("amenitiesSection.card3.desc")} />
       </div>

@@ -23,11 +23,11 @@ const t = useTranslations(lang);
       />
     </div>
     <div>
-      <h1
+      <h2
         class="font-title text-grey-950 uppercase pt-12 md:px-24 mb-4 text-3xl text-center md:text-4xl md:text-[2.5rem] md:pb-6"
       >
         {t("promotionSection.title")}
-      </h1>
+      </h2>
     </div>
     <div
       class="chance grid grid-cols-1 md:grid-cols-3 md:gap-y-0 md:gap-x-4 mb-12 px-4 md:px-8"
@@ -38,11 +38,9 @@ const t = useTranslations(lang);
           src={iconLeaves}
           alt="Icon Leaves"
         />
-        <h2
-          class="font-subtitle uppercase pb-4 text-xl"
-        >
+        <h3 class="font-subtitle uppercase pb-4 text-xl">
           {t("promotionSection.card1.title")}
-        </h2>
+        </h3>
         <p set:html={t("promotionSection.card1.desc")} />
       </div>
 
@@ -52,9 +50,9 @@ const t = useTranslations(lang);
           src={iconConectivity}
           alt="Icon Conectivity"
         />
-        <h2 class="font-subtitle uppercase pb-4 text-xl">
+        <h3 class="font-subtitle uppercase pb-4 text-xl">
           {t("promotionSection.card2.title")}
-        </h2>
+        </h3>
         <p set:html={t("promotionSection.card2.desc")} />
       </div>
 
@@ -64,9 +62,9 @@ const t = useTranslations(lang);
           src={iconDome}
           alt="Icon Dome"
         />
-        <h2 class="font-subtitle uppercase pb-4 text-xl">
+        <h3 class="font-subtitle uppercase pb-4 text-xl">
           {t("promotionSection.card3.title")}
-        </h2>
+        </h3>
         <p set:html={t("promotionSection.card3.desc")} />
       </div>
     </div>
