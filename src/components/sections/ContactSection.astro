@@ -1,11 +1,11 @@
 ---
-import parallaxBg from "@/assets/imgs/Contacto.jpg";
+import parallaxBg from "@/assets/imgs/ContactoBg.webp";
 import { getImage } from "astro:assets";
 import ContactForm from "../form/ContactForm.astro";
 
 const optimizedBackground = await getImage({
   src: parallaxBg,
-  format: "jpg",
+  format: "webp",
 });
 
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";

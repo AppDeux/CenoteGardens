@@ -1,11 +1,11 @@
 ---
 import { Image, getImage } from "astro:assets";
 import logoHeader from "@/assets/svgs/logo_header.svg";
-import imgBannerMain from "@/assets/imgs/bgBannerMain.jpg";
+import imgBannerMain from "@/assets/imgs/bgBannerMain.webp";
 
 const optimizedBackground = await getImage({
   src: imgBannerMain,
-  format: "jpg",
+  format: "webp",
 });
 ---
 
