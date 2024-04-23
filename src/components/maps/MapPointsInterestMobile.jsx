@@ -819,7 +819,7 @@ const MapPointsInterestDesk = ({ url }) => {
 
       <div className="text-end pt-1">
         <a
-          className="underline hover:text-accent-500"
+          className="text-accent-800 hover:underline"
           href="https://maps.app.goo.gl/2jYDVhDxmBudcALt8?g_st=iw"
           target="_blank"
           rel="noopener noreferrer"
