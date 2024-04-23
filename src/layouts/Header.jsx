@@ -99,7 +99,7 @@ const Header = ({ url }) => {
 
         <div className="order-2 lg:order-1 col-span-3 lg:col-span-3">
           <img
-            className={`max-w-48 w-full lg:max-w-52
+            className={`w-44 md:w-48  lg:w-52
             ${showMobileMenu || scrollNumber > 20 ? "opacity-100" : "opacity-0"}
             transition-opacity delay-300 ease-linear`}
             src={logoHeader.src}
