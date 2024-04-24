@@ -792,20 +792,6 @@ const MapPointsInterestDesk = ({ url }) => {
             <circle cx="40" cy="712.371" r="8" fill="#FAB10B" />
           </g>
         )}
-        <defs>
-          <pattern
-            id="pattern0_601_810"
-            patternContentUnits="objectBoundingBox"
-            width="1"
-            height="1"
-          >
-            <use
-              xlinkHref="#image0_601_810"
-              transform="matrix(0.000983947 0 0 0.000760456 -0.996536 0)"
-            />
-          </pattern>
-          <image id="image0_601_810" width="100%" height="100%" />
-        </defs>
       </svg>
 
       <div

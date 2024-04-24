@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import MapPointsDesk from "@/assets/imgs/MapPointsDesk.webp";
 
 // Componente funcional que representa un círculo en el SVG
 function Circle({ cx, cy, r, minutes, placeName, handleMouseOver, fill }) {
@@ -60,8 +61,14 @@ const MapPointsInterestDesk = ({ url }) => {
         viewBox="0 0 1440 632"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
+        style={{
+          backgroundImage: `url(${MapPointsDesk.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPositionX: "center",
+          backgroundSize: "cover",
+          backgroundColor: "red",
+        }}
       >
-        <rect width="1440" height="632" fill="white" />
         <circle cx="979" cy="302" r="12" fill="#00ADEC" />
         <circle cx="942" cy="351" r="12" fill="#00ADEC" />
         <circle cx="826" cy="535" r="12" fill="#00ADEC" />
@@ -818,7 +825,7 @@ const MapPointsInterestDesk = ({ url }) => {
           </g>
         )}
 
-        <defs>
+        {/* <defs>
           <pattern
             id="pattern0"
             patternContentUnits="objectBoundingBox"
@@ -831,7 +838,7 @@ const MapPointsInterestDesk = ({ url }) => {
             />
           </pattern>
           <image id="image0_482_960" width="3000" height="1315" />
-        </defs>
+        </defs> */}
       </svg>
 
       <div
