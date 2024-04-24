@@ -9,7 +9,7 @@ import imgAmenidades from "@/data/imgAmenidades";
 <section class="container flex flex-col items-center px-4 md:px-0 mb-10">
   <DescriptionSectionMain />
   <div class="md:max-w-6xl w-full mb-16">
-    <SliderComponent client:load imgPaths={imgAmenidades} />
+    <SliderComponent client:idle imgPaths={imgAmenidades} />
   </div>
   <DescriptionSectionSecond />
   <DescriptionSectionFeatures />

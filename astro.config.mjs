@@ -9,5 +9,7 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   integrations: [react(), vue(), tailwind()],
   output: "server",
-  adapter: netlify()
+  adapter: netlify({
+    cacheOnDemandPages: true,
+  }),
 });
