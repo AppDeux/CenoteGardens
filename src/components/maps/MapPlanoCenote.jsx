@@ -63,30 +63,27 @@ const MapPlanoCenote = ({ url }) => {
           url={url}
         />
       )}
-
-      <svg
-        loading="lazy"
-        className="md:w-full mb-8"
-        viewBox="0 0 1440 878"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        style={{
-          backgroundImage: `url(${MapPlanoBg.src})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPositionX: "center",
-          backgroundSize: "cover",
-        }}
-      >
-        <g clipPath="url(#clip0_837_1042)">
-          {/* <rect width="1440" height="878" fill="#FFF9E1" />
-          <rect width="1440" height="878" fill="url(#pattern0_837_1042)" /> */}
-
-          {/* 14 circle */}
-          {mapPlanoData.map((e) => (
-            <Path key={e.id} {...e} />
-          ))}
-        </g>
-      </svg>
+      <div className="relative mb-8">
+        <img
+          src={MapPlanoBg.src}
+          loading="lazy"
+          className="absolute top-0 size-full object-cover"
+        />
+        <svg
+          loading="lazy"
+          className="md:w-full relative z-10"
+          viewBox="0 0 1440 878"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        >
+          <g clipPath="url(#clip0_837_1042)">
+            {/* 14 circle */}
+            {mapPlanoData.map((e) => (
+              <Path key={e.id} {...e} />
+            ))}
+          </g>
+        </svg>
+      </div>
 
       <div className="flex items-center mt-8`">
         <a
