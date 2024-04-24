@@ -9,7 +9,12 @@ import imgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
   class="w-full relative h-[26rem] md:h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
 >
   <picture>
-    <source media="(min-width: 480px)" srcset={imgBannerMain.src} />
+    <source
+      media="(min-width: 480px)"
+      srcset={imgBannerMain.src}
+      width="1920"
+      height="868"
+    />
 
     <Image
       class="absolute top-0 size-full object-cover"
