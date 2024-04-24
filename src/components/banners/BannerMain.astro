@@ -15,13 +15,20 @@ import imgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
       class="absolute top-0 size-full object-cover"
       src={imgBannerMobile}
       alt="bg"
+      loading="eager"
     />
   </picture>
 
   <div
     class="flex h-full px-4 md:px-0 justify-center items-center banner-content"
   >
-    <Image class="z-10" id="logoImage" src={logoHeader} alt="Logo Cenotes" />
+    <Image
+      class="z-10"
+      id="logoImage"
+      src={logoHeader}
+      alt="Logo Cenotes"
+      loading="eager"
+    />
   </div>
 </section>
 
