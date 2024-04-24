@@ -1,33 +1,41 @@
-.hs-form-private {
-  @apply px-4 sm:px-0 mb-6;
+.hbspt-form {
+  @apply lg:w-screen container flex justify-center;
+  .hs-form-private {
+    @apply container flex items-center flex-col px-4 sm:px-0 mb-6;
 
-  .form-columns-2 {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-2;
-  }
+    .form-columns-2 {
+      @apply grid grid-cols-1 md:grid-cols-2 gap-2;
+    }
 
-  .input {
-    margin: 0 0 1rem !important;
-  }
+    .input {
+      margin: 0 0 1rem !important;
+    }
 
-  .hs-form-field {
-    width: 100% !important;
-  }
+    .hs-form-field {
+      width: 100% !important;
+    }
 
-  label {
-    @apply flex font-sans text-base font-semibold mb-2;
-  }
+    fieldset {
+      width: 100%;
+      max-width: 710px;
+    }
 
-  input,
-  select {
-    border: 1px solid white;
-    width: 100% !important;
-    @apply bg-accent-700 text-white h-14 p-2;
-  }
+    label {
+      @apply flex font-sans text-base font-semibold mb-2;
+    }
 
-  input[type="submit"] {
-    cursor: pointer;
-    width: auto !important;
-    padding: 0 2rem;
-    @apply bg-primary-50 text-accent-700 hover:bg-primary-100 font-semibold;
+    input,
+    select {
+      border: 1px solid white;
+      width: 100% !important;
+      @apply bg-accent-700 text-white h-14 p-2;
+    }
+
+    input[type="submit"] {
+      cursor: pointer;
+      width: auto !important;
+      padding: 0 2rem;
+      @apply bg-primary-50 text-accent-700 hover:bg-primary-100 font-semibold;
+    }
   }
 }
