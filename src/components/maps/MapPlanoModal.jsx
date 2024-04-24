@@ -77,7 +77,9 @@ const MapPlanoModal = ({ modal, closeModal, url }) => {
       </div>
       <div className="flex flex-col items-center py-2 bg-white  h-full">
         <h5 className="font-light text-sm mb-1">{t("mapPlanoModal.height")}</h5>
-        <p>{modal.data.height} {t("mapPlanoModal.height.meters")}</p>
+        <p>
+          {modal.data.height} {t("mapPlanoModal.height.meters")}
+        </p>
       </div>
       <div className="flex flex-col items-center py-2 bg-white h-full">
         <h5 className="font-light text-sm mb-1">{t("mapPlanoModal.area")}</h5>

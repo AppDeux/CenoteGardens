@@ -65,6 +65,7 @@ const MapPlanoCenote = ({ url }) => {
       )}
 
       <svg
+        loading="lazy"
         className="md:w-full mb-8"
         viewBox="0 0 1440 878"
         xmlns="http://www.w3.org/2000/svg"

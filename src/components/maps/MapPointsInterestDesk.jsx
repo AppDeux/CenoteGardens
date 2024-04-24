@@ -57,6 +57,7 @@ const MapPointsInterestDesk = ({ url }) => {
   return (
     <section className="MapPointsInterest hidden md:block lg:px-8 xl:px-12 container overflow-hidden md:max-w-6xl">
       <svg
+        loading="lazy"
         className="md:w-full"
         viewBox="0 0 1440 632"
         xmlns="http://www.w3.org/2000/svg"
