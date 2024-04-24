@@ -27,9 +27,9 @@ const t = useTranslations(lang);
         </h2>
         <p set:html={t("availabilitySection.desc")} />
       </div>
-      <div class="order-3 md:col-span-2">
+      <div class="order-3 md:col-span-2 flex flex-col items-center md:block">
         <Image
-          class="location__peopleImage pt-8 w-[200px]"
+          class="location__peopleImage pt-8 w-3/4 md:w-[200px]"
           src={peopleImage}
           alt="people Image"
         />
@@ -37,9 +37,12 @@ const t = useTranslations(lang);
           <p set:html={t("availabilitySection.desc2")} />
         </div>
       </div>
-      <div class="col-span-1 order-2 md:row-span-2">
+      <div
+        class="flex flex-col items-center md:block
+      col-span-1 order-2 md:row-span-2"
+      >
         <Image
-          class="location__waterfallImage pt-4 lg:absolute md:w-[300px] mb-10 md:left-[65%]"
+          class="location__waterfallImage pt-4 lg:absolute w-full md:w-[300px] mb-10 md:left-[65%]"
           src={waterfallImage}
           alt="waterfall Image"
         />
