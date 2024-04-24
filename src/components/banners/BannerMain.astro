@@ -1,35 +1,42 @@
 ---
-import { Image, getImage } from "astro:assets";
+import { Image } from "astro:assets";
 import logoHeader from "@/assets/svgs/logo_header.svg";
 import imgBannerMain from "@/assets/imgs/bgBannerMain.webp";
-
-const optimizedBackground = await getImage({
-  src: imgBannerMain,
-  format: "webp",
-});
+import imgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
 ---
 
 <section
-  class="w-full relative h-[26rem] md:h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section"
-  style={`background-image: url(${optimizedBackground.src});`}
+  class="w-full relative h-[26rem] md:h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
 >
-  <div class="flex h-full px-4 md:px-0 justify-center items-center banner-content">
-    <Image id="logoImage" src={logoHeader} alt="Logo Cenotes" />
+  <picture>
+    <source media="(min-width: 480px)" srcset={imgBannerMain.src} />
+
+    <Image
+      class="absolute top-0 size-full object-cover"
+      src={imgBannerMobile}
+      alt="bg"
+    />
+  </picture>
+
+  <div
+    class="flex h-full px-4 md:px-0 justify-center items-center banner-content"
+  >
+    <Image class="z-10" id="logoImage" src={logoHeader} alt="Logo Cenotes" />
   </div>
 </section>
 
 <script>
-  const logoImage = document.getElementById('logoImage');
+  const logoImage = document.getElementById("logoImage");
 
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
 
     if (currentScroll > 20) {
       // Scroll hacia abajo
-      logoImage.style.opacity = '0';
+      logoImage.style.opacity = "0";
     } else {
       // Scroll hacia arriba
-      logoImage.style.opacity = '1';
+      logoImage.style.opacity = "1";
     }
   });
 </script>
@@ -39,4 +46,3 @@ const optimizedBackground = await getImage({
     transition: opacity 0.3s ease-in-out;
   }
 </style>
-
