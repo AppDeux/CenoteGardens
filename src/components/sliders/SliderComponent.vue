@@ -14,6 +14,7 @@
           loading="lazy"
           class="img"
           :alt="'img-carrousel-' + index"
+          sizes="(min-width: 1280px) 960px, (min-width: 1040px) 832px, (min-width: 780px) 736px, (min-width: 680px) 576px, (min-width: 480px) 88.89vw, calc(87.5vw - 27px)"
         />
       </div>
     </swiper-slide>
