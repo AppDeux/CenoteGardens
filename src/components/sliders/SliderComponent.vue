@@ -12,6 +12,7 @@
           :src="item.pathImg.src"
           class="img"
           :alt="'img-carrousel-' + index"
+          loading="lazy"
         />
       </div>
     </swiper-slide>
