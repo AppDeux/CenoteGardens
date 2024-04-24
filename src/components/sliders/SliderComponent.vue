@@ -8,12 +8,17 @@
   >
     <swiper-slide v-for="(item, index) in items" :key="index">
       <div class="slider-content">
-        <img
-          :src="item.pathImg.src"
-          class="img"
-          :alt="'img-carrousel-' + index"
-          loading="lazy"
-        />
+        <picture>
+          <!-- Imagen para Desk -->
+          <source media="(min-width: 768px)" :srcset="item.pathImg.src" />
+          <!-- Imagen para Mobile -->
+          <img
+            :src="item.pathImgMobile.src"
+            loading="lazy"
+            class="img"
+            :alt="'img-carrousel-' + index"
+          />
+        </picture>
       </div>
     </swiper-slide>
   </swiper>
