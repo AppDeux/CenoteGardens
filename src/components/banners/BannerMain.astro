@@ -6,17 +6,18 @@ import imgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
 ---
 
 <section
-  class="w-full relative h-[26rem] md:h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
+  class="w-full relative h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
 >
-  <Image
-    src={imgBannerMobile}
-    srcset={`${imgBannerMobile.src} 400w, ${imgBannerMain.src} 1920w`}
-    sizes="100vw"
-    alt="bg"
-    loading="eager"
-    class="absolute top-0 size-full object-cover"
-  />
-
+  <picture>
+    <source srcset={imgBannerMobile.src} media="(max-width: 400px)" />
+    <source srcset={imgBannerMain.src} media="(min-width: 401px)" />
+    <Image
+      src={imgBannerMobile}
+      alt="bg"
+      loading="eager"
+      class="absolute top-0 size-full object-cover"
+    />
+  </picture>
   <div
     class="flex h-full px-4 md:px-0 justify-center items-center banner-content"
   >

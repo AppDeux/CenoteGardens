@@ -11,7 +11,7 @@
         <img
           :src="item.pathImg.src"
           :srcset="`${item.pathImgMobile.src} 400w, ${item.pathImg.src} 960w`"
-          sizes="(min-width: 1280px) 960px, (min-width: 1040px) 832px, (min-width: 780px) 736px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
+          sizes="(min-width: 1280px) 960px, (min-width: 1080px) 832px, (min-width: 1040px) calc(1280vw - 12736px), (min-width: 780px) 736px, (min-width: 680px) 576px, (min-width: 340px) calc(93.75vw - 43px), 236px"
           loading="lazy"
           class="img"
           :alt="'img-carrousel-' + index"
