@@ -29,7 +29,7 @@ const MapPlanoModal = ({ modal, closeModal, url }) => {
     <div
       className={`
       transition-all z-10
-      MapPlanoCenote__modal ${modal.display} 
+      MapPlanoCenote__modal ${modal.display}
       grid grid-cols-2 items-center bg-slate-200 gap-0.5
       w-3/4 md:w-1/2 lg:w-1/3 font-semibold
       text-center
