@@ -26,7 +26,7 @@ import imgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
       id="logoImage"
       src={logoHeader}
       alt="Logo Cenotes"
-      loading="eager"
+      loading="lazy"
     />
   </div>
 </section>
@@ -36,7 +36,6 @@ import imgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
 
   window.addEventListener("scroll", () => {
     const currentScroll = window.scrollY;
-
     if (currentScroll > 20) {
       // Scroll hacia abajo
       logoImage.style.opacity = "0";
