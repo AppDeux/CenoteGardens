@@ -8,7 +8,7 @@ import netlify from "@astrojs/netlify";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), vue(), tailwind()],
-  output: "server",
+  output: "static",
   adapter: netlify({
     cacheOnDemandPages: true,
   }),
