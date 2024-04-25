@@ -13,18 +13,15 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<footer
-  class="footer_section w-full relative
-    px-4 md:px-0
-    bg-cover bg-center"
->
+<footer class="footer_section w-full relative
+    bg-cover bg-center">
   <Image
     src={imgFooterBannerMain}
     alt="footerbg"
     class="absolute top-0 size-full"
     loading="lazy"
   />
-  <div class="relative">
+  <div class="relative px-4 md:px-0">
     <div class="flex mt-10 mb-10 justify-center">
       <Image
         class="w-full max-w-md"
