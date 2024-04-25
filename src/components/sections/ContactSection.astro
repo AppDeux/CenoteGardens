@@ -1,7 +1,7 @@
 ---
 import bgContact from "@/assets/imgs/ContactoBg.webp";
 import { Image } from "astro:assets";
-import ContactForm from "../form/ContactForm.astro";
+import ContactForm from "../form/ContactForm";
 
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
@@ -34,7 +34,7 @@ const t = useTranslations(lang);
         {t("contactSection.desc")}
       </p>
     </div>
-    <ContactForm />
+    <ContactForm client:visible lang={lang} />
 
     <a href="tel:+52 777 223 5855" class="contact__phone p-4 flex gap-2 mb-4">
       <div class="icon">
