@@ -9,7 +9,7 @@
     <swiper-slide v-for="(item, index) in items" :key="index">
       <div class="slider-content">
         <img
-          :src="item.pathImg.src"
+          :src="item.pathImgMobile.src"
           :srcset="`${item.pathImgMobile.src} 400w, ${item.pathImg.src} 960w`"
           loading="lazy"
           class="img"

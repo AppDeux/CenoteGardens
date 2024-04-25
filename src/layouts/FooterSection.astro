@@ -1,16 +1,11 @@
 ---
-import { Image, getImage } from "astro:assets";
+import { Image } from "astro:assets";
 import logoHeader from "@/assets/svgs/logo_header.svg";
 import imgFooterBannerMain from "@/assets/imgs/bgFooterMain.webp";
 import IconFacebook from "@/assets/imgs/icon_facebook.webp";
 import Iconinstagram from "@/assets/imgs/icon_instagram.webp";
 import Icontiktok from "@/assets/imgs/icon_tiktok.webp";
 import Iconyoutube from "@/assets/imgs/icon_youtube.webp";
-
-const optimizedBackground = await getImage({
-  src: imgFooterBannerMain,
-  format: "webp",
-});
 
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
@@ -22,9 +17,14 @@ const t = useTranslations(lang);
   class="footer_section w-full relative
     px-4 md:px-0
     bg-cover bg-center"
-  style={`background-image: url(${optimizedBackground.src});`}
 >
-  <div>
+  <Image
+    src={imgFooterBannerMain}
+    alt="footerbg"
+    class="absolute top-0 size-full"
+    loading="lazy"
+  />
+  <div class="relative">
     <div class="flex mt-10 mb-10 justify-center">
       <Image
         class="w-full max-w-md"
