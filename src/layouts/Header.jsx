@@ -71,7 +71,7 @@ const Header = ({ url }) => {
     <header
       className={`Header
       ${showMobileMenu || scrollNumber > 20 ? "bg-accent-700" : "bg-transparent"}
-      fixed top-0 z-20 w-full
+      fixed top-0 z-30 w-full
       transition-colors delay-300 ease-linear`}
     >
       <div
