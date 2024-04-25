@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import logoHeader from "@/assets/svgs/logo_header.svg";
 import imgBannerMain from "@/assets/imgs/bgBannerMain.webp";
 import imgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
+export const prerender = true;
 ---
 
 <section
@@ -18,6 +19,7 @@ import imgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
       class="absolute top-0 size-full object-cover"
     />
   </picture>
+
   <div
     class="flex h-full px-4 md:px-0 justify-center items-center banner-content"
   >
