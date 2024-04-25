@@ -1,7 +1,12 @@
 ---
 import { Image } from "astro:assets";
 import logoHeader from "@/assets/svgs/logo_header.svg";
-import imgBannerMain from "@/assets/imgs/bgBannerMain.webp";
+import imgBannerMain920 from "@/assets/imgs/bannerMain/bgBannerMain920.webp";
+import imgBannerMain1230 from "@/assets/imgs/bannerMain/bgBannerMain1230.webp";
+import imgBannerMain1480 from "@/assets/imgs/bannerMain/bgBannerMain1480.webp";
+import imgBannerMain1690 from "@/assets/imgs/bannerMain/bgBannerMain1690.webp";
+import imgBannerMain1880 from "@/assets/imgs/bannerMain/bgBannerMain1880.webp";
+import imgBannerMain2048 from "@/assets/imgs/bannerMain/bgBannerMain2048.webp";
 import imgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
 export const prerender = false;
 ---
@@ -10,8 +15,31 @@ export const prerender = false;
   class="w-full relative h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
 >
   <picture>
+    <!-- Fuente para pantallas pequeñas (hasta 400px de ancho) -->
     <source srcset={imgBannerMobile.src} media="(max-width: 400px)" />
-    <source srcset={imgBannerMain.src} media="(min-width: 401px)" />
+    <!-- Fuente para pantallas medianas y grandes (401px en adelante) -->
+    <source
+      srcset={imgBannerMain920.src}
+      media="(min-width: 401px) and (max-width: 1230px)"
+    />
+    <source
+      srcset={imgBannerMain1230.src}
+      media="(min-width: 1231px) and (max-width: 1480px)"
+    />
+    <source
+      srcset={imgBannerMain1480.src}
+      media="(min-width: 1481px) and (max-width: 1690px)"
+    />
+    <source
+      srcset={imgBannerMain1690.src}
+      media="(min-width: 1691px) and (max-width: 2048px)"
+    />
+    <source
+      srcset={imgBannerMain1880.src}
+      media="(min-width: 1881px) and (max-width: 2048px)"
+    />
+    <source srcset={imgBannerMain2048.src} media="(min-width: 2049px)" />
+
     <img
       src={imgBannerMobile.src}
       alt="bg"
