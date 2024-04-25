@@ -12,12 +12,13 @@ export const prerender = false;
   <picture>
     <source srcset={imgBannerMobile.src} media="(max-width: 400px)" />
     <source srcset={imgBannerMain.src} media="(min-width: 401px)" />
-    <Image
-      src={imgBannerMobile}
+    <img
+      src={imgBannerMobile.src}
       alt="bg"
       loading="eager"
       class="absolute top-0 size-full object-cover"
       fetchpriority="high"
+      decoding="auto"
     />
   </picture>
 
