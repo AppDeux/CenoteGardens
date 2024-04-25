@@ -61,6 +61,7 @@ const MapPointsInterestDesk = ({ url }) => {
           src={MapPointsDesk.src}
           loading="lazy"
           className="absolute top-0 size-full object-cover"
+          alt="Plano"
         />
         <svg
           className="md:w-full relative z-10"

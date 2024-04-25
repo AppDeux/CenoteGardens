@@ -62,6 +62,7 @@ const MapPointsInterestDesk = ({ url }) => {
           src={mapBg.src}
           loading="lazy"
           className="absolute top-0 size-full object-cover"
+          alt="mapCenote"
         />
         <svg
           className={`md:w-full relative`}

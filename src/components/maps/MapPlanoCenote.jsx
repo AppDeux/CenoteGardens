@@ -68,6 +68,7 @@ const MapPlanoCenote = ({ url }) => {
           src={MapPlanoBg.src}
           loading="lazy"
           className="absolute top-0 size-full object-cover"
+          alt="mapCenote"
         />
         <svg
           loading="lazy"
