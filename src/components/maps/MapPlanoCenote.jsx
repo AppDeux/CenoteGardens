@@ -4,6 +4,11 @@ import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import mapPlanoData from "./mapPlanoData";
 import MapPlanoModal from "./MapPlanoModal";
 import MapPlanoBg from "@/assets/imgs/MapPlano.webp";
+import MapPlanoBg300 from "@/assets/imgs/MapPlano/MapPlano300.webp";
+import MapPlanoBg1056 from "@/assets/imgs/MapPlano/MapPlano1056.webp";
+import MapPlanoBg1460 from "@/assets/imgs/MapPlano/MapPlano1460.webp";
+import MapPlanoBg1780 from "@/assets/imgs/MapPlano/MapPlano1780.webp";
+import MapPlanoBg2048 from "@/assets/imgs/MapPlano/MapPlano2048.webp";
 
 const MapPlanoCenote = ({ url }) => {
   const lang = getLangFromUrl(url);
@@ -66,6 +71,7 @@ const MapPlanoCenote = ({ url }) => {
       <div className="relative mb-8">
         <img
           src={MapPlanoBg.src}
+          srcSet={`${MapPlanoBg300.src} 300w, ${MapPlanoBg.src} 960w, ${MapPlanoBg1056.src} 1056w, ${MapPlanoBg1460.src} 1460w, ${MapPlanoBg1780.src} 1780w, ${MapPlanoBg2048.src} 2048w`}
           loading="lazy"
           className="absolute top-0 size-full object-cover"
           alt="mapCenote"
