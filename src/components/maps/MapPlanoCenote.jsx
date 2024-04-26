@@ -4,11 +4,11 @@ import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import mapPlanoData from "./mapPlanoData";
 import MapPlanoModal from "./MapPlanoModal";
 import MapPlanoBg from "@/assets/imgs/MapPlano.webp";
-import MapPlanoBg300 from "@/assets/imgs/mapPlano/MapPlano300.webp";
-import MapPlanoBg1056 from "@/assets/imgs/mapPlano/MapPlano1056.webp";
-import MapPlanoBg1460 from "@/assets/imgs/mapPlano/MapPlano1460.webp";
-import MapPlanoBg1780 from "@/assets/imgs/mapPlano/MapPlano1780.webp";
-import MapPlanoBg2048 from "@/assets/imgs/mapPlano/MapPlano2048.webp";
+import MapPlanoBg300 from "@/assets/imgs/MapPlano/MapPlano300.webp";
+import MapPlanoBg1056 from "@/assets/imgs/MapPlano/MapPlano1056.webp";
+import MapPlanoBg1460 from "@/assets/imgs/MapPlano/MapPlano1460.webp";
+import MapPlanoBg1780 from "@/assets/imgs/MapPlano/MapPlano1780.webp";
+import MapPlanoBg2048 from "@/assets/imgs/MapPlano/MapPlano2048.webp";
 
 const MapPlanoCenote = ({ url }) => {
   const lang = getLangFromUrl(url);
