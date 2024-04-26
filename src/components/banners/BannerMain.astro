@@ -15,54 +15,28 @@ export const prerender = false;
 <section
   class="w-full relative h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
 >
-  <picture>
-    <!-- Fuente para pantallas pequeñas (hasta 400px de ancho) -->
-    <source srcset={bgBannerMain400.src} media="(max-width: 400px)" />
-    <!-- Fuente para pantallas medianas y grandes (401px en adelante) -->
-    <source
-      srcset={imgBannerMain920.src}
-      media="(min-width: 401px) and (max-width: 1230px)"
-    />
-    <source
-      srcset={imgBannerMain1230.src}
-      media="(min-width: 1231px) and (max-width: 1480px)"
-    />
-    <source
-      srcset={imgBannerMain1480.src}
-      media="(min-width: 1481px) and (max-width: 1690px)"
-    />
-    <source
-      srcset={imgBannerMain1690.src}
-      media="(min-width: 1691px) and (max-width: 2048px)"
-    />
-    <source
-      srcset={imgBannerMain1880.src}
-      media="(min-width: 1881px) and (max-width: 2048px)"
-    />
-    <source srcset={imgBannerMain2048.src} media="(min-width: 2049px)" />
-
-    <img
-      src={bgBannerMain400.src}
-      alt="bg"
-      loading="eager"
-      class="absolute top-0 size-full object-cover"
-      fetchpriority="high"
-      decoding="auto"
-    />
-  </picture>
-
-  <div
-    class="flex h-full px-4 md:px-0 justify-center items-center banner-content"
-  >
-    <Image
-      class="z-10"
-      id="logoImage"
-      src={logoHeader}
-      alt="Logo Cenotes"
-      loading="eager"
-    />
-  </div>
+  <Image
+    src={bgBannerMain400}
+    srcset=`${bgBannerMain400.src} 400w, ${imgBannerMain920.src} 920w, ${imgBannerMain1230.src} 1230w, ${imgBannerMain1480.src} 1480w`
+    loading="eager"
+    alt="bg"
+    class="absolute top-0 size-full object-cover"
+    fetchpriority="high"
+    decoding="auto"
+  />
 </section>
+
+<div
+  class="flex h-full px-4 md:px-0 justify-center items-center banner-content"
+>
+  <Image
+    class="z-10"
+    id="logoImage"
+    src={logoHeader}
+    alt="Logo Cenotes"
+    loading="eager"
+  />
+</div>
 
 <script>
   const logoImage = document.getElementById("logoImage");
