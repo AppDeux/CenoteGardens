@@ -31,14 +31,15 @@ export const prerender = true;
   }
 
   // Llama a la función al cargar la página y cuando se redimensiona la ventana
-  window.addEventListener("load", setBackgroundImage);
+  window.addEventListener("DOMContentLoaded", setBackgroundImage);
   window.addEventListener("resize", setBackgroundImage);
 </script>
 
 <section
   class="w-full relative h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
 >
-  <img
+  <Image
+    src={bgBannerMobile}
     id="bgBannerMain"
     sizes="100vw"
     loading="eager"
