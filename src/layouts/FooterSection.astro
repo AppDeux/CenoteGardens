@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import logoHeader from "@/assets/svgs/logo_header.svg";
-import imgFooterBannerMain from "@/assets/imgs/bgFooterMain.webp";
+import imgFooterBannerMain300 from "@/assets/imgs/footerBg/bgFooterMain300.webp";
+import imgFooterBannerMain1370 from "@/assets/imgs/footerBg/bgFooterMain1370.webp";
+import imgFooterBannerMain1920 from "@/assets/imgs/footerBg/bgFooterMain1920.webp";
 import IconFacebook from "@/assets/imgs/icon_facebook.webp";
 import Iconinstagram from "@/assets/imgs/icon_instagram.webp";
 import Icontiktok from "@/assets/imgs/icon_tiktok.webp";
@@ -16,7 +18,8 @@ const t = useTranslations(lang);
 <footer class="footer_section w-full relative
     bg-cover bg-center">
   <Image
-    src={imgFooterBannerMain}
+    src={imgFooterBannerMain1920}
+    srcset={`${imgFooterBannerMain300.src} 300w, ${imgFooterBannerMain1370.src} 1370w, ${imgFooterBannerMain1920.src} 1920w`}
     alt="footerbg"
     class="absolute top-0 size-full"
     loading="lazy"
