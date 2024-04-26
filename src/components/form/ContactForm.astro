@@ -1,0 +1,32 @@
+---
+import { getLangFromUrl, useTranlations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<div class="flex justify-center">
+{lang === "en" && (
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "44724690",
+        formId: "20ea62af-851f-404d-85f2-3c54d4e8dcb0",
+      });
+    </script>)
+}
+
+{lang === "es" && (
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+      region: "na1",
+      portalId: "44724690",
+      formId: "97b84d5a-6b1c-430d-a867-7d85e0205f93"
+    });
+  </script>)
+}
+</div>
