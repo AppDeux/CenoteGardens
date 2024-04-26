@@ -69,13 +69,6 @@ const MapPointsInterestDesk = ({ url }) => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <rect
-            width="1440"
-            height="631"
-            fill="url(#pattern0)"
-            onMouseEnter={handleMouseOut}
-          />
-
           {/* Yellow residential */}
           <Circle
             cx="576"

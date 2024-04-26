@@ -70,7 +70,6 @@ const MapPointsInterestDesk = ({ url }) => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <rect width="360" height="465.801" fill="url(#pattern0_601_810)" />
           <Circle
             handleClick={handleClick}
             minutes={8}
