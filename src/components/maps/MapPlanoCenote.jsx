@@ -72,6 +72,7 @@ const MapPlanoCenote = ({ url }) => {
         <img
           src={MapPlanoBg.src}
           srcSet={`${MapPlanoBg300.src} 300w, ${MapPlanoBg.src} 960w, ${MapPlanoBg1056.src} 1056w, ${MapPlanoBg1460.src} 1460w, ${MapPlanoBg1780.src} 1780w, ${MapPlanoBg2048.src} 2048w`}
+          sizes="(min-width: 1280px) 1056px, (min-width: 1040px) calc(50.91vw + 447px), (min-width: 780px) 100vw, (min-width: 680px) 640px, calc(94.44vw + 17px)"
           loading="lazy"
           className="absolute top-0 size-full object-cover"
           alt="mapCenote"
