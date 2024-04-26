@@ -1,4 +1,19 @@
 .Header {
+  animation: rellenado 2s linear both; /* Duración de 2 segundos, tipo linear, ambos rellenos */
+  animation-timeline: scroll(root);
+  animation-range: 0 120px;
+
+  @media (min-width: 1024px) {
+  animation-range: 0 200px;
+  }
+
+  @keyframes rellenado {
+    to {
+      /* Cambia el color de fondo al final de la animación */
+      @apply bg-accent-700;
+    }
+  }
+
   &__content {
     &__links {
       a:hover {

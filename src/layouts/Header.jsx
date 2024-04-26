@@ -14,6 +14,7 @@ const Header = ({ url }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [scrollNumber, setScrollNumber] = useState(0);
 
+  // Asigna el movimiento smooth para los a #
   useEffect(() => {
     setScrollNumber(window.scrollY);
 
@@ -70,7 +71,7 @@ const Header = ({ url }) => {
   return (
     <header
       className={`Header
-      ${showMobileMenu || scrollNumber > 20 ? "bg-accent-700" : "bg-transparent"}
+      
       fixed top-0 z-30 w-full
       transition-colors delay-300 ease-linear`}
     >
