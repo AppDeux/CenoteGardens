@@ -24,19 +24,18 @@ export const prerender = false;
     fetchpriority="high"
     decoding="auto"
   />
+  <div
+    class="flex h-full px-4 md:px-0 justify-center items-center banner-content"
+  >
+    <Image
+      class="z-10"
+      id="logoImage"
+      src={logoHeader}
+      alt="Logo Cenotes"
+      loading="eager"
+    />
+  </div>
 </section>
-
-<div
-  class="flex h-full px-4 md:px-0 justify-center items-center banner-content"
->
-  <Image
-    class="z-10"
-    id="logoImage"
-    src={logoHeader}
-    alt="Logo Cenotes"
-    loading="eager"
-  />
-</div>
 
 <script>
   const logoImage = document.getElementById("logoImage");
