@@ -1,7 +1,11 @@
 ---
-import bgContact from "@/assets/imgs/ContactoBg.webp";
 import { Image } from "astro:assets";
 import ContactForm from "../form/ContactForm";
+import bgContact300 from "@/assets/imgs/ContactoBg/ContactoBg300.webp";
+import bgContact1140 from "@/assets/imgs/ContactoBg/ContactoBg1140.webp";
+import bgContact1580 from "@/assets/imgs/ContactoBg/ContactoBg1580.webp";
+import bgContact1920 from "@/assets/imgs/ContactoBg/ContactoBg1920.webp";
+import bgContact2048 from "@/assets/imgs/ContactoBg/ContactoBg2048.webp";
 
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
@@ -14,7 +18,8 @@ const t = useTranslations(lang);
   class="contactForm__container relative py-12 flex justify-center flex-col text-center items-center text-white"
 >
   <Image
-    src={bgContact}
+    src={bgContact1920}
+    srcset={`${bgContact300.src} 300w, ${bgContact1140.src} 1140w, ${bgContact1580.src} 1580w, ${bgContact1920.src} 1920w, ${bgContact2048.src} 2048w`}
     alt="bg"
     loading="lazy"
     class="absolute top-0 size-full object-cover"
