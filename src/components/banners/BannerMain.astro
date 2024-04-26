@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import logoHeader from "@/assets/svgs/logo_header.svg";
-import bgBannerMobile from "@/assets/imgs/bgBannerMobile.webp";
 import bgBannerMain400 from "@/assets/imgs/bannerMain/bgBannerMain400.webp";
 import imgBannerMain920 from "@/assets/imgs/bannerMain/bgBannerMain920.webp";
 import imgBannerMain1230 from "@/assets/imgs/bannerMain/bgBannerMain1230.webp";
@@ -9,38 +8,14 @@ import imgBannerMain1480 from "@/assets/imgs/bannerMain/bgBannerMain1480.webp";
 import imgBannerMain1690 from "@/assets/imgs/bannerMain/bgBannerMain1690.webp";
 import imgBannerMain1880 from "@/assets/imgs/bannerMain/bgBannerMain1880.webp";
 import imgBannerMain2048 from "@/assets/imgs/bannerMain/bgBannerMain2048.webp";
-export const prerender = true;
 ---
-
-<script define:vars={{ bgBannerMobile, imgBannerMain1480 }}>
-  // Función para cambiar la imagen de fondo basado en el tamaño de la ventana
-  function setBackgroundImage() {
-    const screenWidth = window.innerWidth;
-
-    // Selecciona el elemento de imagen de fondo
-    const bgImage = document.getElementById("bgBannerMain");
-
-    // Establece la URL de la imagen dependiendo del tamaño de la pantalla
-    if (screenWidth < 768) {
-      // Por ejemplo, para pantallas más pequeñas (como móviles)
-      bgImage.src = bgBannerMobile.src;
-    } else {
-      // Para pantallas más grandes, como tablets y escritorios
-      bgImage.src = imgBannerMain1480.src;
-    }
-  }
-
-  // Llama a la función al cargar la página y cuando se redimensiona la ventana
-  window.addEventListener("DOMContentLoaded", setBackgroundImage);
-  window.addEventListener("resize", setBackgroundImage);
-</script>
 
 <section
   class="w-full relative h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
 >
   <Image
-    src={bgBannerMobile}
-    id="bgBannerMain"
+    src={bgBannerMain400}
+    srcset=`${bgBannerMain400.src} 400w, ${imgBannerMain920.src} 920w, ${imgBannerMain1230.src} 1230w, ${imgBannerMain1480.src} 1480w, ${imgBannerMain1690.src} 1690w, ${imgBannerMain1880.src} 1880w, ${imgBannerMain2048.src} 2048w`
     sizes="100vw"
     loading="eager"
     alt="bg"
