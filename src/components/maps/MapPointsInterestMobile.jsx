@@ -66,6 +66,7 @@ const MapPointsInterestDesk = ({ url }) => {
         <img
           src={MapPoints360.src}
           srcSet={`${MapPoints360.src} 360w, ${MapPoints640.src} 640w, ${MapPoints850.src} 850w, ${MapPoints1010.src} 1010w, ${MapPoints1150.src} 1150w, ${MapPoints1280.src} 1280w`}
+          sizes="(min-width: 680px) 640px, calc(94.44vw + 17px)"
           loading="lazy"
           className="absolute top-0 size-full object-cover"
           alt="mapCenote"

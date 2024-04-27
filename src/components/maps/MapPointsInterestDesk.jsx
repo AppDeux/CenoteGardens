@@ -64,6 +64,7 @@ const MapPointsInterestDesk = ({ url }) => {
         <img
           src={MapPointsDesk1440.src}
           srcSet={`${MapPointsDesk780.src} 780w, ${MapPointsDesk1056.src} 1056w, ${MapPointsDesk1440.src} 1440w, ${MapPointsDesk1770.src} 1770w, ${MapPointsDesk2048.src} 2048w`}
+          sizes="(min-width: 1280px) 1056px, (min-width: 1040px) calc(50.91vw + 447px), 100vw"
           loading="lazy"
           className="absolute top-0 size-full object-cover"
           alt="Plano"
