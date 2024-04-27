@@ -11,7 +11,6 @@
         <img
           :src="item.pathImgMobile.src"
           :srcset="`${item.pathImgMobile.src} 400w, ${item.pathImg.src} 960w`"
-          sizes="(min-width: 1280px) 960px, (min-width: 1040px) 832px, (min-width: 780px) 736px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
           loading="lazy"
           class="img"
           :alt="'img-carrousel-' + index"
