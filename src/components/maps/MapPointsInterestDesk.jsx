@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import MapPointsDesk from "@/assets/imgs/MapPointsDesk.webp";
+import MapPointsDesk780 from "@/assets/imgs/mapPointsDesk/MapPointsDesk780.webp";
+import MapPointsDesk1056 from "@/assets/imgs/mapPointsDesk/MapPointsDesk1056.webp";
+import MapPointsDesk1440 from "@/assets/imgs/mapPointsDesk/MapPointsDesk1440.webp";
+import MapPointsDesk1770 from "@/assets/imgs/mapPointsDesk/MapPointsDesk1770.webp";
+import MapPointsDesk2048 from "@/assets/imgs/mapPointsDesk/MapPointsDesk2048.webp";
 
 // Componente funcional que representa un círculo en el SVG
 function Circle({ cx, cy, r, minutes, placeName, handleMouseOver, fill }) {
@@ -47,18 +51,19 @@ const MapPointsInterestDesk = ({ url }) => {
   };
 
   // Handler para ocultar el tooltip cuando se sale del círculo
-  const handleMouseOut = () => {
-    setTooltip({
-      ...tooltip,
-      display: "none",
-    });
-  };
+  // const handleMouseOut = () => {
+  //   setTooltip({
+  //     ...tooltip,
+  //     display: "none",
+  //   });
+  // };
 
   return (
     <section className="MapPointsInterest hidden md:block lg:px-8 xl:px-12 container overflow-hidden md:max-w-6xl">
       <div className="relative">
         <img
-          src={MapPointsDesk.src}
+          src={MapPointsDesk1440.src}
+          srcSet={`${MapPointsDesk780.src} 780w, ${MapPointsDesk1056.src} 1056w, ${MapPointsDesk1440.src} 1440w, ${MapPointsDesk1770.src} 1770w, ${MapPointsDesk2048.src} 2048w`}
           loading="lazy"
           className="absolute top-0 size-full object-cover"
           alt="Plano"

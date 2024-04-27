@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import mapBg from "@/assets/imgs/MapPoints.webp";
+import MapPoints360 from "@/assets/imgs/mapPointsMobile/MapPoints360.webp";
+import MapPoints640 from "@/assets/imgs/mapPointsMobile/MapPoints640.webp";
+import MapPoints850 from "@/assets/imgs/mapPointsMobile/MapPoints850.webp";
+import MapPoints1010 from "@/assets/imgs/mapPointsMobile/MapPoints1010.webp";
+import MapPoints1150 from "@/assets/imgs/mapPointsMobile/MapPoints1150.webp";
+import MapPoints1280 from "@/assets/imgs/mapPointsMobile/MapPoints1280.webp";
 
 // Componente funcional que representa un círculo en el SVG
 function Circle({ cx, cy, r, minutes, placeName, handleClick, fill }) {
@@ -59,7 +65,8 @@ const MapPointsInterestDesk = ({ url }) => {
     <section className="MapPointsInterest md:hidden container">
       <div className="relative">
         <img
-          src={mapBg.src}
+          src={MapPoints360.src}
+          srcSet={`${MapPoints360.src} 360w, ${MapPoints640.src} 640w, ${MapPoints850.src} 850w, ${MapPoints1010.src} 1010w, ${MapPoints1150.src} 1150w, ${MapPoints1280.src} 1280w`}
           loading="lazy"
           className="absolute top-0 size-full object-cover"
           alt="mapCenote"
