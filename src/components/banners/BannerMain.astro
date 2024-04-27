@@ -1,13 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import logoHeader from "@/assets/svgs/logo_header.svg";
-import bgBannerMain from "@/assets/imgs/bgBannerMobile.webp";
-import bgBannerMain400 from "@/assets/imgs/bannerMain/bgBannerMain400.webp";
-import imgBannerMain920 from "@/assets/imgs/bannerMain/bgBannerMain920.webp";
-import imgBannerMain1230 from "@/assets/imgs/bannerMain/bgBannerMain1230.webp";
-import imgBannerMain1480 from "@/assets/imgs/bannerMain/bgBannerMain1480.webp";
-import imgBannerMain1690 from "@/assets/imgs/bannerMain/bgBannerMain1690.webp";
-import imgBannerMain1880 from "@/assets/imgs/bannerMain/bgBannerMain1880.webp";
+import bgBannerMain300 from "@/assets/imgs/bannerMain/bgBannerMain300.webp";
+import imgBannerMain1040 from "@/assets/imgs/bannerMain/bgBannerMain1040.webp";
+import imgBannerMain1440 from "@/assets/imgs/bannerMain/bgBannerMain1440.webp";
+import imgBannerMain1770 from "@/assets/imgs/bannerMain/bgBannerMain1770.webp";
 import imgBannerMain2048 from "@/assets/imgs/bannerMain/bgBannerMain2048.webp";
 ---
 
@@ -15,8 +12,12 @@ import imgBannerMain2048 from "@/assets/imgs/bannerMain/bgBannerMain2048.webp";
   class="w-full relative h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
 >
   <Image
-    src={bgBannerMain}
-    srcset=`${bgBannerMain400.src} 400w, ${imgBannerMain920.src} 920w, ${imgBannerMain1230.src} 1230w, ${imgBannerMain1480.src} 1480w, ${imgBannerMain1690.src} 1690w, ${imgBannerMain1880.src} 1880w, ${imgBannerMain2048.src} 2048w`
+    src={imgBannerMain1440}
+    srcset=`${bgBannerMain300.src} 300w,
+     ${imgBannerMain1040.src} 1040w,
+      ${imgBannerMain1440.src} 1440w,
+       ${imgBannerMain1770.src} 1770w,
+        ${imgBannerMain2048.src} 2048w`
     sizes="100vw"
     loading="eager"
     alt="bg"
