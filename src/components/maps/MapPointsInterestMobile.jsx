@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import mapBg from "@/assets/imgs/MapPoints.webp";
 import MapPoints360 from "@/assets/imgs/mapPointsMobile/MapPoints360.webp";
 import MapPoints640 from "@/assets/imgs/mapPointsMobile/MapPoints640.webp";
 import MapPoints850 from "@/assets/imgs/mapPointsMobile/MapPoints850.webp";
