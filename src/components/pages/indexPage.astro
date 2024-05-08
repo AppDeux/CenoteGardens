@@ -16,12 +16,13 @@ import ContactSection from "../sections/ContactSection.astro";
 
 interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
-<Layout header title={title}>
+<Layout header title={title} description={description}>
   <BannerMain />
   <DescriptionSecction />
   <BannerParallax />
