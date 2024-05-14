@@ -43,6 +43,8 @@ const lang = getLangFromUrl(Astro.url);
 
     <!-- Para cambiar de idioma de manera suave -->
     <ViewTransitions />
+
+    <slot name="head" />
   </head>
   <body class="">
     <noscript

@@ -23,6 +23,15 @@ const { title, description } = Astro.props;
 ---
 
 <Layout header title={title} description={description}>
+  {
+    title === "Cenote Gardens - ES" && (
+      <link
+        slot="head"
+        rel="canonical"
+        href="https://cenotegardens.com/"
+      />
+    )
+  }
   <BannerMain />
   <DescriptionSecction />
   <BannerParallax />
