@@ -25,7 +25,8 @@
     }
 
     input,
-    select {
+    select,
+    textarea  {
       border: 1px solid white;
       width: 100% !important;
       @apply bg-accent-700 text-white h-14 p-2;
