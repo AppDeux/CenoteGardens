@@ -5,3 +5,7 @@
 - React
 - Sass
 - Tailwind
+
+# Authors
+- Jonathan Alexis Bello Lopez
+- Roberto Corona Simbron
