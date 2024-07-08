@@ -13,6 +13,7 @@ import AvailabilitySection from "@/components/sections/AvailabilitySection.astro
 import InvestSection from "@/components/sections/InvestSection.astro";
 import FooterSection from "@/layouts/FooterSection.astro";
 import ContactSection from "../sections/ContactSection.astro";
+import HomeDesignSection from "@/components/sections/HomeDesignSection.astro";
 
 interface Props {
   title: string;
@@ -25,11 +26,7 @@ const { title, description } = Astro.props;
 <Layout header title={title} description={description}>
   {
     title === "Cenote Gardens | Inicio" && (
-      <link
-        slot="head"
-        rel="canonical"
-        href="https://cenotegardens.com/"
-      />
+      <link slot="head" rel="canonical" href="https://cenotegardens.com/" />
     )
   }
   <BannerMain />
@@ -43,6 +40,7 @@ const { title, description } = Astro.props;
 
   <AvailabilitySection />
   <MapPlanoCenote client:visible url={Astro.url} />
+  <HomeDesignSection />
   <InvestSection />
   <ContactSection />
   <FooterSection />

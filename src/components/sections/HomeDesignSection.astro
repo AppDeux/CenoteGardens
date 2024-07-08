@@ -1,0 +1,48 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import HomeDesignCard from "../cards/HomeDesignCard.astro";
+
+import imgOx from "@/assets/imgs/homedesign/ox.webp";
+import imgKa from "@/assets/imgs/homedesign/ka.webp";
+import imgKuun from "@/assets/imgs/homedesign/kuun.webp";
+import imgKan from "@/assets/imgs/homedesign/kan.webp";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section
+  id="home design"
+  class="container location_section px-4 lg:px-11 xl:px-36 min-[1536px]:px-72 pb-16"
+>
+  <h2
+    class="font-title text-grey-950 uppercase pt-12 md:px-24 mb-6 text-3xl md:text-4xl md:text-[2.5rem] text-center md:pb-6"
+  >
+    {t("homeDesign.title")}
+  </h2>
+
+  <div class="grid grid-cols-2 gap-6 lg:gap-4  lg:grid-cols-4">
+    <HomeDesignCard
+      title={t("homeDesign.subTitle1")}
+      content={t("homeDesign.content1")}
+      img={imgKuun}
+    />
+    <HomeDesignCard
+      title={t("homeDesign.subTitle2")}
+      content={t("homeDesign.content2")}
+      img={imgKa}
+    />
+    <HomeDesignCard
+      title={t("homeDesign.subTitle3")}
+      content={t("homeDesign.content3")}
+      img={imgOx}
+    />
+    <HomeDesignCard
+      title={t("homeDesign.subTitle4")}
+      content={t("homeDesign.content4")}
+      img={imgKan}
+    />
+  </div>
+</section>
+
+<style></style>

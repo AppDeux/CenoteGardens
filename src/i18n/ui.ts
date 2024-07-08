@@ -123,6 +123,50 @@ export const ui = {
       "Invest with certainty, invest in paradise. Invest in Cenote Gardens, where abundance flows.",
     "footer.privacy": "Privacy Policy",
     "footer.produced": "Produced by YGU Comunicaxion",
+    "homeDesign.title": "Cenote Gardens' alternatives for your home's design",
+    "homeDesign.subTitle1": "Casa Kuun",
+    "homeDesign.content1": `
+    <ul>
+        <li>1 bedroom</li>
+        <li>2 wc</li>
+        <li>Rooftop/roofgarden</li>
+        <li>Solarium</li>
+    </ul>
+    <b>Starting price US$225,000</b>`,
+    "homeDesign.subTitle2": "Casa Ka",
+    "homeDesign.content2": `
+      <ul>
+        <li>2 bedrooms</li>
+        <li>2.5 wc</li>
+        <li>Pool</li>
+        <li>Rooftop/roofgarden</li>
+        <li>Solarium</li>
+    </ul>
+    <b>Starting price US$300,000</b>
+    `,
+    "homeDesign.subTitle3": "Casa Ox",
+    "homeDesign.content3": `
+      <ul>
+        <li>3 bedrooms</li>
+        <li>5 wc</li>
+        <li>Pool</li>
+        <li>Rooftop/roofgarden</li>
+        <li>Solarium</li>
+    </ul>
+    <b>Starting price US$475,000</b>
+    `,
+    "homeDesign.subTitle4": "Casa Kan",
+    "homeDesign.content4": `
+      <ul>
+        <li>4 bedrooms</li>
+        <li>6 wc</li>
+        <li>Pool</li>
+        <li>Rooftop/roofgarden</li>
+        <li>Solarium</li>
+    </ul>
+    <b>Starting price US$550,000</b>`,
+    "homeDesign.description":
+      "Although, you also have the freedom to design your home as you have always wished",
   },
   es: {
     "nav.home": "Inicio",
@@ -240,5 +284,49 @@ export const ui = {
       "Invierte con certeza, invierte en el paraíso. Invierte en Cenote Gardens, donde fluye la abundancia.",
     "footer.privacy": "Política de privacidad",
     "footer.produced": "Elaborado por YGU Comunicaxion",
+    "homeDesign.title":
+      "Alternativas de diseño de Cenote Gardens para tu hogar",
+    "homeDesign.subTitle1": "Casa Kuun",
+    "homeDesign.content1": `
+      <ul>
+          <li>1 habitación</li>
+          <li>2 baños</li>
+          <li>Azotea/jardín</li>
+          <li>Solarium</li>
+      </ul>
+      <b>Precio inicial US$225,000</b>`,
+    "homeDesign.subTitle2": "Casa Ka",
+    "homeDesign.content2": `
+      <ul>
+          <li>2 habitaciones</li>
+          <li>2.5 baños</li>
+          <li>Alberca</li>
+          <li>Azotea/jardín</li>
+          <li>Solarium</li>
+      </ul>
+      <b>Precio inicial US$300,000</b>`,
+    "homeDesign.subTitle3": "Casa Ox",
+    "homeDesign.content3": `
+      <ul>
+          <li>3 habitaciones</li>
+          <li>5 baños</li>
+          <li>Alberca</li>
+          <li>Azotea/jardín</li>
+          <li>Solarium</li>
+      </ul>
+      <b>Precio inicial US$475,000</b>
+      `,
+    "homeDesign.subTitle4": "Casa Kan",
+    "homeDesign.content4": `
+      <ul>
+          <li>4 habitaciones</li>
+          <li>6 baños</li>
+          <li>Alberca</li>
+          <li>Azotea/jardín</li>
+          <li>Solarium</li>
+      </ul>
+      <b>Precio inicial US$550,000</b>`,
+    "homeDesign.description":
+      "Aunque también tienes la libertad de diseñar tu hogar como siempre lo has soñado.",
   },
 } as const;

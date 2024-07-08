@@ -1,0 +1,23 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+type Props = {
+  title: string;
+  content: string;
+  img: ImageMetadata;
+};
+
+const { title, content, img } = Astro.props;
+---
+
+<article class="flex flex-col">
+  <Image class="mb-3" src={img} alt={title} />
+
+  <div
+    class="flex flex-col flex-1 justify-between [&>ul]:font-sm [&>ul]:pl-4 lg:[&>ul]:pl-8 [&>ul]:mb-2 lg:[&>ul]:mb-6 [&>ul]:list-disc [&>b]:font-semibold [&>b]:text-sm"
+    set:html={content}
+  />
+</article>
+
+<style></style>
