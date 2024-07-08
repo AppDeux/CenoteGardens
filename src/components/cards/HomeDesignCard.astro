@@ -12,6 +12,8 @@ const { title, content, img } = Astro.props;
 ---
 
 <article class="flex flex-col">
+  <h3 class="font-subtitle text-xl lg:text-2xl mb-2 uppercase">{title}</h3>
+
   <Image class="mb-3" src={img} alt={title} />
 
   <div
