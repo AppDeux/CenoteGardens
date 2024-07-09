@@ -129,6 +129,7 @@ export const ui = {
     <ul>
         <li>1 bedroom</li>
         <li>2 wc</li>
+        <li>Pool</li>
         <li>Rooftop/roofgarden</li>
         <li>Solarium</li>
     </ul>
@@ -291,6 +292,7 @@ export const ui = {
       <ul>
           <li>1 habitación</li>
           <li>2 baños</li>
+          <li>Alberca</li>
           <li>Azotea/jardín</li>
           <li>Solarium</li>
       </ul>
