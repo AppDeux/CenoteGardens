@@ -143,7 +143,7 @@ export const ui = {
         <li>Rooftop/roofgarden</li>
         <li>Solarium</li>
     </ul>
-    <b>Starting price US$300,000</b>
+    <b>Starting price US$275,000</b>
     `,
     "homeDesign.subTitle3": "Casa Ox",
     "homeDesign.content3": `
@@ -154,7 +154,7 @@ export const ui = {
         <li>Rooftop/roofgarden</li>
         <li>Solarium</li>
     </ul>
-    <b>Starting price US$475,000</b>
+    <b>Starting price US$450,000</b>
     `,
     "homeDesign.subTitle4": "Casa Kan",
     "homeDesign.content4": `
@@ -165,7 +165,7 @@ export const ui = {
         <li>Rooftop/roofgarden</li>
         <li>Solarium</li>
     </ul>
-    <b>Starting price US$550,000</b>`,
+    <b>Starting price US$600,000</b>`,
     "homeDesign.description":
       "Although, you also have the freedom to design your home as you have always wished",
   },
@@ -306,7 +306,7 @@ export const ui = {
           <li>Azotea/jardín</li>
           <li>Solarium</li>
       </ul>
-      <b>Precio inicial US$300,000</b>`,
+      <b>Precio inicial US$275,000</b>`,
     "homeDesign.subTitle3": "Casa Ox",
     "homeDesign.content3": `
       <ul>
@@ -316,7 +316,7 @@ export const ui = {
           <li>Azotea/jardín</li>
           <li>Solarium</li>
       </ul>
-      <b>Precio inicial US$475,000</b>
+      <b>Precio inicial US$450,000</b>
       `,
     "homeDesign.subTitle4": "Casa Kan",
     "homeDesign.content4": `
@@ -327,7 +327,7 @@ export const ui = {
           <li>Azotea/jardín</li>
           <li>Solarium</li>
       </ul>
-      <b>Precio inicial US$550,000</b>`,
+      <b>Precio inicial US$600,000</b>`,
     "homeDesign.description":
       "Aunque también tienes la libertad de diseñar tu hogar como siempre lo has soñado.",
   },
