@@ -133,7 +133,7 @@ export const ui = {
         <li>Rooftop/roofgarden</li>
         <li>Solarium</li>
     </ul>
-    <b>Starting price US$225,000</b>`,
+    <b>Starting price US $225,000</b>`,
     "homeDesign.subTitle2": "Casa Ka",
     "homeDesign.content2": `
       <ul>
@@ -143,7 +143,7 @@ export const ui = {
         <li>Rooftop/roofgarden</li>
         <li>Solarium</li>
     </ul>
-    <b>Starting price US$275,000</b>
+    <b>Starting price US $275,000</b>
     `,
     "homeDesign.subTitle3": "Casa Ox",
     "homeDesign.content3": `
@@ -154,7 +154,7 @@ export const ui = {
         <li>Rooftop/roofgarden</li>
         <li>Solarium</li>
     </ul>
-    <b>Starting price US$450,000</b>
+    <b>Starting price US $450,000</b>
     `,
     "homeDesign.subTitle4": "Casa Kan",
     "homeDesign.content4": `
@@ -165,9 +165,33 @@ export const ui = {
         <li>Rooftop/roofgarden</li>
         <li>Solarium</li>
     </ul>
-    <b>Starting price US$600,000</b>`,
+    <b>Starting price US $600,000</b>`,
     "homeDesign.description":
       "Although, you also have the freedom to design your home as you have always wished",
+    "homeDesign.Tab1": "Houses",
+    "homeDesign.Tab2": "Lands",
+    "homeDesign.Serenity": "Serenity",
+    "homeDesign.SerenityData": `
+        <ul>
+          <li>19 units</li>
+          <li>130+ m<sup>2</sup></li>
+        </ul>
+        <b>starting price US $31,000</b>`,
+    "homeDesign.Tranquility": "Tranquility",
+    "homeDesign.TranquilityData": `
+      <ul>
+        <li>26 units</li>
+        <li>300+ m<sup>2</sup></li>
+      </ul>
+      <b>starting price US $78,000</b>`,
+    "homeDesign.Harmoney": "Harmony",
+    "homeDesign.HarmonyData": `
+      <ul>
+        <li>20 units</li>
+        <li>400+ m<sup>2</sup></li>
+      </ul>
+      <b>starting price US $118,000</b>
+      `,
   },
   es: {
     "nav.home": "Inicio",
@@ -296,7 +320,7 @@ export const ui = {
           <li>Azotea/jardín</li>
           <li>Solarium</li>
       </ul>
-      <b>Precio inicial US$225,000</b>`,
+      <b>Precio inicial US $225,000</b>`,
     "homeDesign.subTitle2": "Casa Ka",
     "homeDesign.content2": `
       <ul>
@@ -306,7 +330,7 @@ export const ui = {
           <li>Azotea/jardín</li>
           <li>Solarium</li>
       </ul>
-      <b>Precio inicial US$275,000</b>`,
+      <b>Precio inicial US $275,000</b>`,
     "homeDesign.subTitle3": "Casa Ox",
     "homeDesign.content3": `
       <ul>
@@ -316,7 +340,7 @@ export const ui = {
           <li>Azotea/jardín</li>
           <li>Solarium</li>
       </ul>
-      <b>Precio inicial US$450,000</b>
+      <b>Precio inicial US $450,000</b>
       `,
     "homeDesign.subTitle4": "Casa Kan",
     "homeDesign.content4": `
@@ -327,8 +351,32 @@ export const ui = {
           <li>Azotea/jardín</li>
           <li>Solarium</li>
       </ul>
-      <b>Precio inicial US$600,000</b>`,
+      <b>Precio inicial US $600,000</b>`,
     "homeDesign.description":
       "Aunque también tienes la libertad de diseñar tu hogar como siempre lo has soñado.",
+    "homeDesign.Tab1": "Casas",
+    "homeDesign.Tab2": "Terrenos",
+    "homeDesign.Serenity": "Serenity",
+    "homeDesign.SerenityData": `
+        <ul>
+          <li>19 unidades</li>
+          <li>130+ m<sup>2</sup></li>
+        </ul>
+        <b>Precio inicial US $31,000</b>`,
+    "homeDesign.Tranquility": "Tranquility",
+    "homeDesign.TranquilityData": `
+      <ul>
+        <li>26 unidades</li>
+        <li>300+ m<sup>2</sup></li>
+      </ul>
+      <b>Precio inicial US $78,000</b>`,
+    "homeDesign.Harmony": "Harmony",
+    "homeDesign.HarmonyData": `
+      <ul>
+        <li>20 unidades</li>
+        <li>400+ m<sup>2</sup></li>
+      </ul>
+      <b>Precio inicial US $118,000</b>
+      `,
   },
 } as const;

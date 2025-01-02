@@ -6,6 +6,7 @@ import imgOx from "@/assets/imgs/homedesign/ox.webp";
 import imgKa from "@/assets/imgs/homedesign/ka.webp";
 import imgKuun from "@/assets/imgs/homedesign/kuun.webp";
 import imgKan from "@/assets/imgs/homedesign/kan.webp";
+import TabSelector from "../tabs/TabsSelector";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -21,28 +22,54 @@ const t = useTranslations(lang);
     {t("homeDesign.title")}
   </h2>
 
-  <div class="grid grid-cols-2 gap-6 lg:gap-4  lg:grid-cols-4">
-    <HomeDesignCard
-      title={t("homeDesign.subTitle1")}
-      content={t("homeDesign.content1")}
-      img={imgKuun}
-    />
-    <HomeDesignCard
-      title={t("homeDesign.subTitle2")}
-      content={t("homeDesign.content2")}
-      img={imgKa}
-    />
-    <HomeDesignCard
-      title={t("homeDesign.subTitle3")}
-      content={t("homeDesign.content3")}
-      img={imgOx}
-    />
-    <HomeDesignCard
-      title={t("homeDesign.subTitle4")}
-      content={t("homeDesign.content4")}
-      img={imgKan}
-    />
-  </div>
+  <TabSelector
+    client:only="react"
+    tabsData={[
+      { label: t("homeDesign.Tab1") },
+      { label: t("homeDesign.Tab2") },
+    ]}
+  >
+    <div slot="tab1" class="grid grid-cols-2 gap-6 lg:gap-4 lg:grid-cols-4">
+      <HomeDesignCard
+        title={t("homeDesign.subTitle1")}
+        content={t("homeDesign.content1")}
+        img={imgKuun}
+      />
+      <HomeDesignCard
+        title={t("homeDesign.subTitle2")}
+        content={t("homeDesign.content2")}
+        img={imgKa}
+      />
+      <HomeDesignCard
+        title={t("homeDesign.subTitle3")}
+        content={t("homeDesign.content3")}
+        img={imgOx}
+      />
+      <HomeDesignCard
+        title={t("homeDesign.subTitle4")}
+        content={t("homeDesign.content4")}
+        img={imgKan}
+      />
+    </div>
+
+    <div slot="tab2" class="grid grid-cols-2 gap-6 lg:gap-4 lg:grid-cols-3">
+      <HomeDesignCard
+        title={t("homeDesign.Serenity")}
+        content={t("homeDesign.SerenityData")}
+        color="#ECC8AF"
+      />
+      <HomeDesignCard
+        title={t("homeDesign.Tranquility")}
+        content={t("homeDesign.TranquilityData")}
+        color="#AFCCE6"
+      />
+      <HomeDesignCard
+        title={t("homeDesign.Harmoney")}
+        content={t("homeDesign.HarmonyData")}
+        color="#D0ECCC"
+      />
+    </div>
+  </TabSelector>
 </section>
 
 <style></style>

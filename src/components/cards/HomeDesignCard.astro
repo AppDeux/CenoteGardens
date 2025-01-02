@@ -5,16 +5,26 @@ import { Image } from "astro:assets";
 type Props = {
   title: string;
   content: string;
-  img: ImageMetadata;
+  img?: ImageMetadata;
+  color?: string;
 };
 
-const { title, content, img } = Astro.props;
+const { title, content, img, color } = Astro.props;
 ---
 
 <article class="flex flex-col">
   <h3 class="font-subtitle text-xl lg:text-2xl mb-2 uppercase">{title}</h3>
 
-  <Image class="mb-3 aspect-square object-cover" src={img} alt={title} />
+  {
+    img ? (
+      <Image class="mb-3 aspect-square object-cover" src={img} alt={title} />
+    ) : (
+      <div
+        class={`mb-3 w-full aspect-square rounded-lg`}
+        style={`background-color: ${color}`}
+      />
+    )
+  }
 
   <div
     class="flex flex-col flex-1 justify-between [&>ul]:font-sm [&>ul]:pl-4 lg:[&>ul]:pl-8 [&>ul]:mb-2 lg:[&>ul]:mb-6 [&>ul]:list-disc [&>b]:font-semibold [&>b]:text-sm"
