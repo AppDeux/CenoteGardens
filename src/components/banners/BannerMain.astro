@@ -1,23 +1,15 @@
 ---
 import { Image } from "astro:assets";
 import logoHeader from "@/assets/svgs/logo_header.svg";
-import bgBannerMain300 from "@/assets/imgs/bannerMain/bgBannerMain300.webp";
-import imgBannerMain1040 from "@/assets/imgs/bannerMain/bgBannerMain1040.webp";
-import imgBannerMain1440 from "@/assets/imgs/bannerMain/bgBannerMain1440.webp";
-import imgBannerMain1770 from "@/assets/imgs/bannerMain/bgBannerMain1770.webp";
-import imgBannerMain2048 from "@/assets/imgs/bannerMain/bgBannerMain2048.webp";
+import bgBanner from "@/assets/imgs/bannerMain/bgBanner.webp";
 ---
 
 <section
   class="w-full relative h-[32rem] lg:h-[36rem] bg-cover bg-center banner-section overflow-hidden"
 >
   <Image
-    src={imgBannerMain1440}
-    srcset=`${bgBannerMain300.src} 300w,
-     ${imgBannerMain1040.src} 1040w,
-      ${imgBannerMain1440.src} 1440w,
-       ${imgBannerMain1770.src} 1770w,
-        ${imgBannerMain2048.src} 2048w`
+    src={bgBanner}
+    widths={[300, 1040, 1440, 1770, 2048]}
     sizes="100vw"
     loading="eager"
     alt="bg"
@@ -25,6 +17,10 @@ import imgBannerMain2048 from "@/assets/imgs/bannerMain/bgBannerMain2048.webp";
     fetchpriority="high"
     decoding="auto"
   />
+
+  <div class="absolute top-0 left-0 w-full h-full bg-neutral-800 bg-opacity-50">
+  </div>
+
   <div
     class="flex h-full px-4 md:px-0 justify-center items-center banner-content"
   >
