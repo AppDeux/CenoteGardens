@@ -9,7 +9,7 @@ const TabsSelector = (props) => {
         {props.tabsData.map((tab, index) => (
           <button
             key={index}
-            className={`w-full rounded text-lg px-6 py-3 text-white
+            className={`w-full rounded text-lg px-6 py-3 
               ${activeTab === index ? "bg-accent-700 text-white" : "bg-transparent text-gray-700 border-b-2 border-accent-700"}`}
             onClick={() => setActiveTab(index)}
           >
