@@ -16,7 +16,13 @@ const t = useTranslations(lang);
   </h1>
   <div class="presentation text-lg">
     <div>
-      <Image class="presentation__iconWorld" src={iconWorld} alt="Icon World" loading="lazy"/>
+      <Image
+        data-aos="fade-up"
+        class="presentation__iconWorld"
+        src={iconWorld}
+        alt="Icon World"
+        loading="lazy"
+      />
     </div>
     <p>
       {t("descriptionSection.about")}
@@ -27,7 +33,6 @@ const t = useTranslations(lang);
     </p>
   </div>
 </div>
-
 
 <style lang="scss">
   .presentation {

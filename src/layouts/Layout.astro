@@ -64,7 +64,11 @@ const lang = getLangFromUrl(Astro.url);
     <GlobalStyles />
     <script src="./viewTransitionsConfig.js"></script>
     <script src="./favicon.js"></script>
-    <script is:inline>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      import AOS from "aos";
+
       AOS.init();
     </script>
   </body>
