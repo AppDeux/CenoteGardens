@@ -37,7 +37,9 @@ const { title, description } = Astro.props;
   }
   <BannerMain />
   <DescriptionSecction />
+  <InvestSection />
   <HomeDesignSection />
+
   <BannerParallax />
   <PromotionSection />
   <AmenitiesSection />
@@ -48,10 +50,14 @@ const { title, description } = Astro.props;
   <AvailabilitySection />
   <!-- <MapPlanoCenote client:visible url={Astro.url} /> -->
 
-  <section class="block w-full lg:px-8 xl:px-12 container md:max-w-6xl">
-    <Image src={NewMapaPlano} alt="mapCenote" class="size-full object-cover mb-8" />
+  <section class="block w-full lg:px-8 xl:px-12 container md:max-w-6xl mb-12">
+    <Image
+      src={NewMapaPlano}
+      alt="mapCenote"
+      class="size-full object-cover mb-8"
+    />
 
-    <div class="flex items-center mt-8`">
+    <div class="flex items-center mt-8">
       <a
         href="#contact"
         class="max-w-56 mb-4 bg-accent-700 hover:bg-accent-800 px-6 py-3 text-white m-auto text-center"
@@ -60,7 +66,7 @@ const { title, description } = Astro.props;
       </a>
     </div>
   </section>
-  <InvestSection />
+
   <ContactSection />
   <FooterSection />
 </Layout>

@@ -78,6 +78,14 @@ const t = useTranslations(lang);
     </div>
     <div class="px-4 md:px-8">
       <p class="text-xl text-center" set:html={t("amenitiesCarousel.title")} />
+      <div class="flex items-center mt-8">
+        <a
+          href="#contact"
+          class="max-w-56 mb-4 text-base bg-accent-700 hover:bg-accent-800 px-6 py-3 text-white m-auto text-center"
+        >
+          {t("btnToContact")}
+        </a>
+      </div>
     </div>
   </div>
 </section>

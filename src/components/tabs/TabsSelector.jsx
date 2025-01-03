@@ -4,7 +4,7 @@ const TabsSelector = (props) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mb-8">
       <div className="flex flex-1 w-full mb-6">
         {props.tabsData.map((tab, index) => (
           <button
