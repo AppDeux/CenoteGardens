@@ -64,5 +64,8 @@ const lang = getLangFromUrl(Astro.url);
     <GlobalStyles />
     <script src="./viewTransitionsConfig.js"></script>
     <script src="./favicon.js"></script>
+    <script is:inline>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -18,7 +18,7 @@ export const ui = {
     "descriptionSection.about": `Escape to a world where nature embraces contemporary comfort—nestled in the vibrant jungles of Tulum.`,
     "descriptionSection.about2": `Picture waking up to the beautiful songs of tropical birds, surrounded by the lush jungle in vibrant colors. Every day is like a new adventure waiting to happen.`,
     "descriptionSection.aboutSecond":
-      "Cenote Gardens offers <b>56 residential lots</b> that bring a unique opportunity to be part of an extraordinary living experience.",
+      "Cenote Gardens offers <b>65 residential lots</b> that bring a unique opportunity to be part of an extraordinary living experience.",
     "descriptionSection.aboutSecond2":
       "It is the perfect place for those looking for <b>a lifestyle respectful of nature</b> and the biodiversity of the Mayan jungle.",
     "descriptionSection.aboutSecond3":
@@ -75,7 +75,7 @@ export const ui = {
     "locationSection.linkGoogleMaps": "View location on Google Maps",
     "availabilitySection.title": "Availability",
     "availabilitySection.desc":
-      "Cenote Gardens is the perfect canvas for your dream home. Every lot offers ample space, ranging from <b>250 sq m to 600 sq m</b>, providing you with the flexibility to design and create your ideal living environment. Choose it as your gateway to a <b>lifestyle of tranquility, luxury, and investment potential.</b>",
+      "Cenote Gardens is the perfect canvas for your dream home. Every lot offers ample space, ranging from <b>130 sq m to 545 sq m</b>, providing you with the flexibility to design and create your ideal living environment. Choose it as your gateway to a <b>lifestyle of tranquility, luxury, and investment potential.</b>",
     "availabilitySection.desc2":
       "Explore the available lots today and start envisioning your future in this idyllic enclave in the heart of Tulum's jungle.",
     "availabilitySection.desc3":
@@ -203,7 +203,7 @@ export const ui = {
     "descriptionSection.about": `Escápate a un mundo en donde la naturaleza de la selva maya abraza el confort contemporáneo.`,
     "descriptionSection.about2": `Imagínate despertar y escuchar los cantos de las aves y rodearte de colores vibrantes. Cada día es una nueva aventura esperando ser vivida.`,
     "descriptionSection.aboutSecond":
-      "Cenote Gardens ofrece <b>56 lotes residenciales</b> que te permiten tener una experiencia de vida extraordinaria.",
+      "Cenote Gardens ofrece <b>65 lotes residenciales</b> que te permiten tener una experiencia de vida extraordinaria.",
     "descriptionSection.aboutSecond2":
       "Es el lugar perfecto para aquellos que buscan <b>un estilo de vida respetuoso con la naturaleza</b> y la biodiversidad de la selva maya.",
     "descriptionSection.aboutSecond3":
@@ -260,7 +260,7 @@ export const ui = {
     "locationSection.linkGoogleMaps": "Ver ubicación en google maps",
     "availabilitySection.title": "Disponibilidad",
     "availabilitySection.desc":
-      "Cenote Gardens es el lugar perfecto para tu hogar soñado. Cada terreno ofrece un espacio, que va desde <b>250-600 m²</b>, brindándote la flexibilidad para diseñar y crear tu entorno ideal. Elígelo como el camino a un <b>estilo de vida de tranquilidad, lujo y potencial de inversión.</b>",
+      "Cenote Gardens es el lugar perfecto para tu hogar soñado. Cada terreno ofrece un espacio, que va desde <b>130-545 m²</b>, brindándote la flexibilidad para diseñar y crear tu entorno ideal. Elígelo como el camino a un <b>estilo de vida de tranquilidad, lujo y potencial de inversión.</b>",
     "availabilitySection.desc2":
       "Descubre los terrenos disponibles y comienza a visualizar tu futuro en este refugio en el corazón de la selva de Tulum.",
     "availabilitySection.desc3":
