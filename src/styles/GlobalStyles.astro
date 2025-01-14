@@ -3,10 +3,10 @@
 ---
 
 <style is:global lang="scss">
-  @import "./core/base";
-  @import "./core/typography";
-  @import "./core/components/";
-  @import "./core/layout/";
+  @use "./core/base";
+  @use "./core/typography";
+  @use "./core/components";
+  @use "./core/layout";
 
   // Desactiva la prefencia del scroll del usuario
   @media (prefers-reduced-motion: reduce) {
@@ -14,7 +14,4 @@
       scroll-behavior: auto;
     }
   }
-
-
-
 </style>

@@ -6,6 +6,11 @@ import imgOx from "@/assets/imgs/homedesign/ox.webp";
 import imgKa from "@/assets/imgs/homedesign/ka.webp";
 import imgKuun from "@/assets/imgs/homedesign/kuun.webp";
 import imgKan from "@/assets/imgs/homedesign/kan.webp";
+
+import imgHarmony from "@/assets/imgs/landsPlot/harmony.webp";
+import imgTranquility from "@/assets/imgs/landsPlot/tranquility.webp";
+import imgSerenity from "@/assets/imgs/landsPlot/serenity.webp";
+
 import TabSelector from "../tabs/TabsSelector";
 
 const lang = getLangFromUrl(Astro.url);
@@ -57,16 +62,19 @@ const t = useTranslations(lang);
         title={t("homeDesign.Serenity")}
         content={t("homeDesign.SerenityData")}
         color="#ECC8AF"
+        img={imgSerenity}
       />
       <HomeDesignCard
         title={t("homeDesign.Tranquility")}
         content={t("homeDesign.TranquilityData")}
         color="#AFCCE6"
+        img={imgTranquility}
       />
       <HomeDesignCard
         title={t("homeDesign.Harmoney")}
         content={t("homeDesign.HarmonyData")}
         color="#D0ECCC"
+        img={imgHarmony}
       />
     </div>
   </TabSelector>

@@ -169,7 +169,7 @@ export const ui = {
     "homeDesign.description":
       "Although, you also have the freedom to design your home as you have always wished",
     "homeDesign.Tab1": "Houses",
-    "homeDesign.Tab2": "Lands",
+    "homeDesign.Tab2": "Land Plots",
     "homeDesign.Serenity": "Serenity",
     "homeDesign.SerenityData": `
         <ul>
